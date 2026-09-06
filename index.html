@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,337 +16,267 @@
 <style>
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
-
     font-family:Arial,Helvetica,sans-serif;
-
     background:#07111f;
-
     color:#f4f7fb;
-
     line-height:1.6;
-
 }
 
 a{
-
     color:inherit;
-
     text-decoration:none;
-
 }
 
 .container{
-
     width:min(1120px,92%);
-
     margin:auto;
-
 }
 
 header{
-
     min-height:100vh;
-
     display:flex;
-
     align-items:center;
-
     position:relative;
-
     overflow:hidden;
-
     background:
-
         radial-gradient(circle at 80% 20%,rgba(38,111,255,.25),transparent 35%),
-
         radial-gradient(circle at 20% 80%,rgba(0,196,255,.12),transparent 30%),
-
         #07111f;
-
 }
 
 .hero{
-
     padding:100px 0;
-
 }
 
 .badge{
-
     display:inline-block;
-
     padding:8px 16px;
-
     border:1px solid rgba(255,255,255,.2);
-
     border-radius:30px;
-
     font-size:13px;
-
     letter-spacing:2px;
-
     color:#8ec5ff;
-
     margin-bottom:25px;
-
 }
 
 h1{
-
     font-size:clamp(48px,8vw,92px);
-
     line-height:.95;
-
     letter-spacing:-3px;
-
     margin-bottom:25px;
-
 }
 
 .hero h2{
-
     font-size:clamp(22px,4vw,38px);
-
     font-weight:400;
-
     color:#cbd7e8;
-
     margin-bottom:12px;
-
 }
 
 .position{
-
     font-size:18px;
-
     color:#8ec5ff;
-
     margin-bottom:35px;
-
 }
 
 .hero-description{
-
     max-width:720px;
-
     color:#aebed2;
-
     font-size:18px;
-
 }
 
 nav{
-
     position:absolute;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     padding:24px 0;
-
     z-index:10;
-
     background:linear-gradient(to bottom,rgba(7,17,31,.9),transparent);
-
 }
 
 .nav-inner{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
 .logo{
-
     font-weight:800;
-
     letter-spacing:2px;
-
 }
 
 .nav-links{
-
     display:flex;
-
     gap:25px;
-
     font-size:14px;
-
     color:#b9c7d9;
-
 }
 
 .nav-links a:hover{
-
     color:#fff;
-
 }
 
 section{
-
     padding:100px 0;
-
 }
 
 .section-title{
-
     font-size:38px;
-
     margin-bottom:15px;
-
 }
 
 .section-subtitle{
-
     color:#8fa2b9;
-
     margin-bottom:45px;
-
     max-width:700px;
-
 }
 
 .grid{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:25px;
-
 }
 
 .card{
-
     background:rgba(255,255,255,.045);
-
     border:1px solid rgba(255,255,255,.09);
-
     border-radius:20px;
-
     padding:30px;
-
 }
 
 .card h3{
-
     font-size:22px;
-
     margin-bottom:12px;
-
 }
 
 .card p{
-
     color:#aebed2;
-
 }
 
 .stats{
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:18px;
-
     margin-top:40px;
-
 }
 
 .stat{
-
     padding:25px;
-
     border-radius:18px;
-
     background:rgba(255,255,255,.045);
-
     border:1px solid rgba(255,255,255,.08);
-
 }
 
 .stat strong{
-
     display:block;
-
     font-size:30px;
-
     margin-bottom:5px;
-
 }
 
 .stat span{
-
     color:#91a4bb;
-
     font-size:14px;
+}
+
+/* PHOTO GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.09);
+    aspect-ratio:4/3;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    transition:transform .4s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.35),transparent 50%);
+    pointer-events:none;
+}
+
+.gallery-caption{
+    position:absolute;
+    left:14px;
+    bottom:12px;
+    z-index:2;
+    font-size:13px;
+    color:#fff;
+    font-weight:600;
+    text-shadow:0 2px 6px rgba(0,0,0,.7);
+}
+
+@media(max-width:900px){
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
 
 }
 
 @media(max-width:800px){
 
     .nav-links{
-
         display:none;
-
     }
 
     .grid{
-
         grid-template-columns:1fr;
-
     }
 
     .stats{
-
         grid-template-columns:repeat(2,1fr);
-
     }
 
     section{
-
         padding:75px 0;
-
     }
 
 }
 
 @media(max-width:500px){
 
-    .stats{
-
+    .gallery{
         grid-template-columns:1fr;
+    }
 
+    .stats{
+        grid-template-columns:1fr;
     }
 
     h1{
-
         letter-spacing:-2px;
-
     }
 
 }
@@ -371,6 +302,8 @@ section{
 <a href="#career">Career</a>
 
 <a href="#evidence">Evidence</a>
+
+<a href="#media">Media</a>
 
 </div>
 
@@ -488,8 +421,9 @@ ball protection under pressure, close-range finishing and tactical awareness.
 
 </div>
 
-</section> 
-  <section id="international">
+</section>
+
+<section id="international">
 
 <div class="container">
 
@@ -651,8 +585,9 @@ Continued senior competitive experience with Olympique Annaba.
 
 </div>
 
-</section> 
-  <section id="palmares">
+</section>
+
+<section id="palmares">
 
 <div class="container">
 
@@ -805,7 +740,8 @@ documents provide documentary support for the club career timeline.
 </div>
 
 </section>
-  <section id="media">
+
+<section id="media">
 
 <div class="container">
 
@@ -817,86 +753,86 @@ Visual evidence from the player's international and club career.
 
 </p>
 
-<div class="grid">
+<div class="gallery">
 
-<div class="card">
-
-<h3>International Career</h3>
-
-<p>
-
-Photographs from Algeria national-team camps, African championships
-
-and international competitions.
-
-</p>
-
-<div style="margin-top:22px;height:180px;border:1px dashed rgba(255,255,255,.2);border-radius:15px;display:flex;align-items:center;justify-content:center;color:#71849c;">
-
-International Photos
-
+<div class="gallery-item">
+<img src="02f64a06bbb4a936319d9180cffeb978.jpeg" alt="SEGUENI Abderraouf — Career Evidence" loading="lazy">
+<div class="gallery-caption">Career Evidence</div>
 </div>
 
+<div class="gallery-item">
+<img src="IMG_9032.jpeg" alt="SEGUENI Abderraouf — Handball" loading="lazy">
+<div class="gallery-caption">Handball Career</div>
 </div>
 
-<div class="card">
-
-<h3>Club Career</h3>
-
-<p>
-
-Club presentation photographs, match action and career documentation
-
-from Algerian clubs.
-
-</p>
-
-<div style="margin-top:22px;height:180px;border:1px dashed rgba(255,255,255,.2);border-radius:15px;display:flex;align-items:center;justify-content:center;color:#71849c;">
-
-Club Photos
-
+<div class="gallery-item">
+<img src="IMG_9042.jpeg" alt="SEGUENI Abderraouf — Handball Career" loading="lazy">
+<div class="gallery-caption">Career</div>
 </div>
 
+<div class="gallery-item">
+<img src="IMG_9047.jpeg" alt="SEGUENI Abderraouf — Club Career" loading="lazy">
+<div class="gallery-caption">Club Career</div>
 </div>
 
-<div class="card">
-
-<h3>Match Action</h3>
-
-<p>
-
-Match and training imagery demonstrating the Pivot / Line Player role,
-
-physical presence and attacking contribution.
-
-</p>
-
-<div style="margin-top:22px;height:180px;border:1px dashed rgba(255,255,255,.2);border-radius:15px;display:flex;align-items:center;justify-content:center;color:#71849c;">
-
-Match Action
-
+<div class="gallery-item">
+<img src="IMG_9289.jpeg" alt="SEGUENI Abderraouf — International Handball" loading="lazy">
+<div class="gallery-caption">International</div>
 </div>
 
+<div class="gallery-item">
+<img src="IMG_9296.png" alt="SEGUENI Abderraouf — International Evidence" loading="lazy">
+<div class="gallery-caption">International Evidence</div>
 </div>
 
-<div class="card">
-
-<h3>Scouting Video</h3>
-
-<p>
-
-Video material can be added here to provide direct visual evidence of
-
-playing style, movement, physicality and technical characteristics.
-
-</p>
-
-<div style="margin-top:22px;height:180px;border:1px dashed rgba(255,255,255,.2);border-radius:15px;display:flex;align-items:center;justify-content:center;color:#71849c;">
-
-Scouting Video
-
+<div class="gallery-item">
+<img src="IMG_9297.png" alt="SEGUENI Abderraouf — Handball" loading="lazy">
+<div class="gallery-caption">Handball</div>
 </div>
 
+<div class="gallery-item">
+<img src="IMG_9298.jpeg" alt="SEGUENI Abderraouf — Competition" loading="lazy">
+<div class="gallery-caption">Competition</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9299.jpeg" alt="SEGUENI Abderraouf — Match Career" loading="lazy">
+<div class="gallery-caption">Match Career</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9300.jpeg" alt="SEGUENI Abderraouf — Sporting Career" loading="lazy">
+<div class="gallery-caption">Sporting Career</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9302.png" alt="SEGUENI Abderraouf — International Player" loading="lazy">
+<div class="gallery-caption">International Player</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9308.jpeg" alt="SEGUENI Abderraouf — Club Evidence" loading="lazy">
+<div class="gallery-caption">Club Evidence</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9539.png" alt="SEGUENI Abderraouf — Handball Evidence" loading="lazy">
+<div class="gallery-caption">Handball Evidence</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9540.png" alt="SEGUENI Abderraouf — International Career" loading="lazy">
+<div class="gallery-caption">International Career</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9541.png" alt="SEGUENI Abderraouf — Career Documentation" loading="lazy">
+<div class="gallery-caption">Career Documentation</div>
+</div>
+
+<div class="gallery-item">
+<img src="IMG_9542.png" alt="SEGUENI Abderraouf — Sporting Documentation" loading="lazy">
+<div class="gallery-caption">Sporting Documentation</div>
 </div>
 
 </div>
@@ -972,7 +908,8 @@ including Tajnanet, Mila, Mouloudia Bordj Bou Arreridj and Olympique Annaba.
 </div>
 
 </section>
-  <section id="summary">
+
+<section id="summary">
 
 <div class="container">
 
@@ -1109,7 +1046,8 @@ Pivot / Line Player
 </div>
 
 </footer>
-  <script>
+
+<script>
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
@@ -1134,7 +1072,8 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 </script>
-  </body>
+
+</body>
 
 </html>
-  
+```
