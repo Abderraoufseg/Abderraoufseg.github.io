@@ -10,7 +10,9 @@
 
 <title>SEGUENI Abderraouf — International Handball Player</title>
 
-<meta name="description" content="SEGUENI Abderraouf — Algerian international handball player, Pivot / Line Player, Right-Handed, 183 cm, #18. Haut Niveau Classe A & Élite.">
+<meta name="description"
+
+content="SEGUENI Abderraouf — Algerian international handball player, Pivot / Line Player, Right-Handed, 183 cm, #18. Haut Niveau Classe A & Élite.">
 
 <meta name="author" content="SEGUENI Abderraouf">
 
@@ -60,7 +62,11 @@ a{
 
 }
 
-/* HERO */
+/* =========================
+
+   HERO
+
+========================= */
 
 header{
 
@@ -78,6 +84,8 @@ header{
 
 }
 
+/* MAIN PHOTO */
+
 .hero-image{
 
     position:absolute;
@@ -90,11 +98,17 @@ header{
 
     object-fit:cover;
 
+    /* Important for the main photo */
+
     object-position:center center;
 
     z-index:0;
 
+    display:block;
+
 }
+
+/* DARK OVERLAY */
 
 header::after{
 
@@ -112,9 +126,9 @@ header::after{
 
             rgba(3,8,15,1) 0%,
 
-            rgba(3,8,15,.80) 30%,
+            rgba(3,8,15,.82) 30%,
 
-            rgba(3,8,15,.32) 70%,
+            rgba(3,8,15,.38) 65%,
 
             rgba(3,8,15,.12) 100%
 
@@ -148,7 +162,7 @@ header::after{
 
     border-radius:30px;
 
-    background:rgba(0,0,0,.35);
+    background:rgba(0,0,0,.40);
 
     backdrop-filter:blur(10px);
 
@@ -180,7 +194,7 @@ header::after{
 
     font-size:clamp(22px,4vw,42px);
 
-    font-weight:800;
+    font-weight:900;
 
     margin-bottom:10px;
 
@@ -190,7 +204,7 @@ header::after{
 
     font-size:clamp(18px,3vw,28px);
 
-    font-weight:800;
+    font-weight:900;
 
     margin-bottom:22px;
 
@@ -222,7 +236,11 @@ header::after{
 
 }
 
-/* NAV */
+/* =========================
+
+   NAVIGATION
+
+========================= */
 
 nav{
 
@@ -232,7 +250,7 @@ nav{
 
     z-index:20;
 
-    background:rgba(4,9,17,.88);
+    background:rgba(4,9,17,.90);
 
     backdrop-filter:blur(15px);
 
@@ -278,7 +296,11 @@ nav{
 
 }
 
-/* SECTIONS */
+/* =========================
+
+   SECTIONS
+
+========================= */
 
 section{
 
@@ -312,7 +334,11 @@ section{
 
 }
 
-/* CARDS */
+/* =========================
+
+   CARDS
+
+========================= */
 
 .grid{
 
@@ -326,15 +352,17 @@ section{
 
 .card{
 
-    background:linear-gradient(
+    background:
 
-        145deg,
+        linear-gradient(
 
-        rgba(255,255,255,.08),
+            145deg,
 
-        rgba(255,255,255,.025)
+            rgba(255,255,255,.08),
 
-    );
+            rgba(255,255,255,.025)
+
+        );
 
     border:1px solid rgba(255,255,255,.10);
 
@@ -388,7 +416,11 @@ section{
 
 }
 
-/* PROFILE */
+/* =========================
+
+   PROFILE
+
+========================= */
 
 .profile-box{
 
@@ -422,7 +454,11 @@ section{
 
 }
 
-/* WORLD */
+/* =========================
+
+   WORLD CHAMPIONSHIP
+
+========================= */
 
 .world{
 
@@ -434,9 +470,25 @@ section{
 
     background:
 
-        radial-gradient(circle at top right,rgba(255,255,255,.13),transparent 35%),
+        radial-gradient(
 
-        linear-gradient(135deg,#111d2d,#070d16);
+            circle at top right,
+
+            rgba(255,255,255,.13),
+
+            transparent 35%
+
+        ),
+
+        linear-gradient(
+
+            135deg,
+
+            #111d2d,
+
+            #070d16
+
+        );
 
     border:1px solid rgba(255,255,255,.12);
 
@@ -472,7 +524,11 @@ section{
 
 }
 
-/* CAMPS */
+/* =========================
+
+   CAMPS
+
+========================= */
 
 .camps{
 
@@ -496,13 +552,11 @@ section{
 
 }
 
-.camp-number small{
+/* =========================
 
-    font-size:20px;
+   PALMARES
 
-}
-
-/* PALMARES */
+========================= */
 
 .palmares{
 
@@ -540,7 +594,11 @@ section{
 
 }
 
-/* EVIDENCE */
+/* =========================
+
+   EVIDENCE
+
+========================= */
 
 .evidence{
 
@@ -576,7 +634,11 @@ section{
 
 }
 
-/* GALLERY */
+/* =========================
+
+   GALLERY
+
+========================= */
 
 .gallery{
 
@@ -612,7 +674,11 @@ section{
 
 }
 
-/* SCOUTING */
+/* =========================
+
+   SCOUTING
+
+========================= */
 
 .scouting{
 
@@ -648,7 +714,11 @@ section{
 
 }
 
-/* CONTACT */
+/* =========================
+
+   CONTACT
+
+========================= */
 
 .contact{
 
@@ -658,15 +728,17 @@ section{
 
     border-radius:28px;
 
-    background:linear-gradient(
+    background:
 
-        135deg,
+        linear-gradient(
 
-        rgba(255,255,255,.09),
+            135deg,
 
-        rgba(255,255,255,.025)
+            rgba(255,255,255,.09),
 
-    );
+            rgba(255,255,255,.025)
+
+        );
 
     border:1px solid rgba(255,255,255,.10);
 
@@ -704,7 +776,11 @@ section{
 
 }
 
-/* FOOTER */
+/* =========================
+
+   FOOTER
+
+========================= */
 
 footer{
 
@@ -718,7 +794,11 @@ footer{
 
 }
 
-/* MOBILE */
+/* =========================
+
+   MOBILE
+
+========================= */
 
 @media(max-width:800px){
 
@@ -731,12 +811,6 @@ footer{
     .hero-content{
 
         padding-bottom:45px;
-
-    }
-
-    .hero-content h1{
-
-        letter-spacing:-1px;
 
     }
 
@@ -800,6 +874,18 @@ footer{
 
     }
 
+    header{
+
+        min-height:85vh;
+
+    }
+
+    .hero-image{
+
+        object-position:center center;
+
+    }
+
 }
 
 </style>
@@ -808,13 +894,19 @@ footer{
 
 <body>
 
+<!-- =========================
+
+     HERO / MAIN PHOTO
+
+========================= -->
+
 <header>
 
 <img
 
     class="hero-image"
 
-    src="SEGUENI_cover.jpg"
+    src="./IMG_9726.jpeg"
 
     alt="SEGUENI Abderraouf — International Handball Player #18"
 
@@ -866,6 +958,12 @@ statut : Haut niveau Classe À & Élite
 
 </header>
 
+<!-- =========================
+
+     NAVIGATION
+
+========================= -->
+
 <nav>
 
 <div class="nav-inner">
@@ -890,11 +988,21 @@ statut : Haut niveau Classe À & Élite
 
 <main>
 
+<!-- =========================
+
+     PROFILE
+
+========================= -->
+
 <section id="profile">
 
 <div class="container">
 
-<div class="section-label">Athlete Profile</div>
+<div class="section-label">
+
+Athlete Profile
+
+</div>
 
 <h2 class="section-title">
 
@@ -906,7 +1014,11 @@ International Handball Player
 
 <div class="card">
 
-<h3>SEGUENI Abderraouf</h3>
+<h3>
+
+SEGUENI Abderraouf
+
+</h3>
 
 <p>
 
@@ -934,19 +1046,47 @@ followed by senior-level international experience.
 
 <ul class="profile-list">
 
-<li><strong>Nationality:</strong> Algeria 🇩🇿</li>
+<li>
 
-<li><strong>Position:</strong> Pivot / Line Player</li>
+<strong>Nationality:</strong> Algeria 🇩🇿
 
-<li><strong>Hand:</strong> Right-Handed</li>
+</li>
 
-<li><strong>Height:</strong> 183 cm</li>
+<li>
 
-<li><strong>Jersey:</strong> #18</li>
+<strong>Position:</strong> Pivot / Line Player
 
-<li><strong>Experience:</strong> 14+ years</li>
+</li>
 
-<li><strong>Status:</strong> Haut Niveau Classe À & Élite</li>
+<li>
+
+<strong>Hand:</strong> Right-Handed
+
+</li>
+
+<li>
+
+<strong>Height:</strong> 183 cm
+
+</li>
+
+<li>
+
+<strong>Jersey:</strong> #18
+
+</li>
+
+<li>
+
+<strong>Experience:</strong> 14+ years
+
+</li>
+
+<li>
+
+<strong>Status:</strong> Haut Niveau Classe À & Élite
+
+</li>
 
 </ul>
 
@@ -958,11 +1098,21 @@ followed by senior-level international experience.
 
 </section>
 
+<!-- =========================
+
+     INTERNATIONAL
+
+========================= -->
+
 <section id="international">
 
 <div class="container">
 
-<div class="section-label">International Career</div>
+<div class="section-label">
+
+International Career
+
+</div>
 
 <h2 class="section-title">
 
@@ -974,7 +1124,11 @@ International Achievements
 
 <div class="card">
 
-<div class="flag">🇰🇪</div>
+<div class="flag">
+
+🇰🇪
+
+</div>
 
 <div class="badge">
 
@@ -1000,7 +1154,11 @@ Algeria finished second and earned the
 
 <div class="card">
 
-<div class="flag">🇲🇱</div>
+<div class="flag">
+
+🇲🇱
+
+</div>
 
 <div class="badge">
 
@@ -1016,9 +1174,13 @@ Mali — Bamako 2016
 
 <p>
 
-Algeria finished in <strong>3rd place</strong>
+Algeria finished in
 
-and earned the <strong>Bronze Medal</strong>.
+<strong>3rd place</strong>
+
+and earned the
+
+<strong>Bronze Medal</strong>.
 
 </p>
 
@@ -1116,11 +1278,21 @@ friendly experience across Europe.
 
 </section>
 
+<!-- =========================
+
+     PALMARES
+
+========================= -->
+
 <section id="palmares">
 
 <div class="container">
 
-<div class="section-label">Palmarès</div>
+<div class="section-label">
+
+Palmarès
+
+</div>
 
 <h2 class="section-title">
 
@@ -1201,6 +1373,12 @@ U21 World Championship
 </div>
 
 </section>
+
+<!-- =========================
+
+     EVIDENCE
+
+========================= -->
 
 <section id="evidence">
 
@@ -1298,6 +1476,12 @@ World Championship evidence.
 
 </section>
 
+<!-- =========================
+
+     MEDIA
+
+========================= -->
+
 <section id="media">
 
 <div class="container">
@@ -1316,63 +1500,121 @@ International Career Gallery
 
 <div class="gallery">
 
-<img src="02f64a06bbb4a936319d9180cffeb978.jpeg"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./02f64a06bbb4a936319d9180cffeb978.jpeg"
 
-<img src="IMG_9032.jpeg"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9042.jpeg"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./IMG_9032.jpeg"
 
-<img src="IMG_9047.jpeg"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9289.jpeg"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./IMG_9042.jpeg"
 
-<img src="IMG_9300.jpeg"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9302.png"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./IMG_9047.jpeg"
 
-<img src="IMG_9308.jpeg"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9539.png"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./IMG_9289.jpeg"
 
-<img src="IMG_9540.png"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9541.png"
+<img
 
-alt="SEGUENI Abderraouf handball">
+src="./IMG_9300.jpeg"
 
-<img src="IMG_9542.png"
+alt="SEGUENI Abderraouf handball"
 
-alt="SEGUENI Abderraouf handball">
+>
 
-<img src="IMG_9726.jpeg"
+<img
 
-alt="SEGUENI Abderraouf International Handball Player">
+src="./IMG_9302.png"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9308.jpeg"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9539.png"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9540.png"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9541.png"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9542.png"
+
+alt="SEGUENI Abderraouf handball"
+
+>
+
+<img
+
+src="./IMG_9726.jpeg"
+
+alt="SEGUENI Abderraouf International Handball Player"
+
+>
 
 </div>
 
 </div>
 
 </section>
+
+<!-- =========================
+
+     SCOUTING
+
+========================= -->
 
 <section id="scouting">
 
@@ -1394,7 +1636,11 @@ Professional Scouting Profile
 
 <div class="skill">
 
-<h3>💪 Physical Strength</h3>
+<h3>
+
+💪 Physical Strength
+
+</h3>
 
 <p>
 
@@ -1408,7 +1654,11 @@ and physical resistance around the 6-metre line.
 
 <div class="skill">
 
-<h3>🧠 Tactical Intelligence</h3>
+<h3>
+
+🧠 Tactical Intelligence
+
+</h3>
 
 <p>
 
@@ -1422,7 +1672,11 @@ blocks and intelligent movement away from the ball.
 
 <div class="skill">
 
-<h3>⚡ Explosive Movement</h3>
+<h3>
+
+⚡ Explosive Movement
+
+</h3>
 
 <p>
 
@@ -1436,7 +1690,11 @@ of direction and explosive close-range actions.
 
 <div class="skill">
 
-<h3>🤾 Ball Protection</h3>
+<h3>
+
+🤾 Ball Protection
+
+</h3>
 
 <p>
 
@@ -1450,7 +1708,11 @@ ball protection in physical defensive contact.
 
 <div class="skill">
 
-<h3>🎯 Finishing</h3>
+<h3>
+
+🎯 Finishing
+
+</h3>
 
 <p>
 
@@ -1464,7 +1726,11 @@ to receive with both hands and finish naturally right-handed.
 
 <div class="skill">
 
-<h3>🔥 Competitive Responsibility</h3>
+<h3>
+
+🔥 Competitive Responsibility
+
+</h3>
 
 <p>
 
@@ -1481,6 +1747,12 @@ moments and decisive final possessions.
 </div>
 
 </section>
+
+<!-- =========================
+
+     CONTACT
+
+========================= -->
 
 <section id="contact">
 
@@ -1521,6 +1793,12 @@ Official Athlete Website
 </section>
 
 </main>
+
+<!-- =========================
+
+     FOOTER
+
+========================= -->
 
 <footer>
 
