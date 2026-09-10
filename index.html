@@ -814,19 +814,69 @@ h2{
 
     aspect-ratio:16/9;
 
-    background:radial-gradient(circle at center,#252a31 0%,#111419 45%,#08090b 100%);
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
     position:relative;
+
+    overflow:hidden;
+
+    background:#101318;
+
+}
+
+.video-preview img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:transform .35s ease,filter .35s ease;
+
+}
+
+.video-card:hover .video-preview img{
+
+    transform:scale(1.035);
+
+    filter:brightness(.72);
+
+}
+
+.video-preview::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(0,0,0,.08),
+
+        rgba(0,0,0,.35)
+
+    );
+
+    pointer-events:none;
 
 }
 
 .play-button{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:2;
 
     width:64px;
 
@@ -844,6 +894,10 @@ h2{
 
     color:#d6b36a;
 
+    background:rgba(8,9,11,.72);
+
+    backdrop-filter:blur(4px);
+
     font-size:22px;
 
     padding-left:4px;
@@ -858,7 +912,7 @@ h2{
 
     color:#08090b;
 
-    transform:scale(1.08);
+    transform:translate(-50%,-50%) scale(1.08);
 
 }
 
@@ -895,6 +949,68 @@ h2{
     color:#858b94;
 
     font-size:12px;
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.contact-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 15px;
+
+    border:1px solid #292d34;
+
+    background:#0b0e12;
+
+    color:#b9bec6;
+
+    font-size:11px;
+
+    letter-spacing:.5px;
+
+    transition:all .25s ease;
+
+}
+
+.contact-link:hover{
+
+    border-color:#665331;
+
+    color:#d6b36a;
+
+    transform:translateY(-1px);
+
+}
+
+.contact-icon{
+
+    font-size:15px;
+
+}
+
+.contact-label{
+
+    color:#858b94;
 
 }
 
@@ -1143,6 +1259,20 @@ footer{
     .signature-name{
 
         font-size:42px;
+
+    }
+
+    .contact{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .contact-link{
+
+        justify-content:center;
 
     }
 
@@ -1694,8 +1824,6 @@ Club Career
 
 <div class="clubs">
 
-<!-- 01 — CRBBA -->
-
 <div class="club">
 
 <div>
@@ -1737,8 +1865,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 02 — CRBM MILA -->
 
 <div class="club">
 
@@ -1782,8 +1908,6 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
-<!-- 03 — MBBA -->
-
 <div class="club">
 
 <div>
@@ -1825,8 +1949,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 04 — OMA ANNABA -->
 
 <div class="club">
 
@@ -1870,8 +1992,6 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
-<!-- 05 — CHBZY -->
-
 <div class="club">
 
 <div>
@@ -1913,8 +2033,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 06 — MBT TADJENANET -->
 
 <div class="club">
 
@@ -1984,8 +2102,6 @@ Selected Media
 
 <div class="media">
 
-<!-- OLD MEDIA -->
-
 <div class="media-card">
 
 <img src="IMG_9042.jpeg" alt="SEGUENI Abderraouf">
@@ -2039,8 +2155,6 @@ Selected Media
 <img src="IMG_9726.jpeg" alt="SEGUENI Abderraouf">
 
 </div>
-
-<!-- ================= 21 NEW MEDIA IMAGES ================= -->
 
 <div class="media-card">
 
@@ -2194,17 +2308,37 @@ rel="noopener noreferrer"
 
 <div class="video-preview">
 
+<img
+
+src="IMG_9042.jpeg"
+
+alt="SEGUENI Abderraouf — Video 01"
+
+>
+
 <span class="play-button">▶</span>
 
 </div>
 
 <div class="video-info">
 
-<span class="video-number">VIDEO 01</span>
+<span class="video-number">
 
-<h3>SEGUENI Abderraouf</h3>
+VIDEO 01
 
-<p>Watch on Facebook</p>
+</span>
+
+<h3>
+
+SEGUENI Abderraouf
+
+</h3>
+
+<p>
+
+Watch on Facebook
+
+</p>
 
 </div>
 
@@ -2224,17 +2358,37 @@ rel="noopener noreferrer"
 
 <div class="video-preview">
 
+<img
+
+src="IMG_9047.jpeg"
+
+alt="SEGUENI Abderraouf — Video 02"
+
+>
+
 <span class="play-button">▶</span>
 
 </div>
 
 <div class="video-info">
 
-<span class="video-number">VIDEO 02</span>
+<span class="video-number">
 
-<h3>SEGUENI Abderraouf</h3>
+VIDEO 02
 
-<p>Watch on Facebook</p>
+</span>
+
+<h3>
+
+SEGUENI Abderraouf
+
+</h3>
+
+<p>
+
+Watch on Facebook
+
+</p>
 
 </div>
 
@@ -2254,17 +2408,37 @@ rel="noopener noreferrer"
 
 <div class="video-preview">
 
+<img
+
+src="IMG_9289.jpeg"
+
+alt="SEGUENI Abderraouf — Video 03"
+
+>
+
 <span class="play-button">▶</span>
 
 </div>
 
 <div class="video-info">
 
-<span class="video-number">VIDEO 03</span>
+<span class="video-number">
 
-<h3>SEGUENI Abderraouf</h3>
+VIDEO 03
 
-<p>Watch on Facebook</p>
+</span>
+
+<h3>
+
+SEGUENI Abderraouf
+
+</h3>
+
+<p>
+
+Watch on Facebook
+
+</p>
 
 </div>
 
@@ -2304,8 +2478,6 @@ A. Segueni
 
 <div class="signature-line"></div>
 
-<!-- IHF LOGO AT END -->
-
 <img
 
 class="end-ihf"
@@ -2341,6 +2513,104 @@ Fédération Algérienne de Handball
 <div class="signature-caption">
 
 International Handball Player · Pivot · #18
+
+</div>
+
+<!-- ================= CONTACT ================= -->
+
+<div class="contact">
+
+<a
+
+class="contact-link"
+
+href="mailto:segueniabderraouf001@gmail.com"
+
+>
+
+<span class="contact-icon">✉</span>
+
+<span>
+
+<span class="contact-label">Email</span>
+
+&nbsp; segueniabderraouf001@gmail.com
+
+</span>
+
+</a>
+
+<a
+
+class="contact-link"
+
+href="https://www.instagram.com/aymenseg18/"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<span class="contact-icon">◎</span>
+
+<span>
+
+<span class="contact-label">Instagram</span>
+
+&nbsp; @aymenseg18
+
+</span>
+
+</a>
+
+<a
+
+class="contact-link"
+
+href="https://www.facebook.com/share/1MWFu4s94c/?mibextid=wwXIfr"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<span class="contact-icon">f</span>
+
+<span>
+
+<span class="contact-label">Facebook</span>
+
+&nbsp; SEGUENI Abderraouf
+
+</span>
+
+</a>
+
+<a
+
+class="contact-link"
+
+href="https://wa.me/213559067688"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<span class="contact-icon">◉</span>
+
+<span>
+
+<span class="contact-label">WhatsApp</span>
+
+&nbsp; 0559 06 76 88
+
+</span>
+
+</a>
 
 </div>
 
