@@ -126,7 +126,7 @@ nav{
 
 nav a:hover{
 
-    color:white;
+    color:#d6b36a;
 
 }
 
@@ -154,9 +154,7 @@ nav a:hover{
 
 h1{
 
-    font-size:clamp(46px,8vw,88px);
-
-    line-height:.93;
+    line-height:.92;
 
     letter-spacing:-4px;
 
@@ -164,13 +162,35 @@ h1{
 
 }
 
+.last-name{
+
+    display:block;
+
+    font-size:clamp(58px,10vw,108px);
+
+}
+
+.first-name{
+
+    display:block;
+
+    font-size:clamp(35px,5.8vw,62px);
+
+    letter-spacing:-2px;
+
+    font-weight:650;
+
+    margin-top:9px;
+
+}
+
 .role{
 
-    margin-top:25px;
+    margin-top:28px;
 
     font-size:clamp(21px,3vw,31px);
 
-    font-weight:650;
+    font-weight:800;
 
 }
 
@@ -182,13 +202,15 @@ h1{
 
     padding:9px 15px;
 
-    border:1px solid #383d45;
+    border:1px solid #665331;
 
     background:#111318;
 
+    color:#d6b36a;
+
     font-size:13px;
 
-    font-weight:700;
+    font-weight:800;
 
 }
 
@@ -332,7 +354,7 @@ h2{
 
 }
 
-/* QUALITIES — GRID */
+/* ================= QUALITIES ================= */
 
 .qualities{
 
@@ -482,7 +504,7 @@ h2{
 
 .event-year{
 
-    color:#c8a96b;
+    color:#d6b36a;
 
     font-size:10px;
 
@@ -508,6 +530,22 @@ h2{
 
 }
 
+.flag{
+
+    font-size:21px;
+
+    vertical-align:-2px;
+
+    margin-right:6px;
+
+}
+
+.gold{
+
+    color:#d6b36a;
+
+}
+
 /* ================= MEDALS ================= */
 
 .medals{
@@ -528,11 +566,45 @@ h2{
 
     border:1px solid #292d34;
 
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.medal::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-28px;
+
+    top:-28px;
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(214,179,106,.18);
+
+}
+
+.medal-icon{
+
+    font-size:52px;
+
+    line-height:1;
+
+    margin-bottom:16px;
+
 }
 
 .medal-label{
 
-    color:#c8a96b;
+    color:#d6b36a;
 
     font-size:10px;
 
@@ -646,6 +718,114 @@ h2{
 
 }
 
+/* ================= SIGNATURE ================= */
+
+.signature-section{
+
+    text-align:center;
+
+}
+
+.signature-wrap{
+
+    max-width:650px;
+
+    margin:10px auto 0;
+
+    padding:36px 30px;
+
+    background:#101318;
+
+    border:1px solid #292d34;
+
+}
+
+.signature-name{
+
+    font-family:
+
+        "Brush Script MT",
+
+        "Segoe Script",
+
+        cursive;
+
+    font-size:52px;
+
+    font-style:italic;
+
+    color:#d6b36a;
+
+    line-height:1.1;
+
+    margin-bottom:12px;
+
+}
+
+.signature-line{
+
+    width:180px;
+
+    height:1px;
+
+    background:#665331;
+
+    margin:0 auto 20px;
+
+}
+
+.fahb-mark{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#d6b36a;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+}
+
+.fahb-symbol{
+
+    width:34px;
+
+    height:34px;
+
+    border:1px solid #665331;
+
+    border-radius:50%;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:8px;
+
+    font-weight:900;
+
+}
+
+.signature-caption{
+
+    margin-top:13px;
+
+    color:#777d86;
+
+    font-size:11px;
+
+}
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -754,6 +934,12 @@ footer{
 
     }
 
+    .signature-name{
+
+        font-size:42px;
+
+    }
+
 }
 
 </style>
@@ -806,15 +992,15 @@ Algerian Handball
 
 <h1>
 
-SEGUENI<br>
+<span class="last-name">SEGUENI</span>
 
-Abderraouf
+<span class="first-name">Abderraouf</span>
 
 </h1>
 
 <div class="role">
 
-International Handball Player
+<strong>International Handball Player</strong>
 
 </div>
 
@@ -1022,7 +1208,7 @@ International Handball Federation
 
 <span>Nationality</span>
 
-<strong>Algeria</strong>
+<strong>🇩🇿 Algeria</strong>
 
 </div>
 
@@ -1078,6 +1264,8 @@ preparation camps in Europe.
 
 <div class="timeline">
 
+<!-- KENYA -->
+
 <div class="event">
 
 <div class="event-year">
@@ -1090,19 +1278,25 @@ U19 · 2014
 
 <h3>
 
+<span class="flag">🇰🇪</span>
+
 African Championship
 
 </h3>
 
 <p>
 
-Nairobi, Kenya — Algeria finished 2nd and earned the silver medal.
+Nairobi, Kenya — Algeria finished 2nd and earned the
+
+<span class="gold">silver medal</span>.
 
 </p>
 
 </div>
 
 </div>
+
+<!-- MALI -->
 
 <div class="event">
 
@@ -1116,19 +1310,25 @@ U21 · 2016
 
 <h3>
 
+<span class="flag">🇲🇱</span>
+
 African Championship
 
 </h3>
 
 <p>
 
-Bamako, Mali — Algeria finished 3rd and earned the bronze medal.
+Bamako, Mali — Algeria finished 3rd and earned the
+
+<span class="gold">bronze medal</span>.
 
 </p>
 
 </div>
 
 </div>
+
+<!-- WORLD CHAMPIONSHIP -->
 
 <div class="event">
 
@@ -1142,19 +1342,27 @@ U21 · 2017
 
 <h3>
 
+<span class="flag">🇩🇿</span>
+
 World Championship
 
 </h3>
 
 <p>
 
-World Championship participation with Algeria as a Pivot / Line Player.
+Participation in the U21 World Championship with Algeria as a
+
+Pivot / Line Player and qualification to the
+
+<strong>Second Round</strong>.
 
 </p>
 
 </div>
 
 </div>
+
+<!-- CAMPS -->
 
 <div class="event">
 
@@ -1174,9 +1382,15 @@ Europe
 
 <p>
 
-More than 25 international preparation camps in Europe with matches
+More than 25 international preparation camps in Europe with
 
-and international opposition.
+international opposition, including
+
+<span class="flag">🇸🇮</span> Slovenia,
+
+<span class="flag">🇭🇷</span> Croatia and
+
+<span class="flag">🇮🇸</span> Iceland.
 
 </p>
 
@@ -1212,6 +1426,12 @@ International Medals
 
 <div class="medal">
 
+<div class="medal-icon">
+
+🥈
+
+</div>
+
 <div class="medal-label">
 
 Silver · 2014
@@ -1226,13 +1446,19 @@ U19 African Championship
 
 <p>
 
-Nairobi, Kenya
+🇰🇪 Nairobi, Kenya · Algeria — 2nd Place
 
 </p>
 
 </div>
 
 <div class="medal">
+
+<div class="medal-icon">
+
+🥉
+
+</div>
 
 <div class="medal-label">
 
@@ -1248,7 +1474,7 @@ U21 African Championship
 
 <p>
 
-Bamako, Mali
+🇲🇱 Bamako, Mali · Algeria — 3rd Place
 
 </p>
 
@@ -1405,6 +1631,62 @@ Selected Media
 <div class="media-card">
 
 <img src="IMG_9726.jpeg" alt="SEGUENI Abderraouf">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SIGNATURE ================= -->
+
+<section class="signature-section">
+
+<div class="container">
+
+<div class="section-label">
+
+06 — Signature
+
+</div>
+
+<h2>
+
+SEGUENI Abderraouf
+
+</h2>
+
+<div class="signature-wrap">
+
+<div class="signature-name">
+
+A. Segueni
+
+</div>
+
+<div class="signature-line"></div>
+
+<div class="fahb-mark">
+
+<span class="fahb-symbol">
+
+FAHB
+
+</span>
+
+<span>
+
+Fédération Algérienne de Handball
+
+</span>
+
+</div>
+
+<div class="signature-caption">
+
+International Handball Player · Pivot · #18
 
 </div>
 
