@@ -10,17 +10,63 @@
 
 <title>SEGUENI Abderraouf — International Handball Player</title>
 
-<meta name="description" content="SEGUENI Abderraouf — Algerian international handball player. Pivot / Line Player. Athlète de Haut Niveau Classe A & Élite.">
+<meta name="description" content="SEGUENI Abderraouf — Algerian international handball player. Pivot / Line Player. 183 cm. No. 18. International experience with Algeria U17, U19 and U21. IHF World Championship 2017.">
+
+<meta name="keywords" content="SEGUENI Abderraouf, Abderraouf Segueni, Algerian handball player, International Handball Player, Pivot, Line Player, IHF, Algeria U21, World Championship 2017, handball Algeria">
+
+<meta name="author" content="SEGUENI Abderraouf">
+
+<meta property="og:title" content="SEGUENI Abderraouf — International Handball Player">
+
+<meta property="og:description" content="Algerian International Handball Player • Pivot / Line Player • No. 18 • IHF World Championship 2017">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://abderraoufseg.github.io/">
+
+<link rel="canonical" href="https://abderraoufseg.github.io/">
 
 <style>
 
+:root{
+
+    --bg:#08090b;
+
+    --bg2:#0d0f13;
+
+    --panel:#111318;
+
+    --panel2:#151820;
+
+    --text:#f5f5f3;
+
+    --muted:#a7a9ad;
+
+    --gold:#d6b36a;
+
+    --gold2:#b99145;
+
+    --line:rgba(255,255,255,.10);
+
+    /* STATUT SPORTIF */
+
+    --earth-blue:#1677c8;
+
+    --earth-blue-dark:#0c4f91;
+
+    --earth-white:#ffffff;
+
+    --max:1200px;
+
+}
+
 *{
+
+    box-sizing:border-box;
 
     margin:0;
 
     padding:0;
-
-    box-sizing:border-box;
 
 }
 
@@ -32,21 +78,17 @@ html{
 
 body{
 
-    background:#08090b;
+    font-family:Inter,Arial,Helvetica,sans-serif;
 
-    color:#f4f4f5;
+    background:
 
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+        radial-gradient(circle at 85% 5%,rgba(214,179,106,.08),transparent 30%),
+
+        var(--bg);
+
+    color:var(--text);
 
     line-height:1.6;
-
-}
-
-.container{
-
-    width:min(1160px,92%);
-
-    margin:auto;
 
 }
 
@@ -58,27 +100,39 @@ a{
 
 }
 
-/* ================= HEADER ================= */
+.container{
 
-header{
+    width:min(var(--max),92%);
 
-    position:sticky;
-
-    top:0;
-
-    z-index:100;
-
-    background:rgba(8,9,11,.94);
-
-    backdrop-filter:blur(14px);
-
-    border-bottom:1px solid #25282d;
+    margin:auto;
 
 }
 
-.nav{
+/* ================= NAV ================= */
 
-    min-height:72px;
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    z-index:100;
+
+    background:rgba(8,9,11,.88);
+
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid var(--line);
+
+}
+
+.nav-inner{
+
+    min-height:70px;
 
     display:flex;
 
@@ -86,37 +140,47 @@ header{
 
     justify-content:space-between;
 
-}
-
-.logo{
-
-    font-size:14px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
+    gap:20px;
 
 }
 
-nav{
+.brand{
+
+    font-weight:900;
+
+    letter-spacing:.14em;
+
+    font-size:.95rem;
+
+}
+
+.brand span{
+
+    color:var(--gold);
+
+}
+
+.nav-links{
 
     display:flex;
 
-    gap:28px;
+    gap:24px;
 
-    color:#9298a1;
+    font-size:.82rem;
 
-    font-size:11px;
-
-    text-transform:uppercase;
-
-    letter-spacing:1.7px;
+    color:#ddd;
 
 }
 
-nav a:hover{
+.nav-links a{
 
-    color:#d6b36a;
+    transition:.25s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--gold);
 
 }
 
@@ -124,125 +188,377 @@ nav a:hover{
 
 .hero{
 
-    padding:75px 0 85px;
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:110px 0 70px;
+
+}
+
+.hero-media{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.hero-media img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center 28%;
+
+    filter:saturate(.82) contrast(1.08);
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(8,9,11,.98) 0%,
+
+            rgba(8,9,11,.90) 40%,
+
+            rgba(8,9,11,.42) 75%,
+
+            rgba(8,9,11,.20) 100%
+
+        );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:820px;
 
 }
 
 .eyebrow{
 
-    color:#969ca5;
+    color:var(--gold);
 
-    font-size:11px;
-
-    letter-spacing:4px;
+    font-size:.78rem;
 
     text-transform:uppercase;
+
+    letter-spacing:.20em;
+
+    font-weight:900;
 
     margin-bottom:18px;
 
 }
 
-h1{
+.hero h1{
 
-    line-height:.92;
+    font-size:clamp(3.4rem,8vw,7.4rem);
 
-    letter-spacing:-4px;
+    line-height:.88;
 
-    font-weight:850;
+    letter-spacing:-.06em;
 
-}
-
-.last-name{
-
-    display:block;
-
-    font-size:clamp(58px,10vw,108px);
+    margin-bottom:22px;
 
 }
 
-.first-name{
+.hero h1 span{
 
     display:block;
 
-    font-size:clamp(35px,5.8vw,62px);
+    color:#fff;
 
-    letter-spacing:-2px;
+}
 
-    font-weight:650;
+.hero-title-row{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-bottom:18px;
+
+}
+
+.hero-title-row h2{
+
+    font-size:clamp(1.15rem,2vw,1.5rem);
+
+    font-weight:800;
+
+}
+
+.ihf-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 12px;
+
+    border:1px solid rgba(214,179,106,.55);
+
+    border-radius:8px;
+
+    color:var(--gold);
+
+    font-size:.75rem;
+
+    font-weight:900;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    transition:.25s;
+
+}
+
+.ihf-link:hover{
+
+    background:rgba(214,179,106,.10);
+
+    transform:translateY(-1px);
+
+}
+
+.ihf-dot{
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+}
+
+/* ================= STATUT SPORTIF ================= */
+
+.status-sportif{
+
+    margin:18px 0 25px;
+
+    padding:18px 20px;
+
+    border-radius:13px;
+
+    /* الأزرق والأبيض فقط */
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(12,79,145,.94),
+
+            rgba(22,119,200,.72)
+
+        );
+
+    border:1px solid rgba(255,255,255,.32);
+
+    box-shadow:
+
+        0 10px 35px rgba(0,0,0,.28),
+
+        inset 0 0 25px rgba(255,255,255,.05);
+
+    color:#fff;
+
+    max-width:850px;
+
+}
+
+.status-sportif-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:.86rem;
+
+    font-weight:950;
+
+    letter-spacing:.14em;
+
+    text-transform:uppercase;
+
+    margin-bottom:9px;
+
+}
+
+.status-earth{
+
+    font-size:1.1rem;
+
+}
+
+.status-sportif strong{
+
+    color:#fff;
+
+}
+
+.status-sportif p{
+
+    color:#f4f8ff;
+
+    font-size:.91rem;
+
+    margin-top:7px;
+
+}
+
+.status-sportif .legal{
+
+    font-size:.78rem;
+
+    line-height:1.55;
+
+    color:#eef6ff;
 
     margin-top:9px;
 
 }
 
+.status-sportif .major{
+
+    font-size:.78rem;
+
+    line-height:1.55;
+
+    color:#fff;
+
+    margin-top:8px;
+
+}
+
+/* ================= HERO ROLE ================= */
+
 .role{
 
-    margin-top:28px;
+    color:#dfe1e4;
 
-    font-size:clamp(21px,3vw,31px);
+    font-size:1.02rem;
 
-    font-weight:800;
-
-}
-
-.status{
-
-    display:inline-block;
-
-    margin-top:14px;
-
-    padding:9px 15px;
-
-    border:1px solid #665331;
-
-    background:#111318;
-
-    color:#d6b36a;
-
-    font-size:13px;
-
-    font-weight:800;
+    margin-bottom:24px;
 
 }
 
-.main-photo{
-
-    margin-top:50px;
-
-}
-
-.main-photo img{
-
-    width:100%;
-
-    display:block;
-
-    max-height:720px;
-
-    object-fit:cover;
-
-    object-position:center;
-
-    border:1px solid #2a2e34;
-
-}
-
-.photo-info{
+.chips{
 
     display:flex;
 
-    justify-content:space-between;
+    flex-wrap:wrap;
 
-    gap:20px;
+    gap:9px;
 
-    margin-top:12px;
+}
 
-    color:#858b94;
+.chip{
 
-    font-size:10px;
+    padding:8px 12px;
 
-    letter-spacing:2px;
+    border:1px solid rgba(255,255,255,.14);
 
-    text-transform:uppercase;
+    border-radius:999px;
+
+    background:rgba(255,255,255,.045);
+
+    font-size:.82rem;
+
+    color:#e7e7e5;
+
+}
+
+.cta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 18px;
+
+    border-radius:9px;
+
+    font-weight:900;
+
+    border:1px solid var(--line);
+
+    transition:.25s;
+
+}
+
+.btn.primary{
+
+    background:var(--gold);
+
+    color:#08090b;
+
+}
+
+.btn.alt{
+
+    background:transparent;
+
+    color:#fff;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
 
 }
 
@@ -250,291 +566,97 @@ h1{
 
 section{
 
-    padding:82px 0;
+    padding:92px 0;
 
-    border-top:1px solid #22252a;
+    border-top:1px solid var(--line);
 
 }
 
-.section-label{
+.section-head{
 
-    color:#858b94;
+    display:flex;
 
-    font-size:10px;
+    justify-content:space-between;
 
-    letter-spacing:4px;
+    align-items:end;
+
+    gap:30px;
+
+    margin-bottom:38px;
+
+}
+
+.kicker{
+
+    color:var(--gold);
+
+    font-size:.76rem;
 
     text-transform:uppercase;
 
-    margin-bottom:13px;
+    letter-spacing:.18em;
+
+    font-weight:950;
+
+    margin-bottom:9px;
 
 }
 
-h2{
+.section-head h2{
 
-    font-size:clamp(33px,5vw,53px);
+    font-size:clamp(2rem,4vw,3.5rem);
 
-    line-height:1.05;
-
-    letter-spacing:-2px;
-
-    margin-bottom:34px;
+    line-height:1;
 
 }
 
-.section-intro{
+.section-head p{
 
-    max-width:800px;
+    max-width:560px;
 
-    color:#b9bec6;
-
-    margin-bottom:35px;
+    color:var(--muted);
 
 }
 
 /* ================= PROFILE ================= */
 
-.profile-layout{
-
-    display:grid;
-
-    grid-template-columns:1.35fr .85fr;
-
-    gap:20px;
-
-}
-
-.profile-box,
-
-.ihf-box{
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-    padding:32px;
-
-}
-
-.profile-box h3{
-
-    font-size:28px;
-
-    margin-bottom:10px;
-
-}
-
-.profile-box p{
-
-    color:#b9bec6;
-
-    max-width:700px;
-
-}
-
-/* ================= PLAYER PROFILE INFO ================= */
-
 .profile-info-grid{
 
-    margin-top:28px;
-
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(6,1fr);
 
-    gap:1px;
+    gap:12px;
 
-    background:#292d34;
-
-    border:1px solid #292d34;
+    margin-bottom:38px;
 
 }
 
 .profile-info{
 
-    background:#0b0e12;
+    min-height:135px;
 
-    padding:18px 15px;
+    padding:19px 15px;
 
-    min-height:86px;
+    border:1px solid var(--line);
+
+    border-radius:15px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.055),
+
+            rgba(255,255,255,.018)
+
+        );
 
     display:flex;
 
     flex-direction:column;
-
-    justify-content:center;
-
-}
-
-.profile-info-label{
-
-    color:#858b94;
-
-    font-size:9px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:5px;
-
-}
-
-.profile-info-value{
-
-    color:#f0f1f3;
-
-    font-size:14px;
-
-    font-weight:800;
-
-    line-height:1.3;
-
-}
-
-.profile-info-value.gold{
-
-    color:#d6b36a;
-
-}
-
-/* ================= QUALITIES ================= */
-
-.qualities-title{
-
-    margin-top:32px;
-
-    margin-bottom:13px;
-
-    color:#858b94;
-
-    font-size:10px;
-
-    letter-spacing:4px;
-
-    text-transform:uppercase;
-
-}
-
-.qualities{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:10px;
-
-}
-
-.quality{
-
-    background:#0b0e12;
-
-    border:1px solid #292d34;
-
-    padding:15px;
-
-    min-height:105px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:13px;
-
-    transition:border-color .25s ease,transform .25s ease;
-
-}
-
-.quality:hover{
-
-    border-color:#665331;
-
-    transform:translateY(-1px);
-
-}
-
-.quality-icon{
-
-    width:46px;
-
-    height:46px;
-
-    flex:0 0 46px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    color:#d6b36a;
-
-    border:1px solid #665331;
-
-    border-radius:50%;
-
-    background:#101318;
-
-}
-
-.quality-icon svg{
-
-    width:25px;
-
-    height:25px;
-
-    display:block;
-
-    stroke:currentColor;
-
-    fill:none;
-
-    stroke-width:1.7;
-
-    stroke-linecap:round;
-
-    stroke-linejoin:round;
-
-}
-
-.quality-text{
-
-    color:#e3e6ea;
-
-    font-size:12px;
-
-    font-weight:750;
-
-    line-height:1.35;
-
-}
-
-.quality-text span{
-
-    display:block;
-
-    color:#858b94;
-
-    font-size:8px;
-
-    letter-spacing:1.2px;
-
-    text-transform:uppercase;
-
-    margin-top:4px;
-
-}
-
-/* ================= IHF ================= */
-
-.ihf-box{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
 
     justify-content:center;
 
@@ -542,35 +664,221 @@ h2{
 
 }
 
+.profile-info-label{
+
+    color:var(--muted);
+
+    text-transform:uppercase;
+
+    letter-spacing:.10em;
+
+    font-size:.66rem;
+
+    font-weight:900;
+
+    margin-bottom:8px;
+
+}
+
+.profile-info-value{
+
+    font-size:1.02rem;
+
+    font-weight:900;
+
+    color:#fff;
+
+}
+
+.profile-info-value small{
+
+    color:var(--gold);
+
+}
+
+.profile-lead{
+
+    max-width:900px;
+
+    color:#c7c9cc;
+
+    font-size:1rem;
+
+    margin-bottom:32px;
+
+}
+
+.qualities-title{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+
+    font-size:.76rem;
+
+    font-weight:950;
+
+    margin-bottom:18px;
+
+}
+
+.qualities-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+.quality{
+
+    padding:20px;
+
+    border:1px solid var(--line);
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.025);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.quality-icon{
+
+    width:48px;
+
+    height:48px;
+
+    min-width:48px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,179,106,.08);
+
+    border:1px solid rgba(214,179,106,.25);
+
+}
+
+.quality-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+    stroke:var(--gold);
+
+    fill:none;
+
+    stroke-width:1.7;
+
+}
+
+.quality h3{
+
+    font-size:.96rem;
+
+    margin-bottom:3px;
+
+}
+
+.quality p{
+
+    color:var(--muted);
+
+    font-size:.78rem;
+
+}
+
+/* ================= IHF ================= */
+
+.ihf-certification{
+
+    margin-top:34px;
+
+    padding:25px;
+
+    border:1px solid rgba(214,179,106,.28);
+
+    border-radius:16px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(214,179,106,.07),
+
+            rgba(255,255,255,.015)
+
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+}
+
 .ihf-logo{
 
-    width:min(330px,100%);
+    width:min(300px,100%);
 
     height:auto;
 
     display:block;
 
-    margin-bottom:22px;
-
-    background:white;
+    border-radius:5px;
 
 }
 
-.ihf-title{
+.ihf-certification-text{
 
-    font-size:20px;
-
-    font-weight:800;
+    text-align:right;
 
 }
 
-.ihf-subtitle{
+.ihf-certification-text strong{
 
-    margin-top:6px;
+    display:block;
 
-    color:#949aa3;
+    color:var(--gold);
 
-    font-size:12px;
+    font-size:1rem;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.ihf-certification-text span{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.78rem;
+
+    margin-top:5px;
 
 }
 
@@ -580,11 +888,11 @@ h2{
 
     display:grid;
 
-    gap:14px;
+    gap:0;
 
 }
 
-.event{
+.timeline-item{
 
     display:grid;
 
@@ -592,143 +900,83 @@ h2{
 
     gap:25px;
 
-    padding:25px;
+    padding:25px 0;
 
-    background:#101318;
-
-    border:1px solid #292d34;
+    border-bottom:1px solid var(--line);
 
 }
 
-.event-year{
+.timeline-year{
 
-    color:#d6b36a;
+    color:var(--gold);
 
-    font-size:10px;
+    font-weight:950;
 
-    letter-spacing:2px;
-
-    text-transform:uppercase;
+    font-size:.9rem;
 
 }
 
-.event h3{
+.timeline-item h3{
 
-    font-size:21px;
+    font-size:1.1rem;
 
     margin-bottom:5px;
 
 }
 
-.event p{
+.timeline-item p{
 
-    color:#b5bac2;
+    color:var(--muted);
 
-    font-size:14px;
+}
+
+/* ================= CAMPS ================= */
+
+.camps{
+
+    margin-top:35px;
+
+}
+
+.camps h3{
+
+    margin-bottom:15px;
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.camp-flags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
 
 }
 
 .flag{
 
-    font-size:21px;
+    padding:10px 15px;
 
-    vertical-align:-2px;
+    border:1px solid var(--line);
 
-    margin-right:6px;
+    border-radius:10px;
 
-}
+    background:rgba(255,255,255,.025);
 
-.gold{
-
-    color:#d6b36a;
+    font-size:1.25rem;
 
 }
 
-/* ================= MEDALS ================= */
+/* ================= ACHIEVEMENTS ================= */
 
-.medals{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:16px;
-
-}
-
-.medal{
-
-    padding:30px;
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-.medal::after{
-
-    content:"";
-
-    position:absolute;
-
-    right:-28px;
-
-    top:-28px;
-
-    width:110px;
-
-    height:110px;
-
-    border-radius:50%;
-
-    border:1px solid rgba(214,179,106,.18);
-
-}
-
-.medal-icon{
-
-    font-size:52px;
-
-    line-height:1;
-
-    margin-bottom:16px;
-
-}
-
-.medal-label{
-
-    color:#d6b36a;
-
-    font-size:10px;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-}
-
-.medal h3{
-
-    margin:12px 0 4px;
-
-    font-size:24px;
-
-}
-
-.medal p{
-
-    color:#949aa3;
-
-}
-
-/* ================= CLUB CAREER ================= */
-
-.clubs{
+.achievements{
 
     display:grid;
 
@@ -738,103 +986,293 @@ h2{
 
 }
 
-.club{
+.achievement{
 
-    min-height:245px;
+    min-height:205px;
 
-    padding:22px;
+    padding:27px;
 
-    background:#101318;
+    border:1px solid var(--line);
 
-    border:1px solid #292d34;
+    border-radius:18px;
 
-    display:flex;
+    background:
 
-    flex-direction:column;
+        linear-gradient(
 
-    justify-content:space-between;
+            145deg,
+
+            #15171c,
+
+            #0c0e12
+
+        );
 
     position:relative;
 
     overflow:hidden;
 
-    transition:border-color .25s ease, transform .25s ease;
+}
+
+.achievement::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    background:rgba(214,179,106,.06);
+
+    right:-60px;
+
+    bottom:-70px;
 
 }
 
-.club:hover{
+.medal{
 
-    border-color:#665331;
+    font-size:2rem;
 
-    transform:translateY(-2px);
-
-}
-
-.club-number{
-
-    color:#777d86;
-
-    font-size:10px;
-
-    letter-spacing:2px;
+    margin-bottom:13px;
 
 }
 
-.club-logo{
+.achievement h3{
 
-    height:110px;
+    font-size:1.2rem;
+
+    margin-bottom:6px;
+
+}
+
+.achievement p{
+
+    color:var(--muted);
+
+}
+
+/* ================= CLUB CAREER ================= */
+
+.club-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+}
+
+.club{
 
     display:flex;
 
     align-items:center;
 
-    justify-content:center;
+    gap:18px;
 
-    margin:8px 0 18px;
+    padding:20px;
+
+    border:1px solid var(--line);
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.025);
 
 }
 
-.club-logo img{
+.club-logo{
 
-    max-width:125px;
+    width:68px;
 
-    max-height:100px;
+    height:68px;
 
-    width:auto;
-
-    height:auto;
+    border-radius:12px;
 
     object-fit:contain;
 
+    background:#fff;
+
+    padding:5px;
+
+}
+
+.club-number{
+
+    color:var(--gold);
+
+    font-size:.72rem;
+
+    font-weight:950;
+
+    letter-spacing:.1em;
+
+}
+
+.club h3{
+
+    font-size:1rem;
+
+    margin:2px 0;
+
+}
+
+.club p{
+
+    color:var(--muted);
+
+    font-size:.82rem;
+
+}
+
+/* ================= REFERENCEMENT ================= */
+
+.documentation{
+
+    padding:30px;
+
+    border:1px solid rgba(214,179,106,.24);
+
+    border-radius:18px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.045),
+
+            rgba(255,255,255,.012)
+
+        );
+
+}
+
+.documentation h3{
+
+    font-size:1.45rem;
+
+    margin-bottom:13px;
+
+}
+
+.documentation-intro{
+
+    color:#d8d9db;
+
+    font-weight:700;
+
+    margin-bottom:9px;
+
+}
+
+.documentation-text{
+
+    color:var(--muted);
+
+    max-width:1000px;
+
+}
+
+.documentation-banner{
+
+    margin-top:25px;
+
+    padding:15px;
+
+    text-align:center;
+
+    border-top:1px solid var(--line);
+
+    border-bottom:1px solid var(--line);
+
+    color:var(--gold);
+
+    font-weight:950;
+
+    letter-spacing:.12em;
+
+    font-size:.88rem;
+
+}
+
+.documentation-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:24px;
+
+}
+
+.doc-link{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:17px;
+
+    border:1px solid var(--line);
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.025);
+
+    transition:.25s;
+
+}
+
+.doc-link:hover{
+
+    border-color:rgba(214,179,106,.5);
+
+    transform:translateY(-1px);
+
+}
+
+.doc-link strong{
+
+    font-size:.9rem;
+
+}
+
+.doc-link span{
+
+    color:var(--muted);
+
+    font-size:.73rem;
+
     display:block;
 
-}
-
-.club-name{
-
-    font-size:17px;
-
-    font-weight:700;
-
-    line-height:1.3;
+    margin-top:3px;
 
 }
 
-.club-level{
+.doc-tag{
 
-    margin-top:9px;
+    color:var(--gold);
 
-    color:#d6b36a;
+    font-size:.68rem;
 
-    font-size:10px;
+    font-weight:950;
 
-    line-height:1.5;
+    letter-spacing:.1em;
 
-    font-weight:700;
-
-    letter-spacing:1.2px;
-
-    text-transform:uppercase;
+    white-space:nowrap;
 
 }
 
@@ -852,15 +1290,19 @@ h2{
 
 .media-card{
 
+    border:1px solid var(--line);
+
+    border-radius:14px;
+
     overflow:hidden;
 
-    background:#101318;
-
-    border:1px solid #292d34;
+    background:#0c0e12;
 
 }
 
 .media-card img{
+
+    display:block;
 
     width:100%;
 
@@ -868,395 +1310,135 @@ h2{
 
     object-fit:cover;
 
-    display:block;
-
-    transition:transform .35s ease;
-
 }
 
-.media-card:hover img{
+.media-card figcaption{
 
-    transform:scale(1.035);
+    padding:9px 12px;
+
+    color:#aeb1b5;
+
+    font-size:.72rem;
 
 }
 
 /* ================= VIDEOS ================= */
 
-.video-section-title{
-
-    margin-top:55px;
-
-    margin-bottom:20px;
-
-    color:#858b94;
-
-    font-size:10px;
-
-    letter-spacing:4px;
-
-    text-transform:uppercase;
-
-}
-
-.videos{
+.video-grid{
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:14px;
+    gap:15px;
+
+    margin-top:35px;
 
 }
 
 .video-card{
 
+    border:1px solid var(--line);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    background:#0d0f13;
+
+}
+
+.video-card a{
+
     display:block;
 
-    overflow:hidden;
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-    transition:transform .25s ease,border-color .25s ease;
-
 }
 
-.video-card:hover{
-
-    transform:translateY(-2px);
-
-    border-color:#665331;
-
-}
-
-.video-preview{
-
-    aspect-ratio:16/9;
-
-    position:relative;
-
-    overflow:hidden;
-
-    background:#101318;
-
-}
-
-.video-preview img{
+.video-card img{
 
     width:100%;
 
-    height:100%;
-
-    display:block;
+    aspect-ratio:16/9;
 
     object-fit:cover;
 
-    transition:transform .35s ease,filter .35s ease;
+    display:block;
 
 }
 
-.video-card:hover .video-preview img{
+.video-content{
 
-    transform:scale(1.035);
-
-    filter:brightness(.72);
+    padding:15px;
 
 }
 
-.video-preview::after{
+.video-content strong{
 
-    content:"";
+    display:block;
 
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(
-
-        180deg,
-
-        rgba(0,0,0,.08),
-
-        rgba(0,0,0,.35)
-
-    );
-
-    pointer-events:none;
+    margin-bottom:4px;
 
 }
 
-.play-button{
+.video-content span{
 
-    position:absolute;
+    color:var(--muted);
 
-    left:50%;
-
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    z-index:2;
-
-    width:64px;
-
-    height:64px;
-
-    border:1px solid #d6b36a;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    color:#d6b36a;
-
-    background:rgba(8,9,11,.72);
-
-    backdrop-filter:blur(4px);
-
-    font-size:22px;
-
-    padding-left:4px;
-
-    transition:all .3s ease;
-
-}
-
-.video-card:hover .play-button{
-
-    background:#d6b36a;
-
-    color:#08090b;
-
-    transform:translate(-50%,-50%) scale(1.08);
-
-}
-
-.video-info{
-
-    padding:20px;
-
-}
-
-.video-number{
-
-    color:#d6b36a;
-
-    font-size:9px;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-}
-
-.video-info h3{
-
-    margin-top:8px;
-
-    font-size:19px;
-
-}
-
-.video-info p{
-
-    margin-top:4px;
-
-    color:#858b94;
-
-    font-size:12px;
+    font-size:.74rem;
 
 }
 
 /* ================= CONTACT ================= */
 
-.contact{
+.contact-grid{
 
-    margin-top:18px;
+    display:grid;
 
-    display:flex;
+    grid-template-columns:repeat(4,1fr);
 
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:10px;
+    gap:12px;
 
 }
 
-.contact-link{
+.contact-card{
 
-    display:inline-flex;
+    padding:20px;
 
-    align-items:center;
+    border:1px solid var(--line);
 
-    gap:8px;
+    border-radius:14px;
 
-    padding:10px 15px;
-
-    border:1px solid #292d34;
-
-    background:#0b0e12;
-
-    color:#b9bec6;
-
-    font-size:11px;
-
-    letter-spacing:.5px;
-
-    transition:all .25s ease;
+    background:rgba(255,255,255,.025);
 
 }
 
-.contact-link:hover{
+.contact-card small{
 
-    border-color:#665331;
-
-    color:#d6b36a;
-
-    transform:translateY(-1px);
-
-}
-
-.contact-icon{
-
-    font-size:15px;
-
-}
-
-.contact-label{
-
-    color:#858b94;
-
-}
-
-/* ================= SIGNATURE ================= */
-
-.signature-section{
-
-    text-align:center;
-
-}
-
-.signature-wrap{
-
-    max-width:650px;
-
-    margin:10px auto 0;
-
-    padding:36px 30px;
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-}
-
-.signature-name{
-
-    font-family:"Brush Script MT","Segoe Script",cursive;
-
-    font-size:52px;
-
-    font-style:italic;
-
-    color:#d6b36a;
-
-    line-height:1.1;
-
-    margin-bottom:12px;
-
-}
-
-.signature-line{
-
-    width:180px;
-
-    height:1px;
-
-    background:#665331;
-
-    margin:0 auto 22px;
-
-}
-
-/* IHF AT END */
-
-.end-ihf{
-
-    width:min(300px,85%);
-
-    height:auto;
-
-    display:block;
-
-    margin:0 auto 22px;
-
-    background:white;
-
-}
-
-.fahb-mark{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    color:#d6b36a;
-
-    font-weight:800;
-
-    letter-spacing:1.5px;
-
-    font-size:12px;
+    color:var(--gold);
 
     text-transform:uppercase;
 
-}
-
-.fahb-symbol{
-
-    width:34px;
-
-    height:34px;
-
-    border:1px solid #665331;
-
-    border-radius:50%;
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:8px;
+    letter-spacing:.1em;
 
     font-weight:900;
 
-}
-
-.algeria{
-
-    margin-top:18px;
-
-    font-size:28px;
+    font-size:.65rem;
 
 }
 
-.signature-caption{
+.contact-card strong{
 
-    margin-top:13px;
+    display:block;
 
-    color:#777d86;
+    margin-top:6px;
 
-    font-size:11px;
+    word-break:break-word;
+
+}
+
+.contact-card:hover{
+
+    border-color:rgba(214,179,106,.45);
 
 }
 
@@ -1264,41 +1446,33 @@ h2{
 
 footer{
 
-    border-top:1px solid #25282d;
+    padding:55px 0;
 
-    padding:38px 0;
+    border-top:1px solid var(--line);
 
-    color:#777d86;
+    color:#85898f;
 
-    font-size:11px;
-
-}
-
-.footer{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    gap:20px;
+    font-size:.78rem;
 
 }
 
-/* ================= MOBILE ================= */
+footer strong{
 
-@media(max-width:850px){
+    color:#fff;
 
-    nav{
+}
 
-        display:none;
+.footer-algeria{
 
-    }
+    margin-top:15px;
 
-    .profile-layout{
+    font-size:1.7rem;
 
-        grid-template-columns:1fr;
+}
 
-    }
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1050px){
 
     .profile-info-grid{
 
@@ -1306,37 +1480,127 @@ footer{
 
     }
 
-    .clubs{
+    .qualities-grid{
 
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .achievements{
+
+        grid-template-columns:1fr;
 
     }
 
     .media{
 
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:repeat(2,1fr);
 
     }
 
-    .videos{
+    .video-grid{
 
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:repeat(2,1fr);
 
     }
 
 }
 
-@media(max-width:560px){
+@media(max-width:800px){
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:3.8rem;
+
+    }
+
+    .section-head{
+
+        display:block;
+
+    }
+
+    .section-head p{
+
+        margin-top:15px;
+
+    }
+
+    .profile-info-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .qualities-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .club-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .documentation-links{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .timeline-item{
+
+        grid-template-columns:90px 1fr;
+
+    }
+
+    .media{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .ihf-certification{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .ihf-certification-text{
+
+        text-align:left;
+
+    }
+
+}
+
+@media(max-width:520px){
 
     .hero{
 
-        padding-top:52px;
+        padding-top:95px;
 
     }
 
-    h1{
+    .hero h1{
 
-        letter-spacing:-2.5px;
+        font-size:3.15rem;
 
     }
 
@@ -1346,77 +1610,35 @@ footer{
 
     }
 
-    .qualities{
+    .profile-info{
 
-        grid-template-columns:1fr 1fr;
+        min-height:120px;
 
     }
 
-    .clubs,
-
-    .media,
-
-    .videos{
+    .contact-grid{
 
         grid-template-columns:1fr;
 
     }
 
-    .medals{
+    .status-sportif{
 
-        grid-template-columns:1fr;
-
-    }
-
-    .event{
-
-        grid-template-columns:1fr;
-
-        gap:8px;
+        padding:16px;
 
     }
 
-    .photo-info,
+    .club{
 
-    .footer{
-
-        flex-direction:column;
+        align-items:flex-start;
 
     }
 
-    .signature-name{
+    .club-logo{
 
-        font-size:42px;
+        width:58px;
 
-    }
-
-    .contact{
-
-        flex-direction:column;
-
-        align-items:stretch;
-
-    }
-
-    .contact-link{
-
-        justify-content:center;
-
-    }
-
-}
-
-@media(max-width:390px){
-
-    .profile-info-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .qualities{
-
-        grid-template-columns:1fr;
+        height:58px;
 
     }
 
@@ -1428,27 +1650,179 @@ footer{
 
 <body>
 
-<header>
-
-<div class="container nav">
-
-<div class="logo">
-
-SEGUENI ABDERRAOUF
-
-</div>
+<!-- ================= NAV ================= -->
 
 <nav>
+
+<div class="container nav-inner">
+
+<a href="#top" class="brand">
+
+SEGUENI <span>ABDERRAOuf</span>
+
+</a>
+
+<div class="nav-links">
 
 <a href="#profile">Profile</a>
 
 <a href="#international">International</a>
 
+<a href="#achievements">Achievements</a>
+
 <a href="#career">Career</a>
+
+<a href="#documentation">Documentation</a>
 
 <a href="#media">Media</a>
 
+</div>
+
+</div>
+
 </nav>
+
+<!-- ================= HERO ================= -->
+
+<header class="hero" id="top">
+
+<div class="hero-media">
+
+<img src="IMG_9755.jpeg"
+
+alt="SEGUENI Abderraouf — Algerian international handball player">
+
+</div>
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+
+🇩🇿 Algeria • Handball • No. 18
+
+</div>
+
+<h1>
+
+International
+
+<span>Handball Player</span>
+
+</h1>
+
+<div class="hero-title-row">
+
+<h2>
+
+🌎 International Handball Player
+
+</h2>
+
+<a
+
+class="ihf-link"
+
+href="https://www.ihf.info/"
+
+target="_blank"
+
+rel="noopener"
+
+title="International Handball Federation — Official Website"
+
+>
+
+<span class="ihf-dot"></span>
+
+IHF Official Website
+
+</a>
+
+</div>
+
+<!-- STATUT SPORTIF -->
+
+<div class="status-sportif">
+
+<div class="status-sportif-title">
+
+<span class="status-earth">🌎</span>
+
+STATUT SPORTIF
+
+</div>
+
+<strong>
+
+Joueur international algérien — Haut niveau, Classe A &amp; Élite.
+
+</strong>
+
+<p>
+
+Parcours sportif documenté au niveau national, africain et mondial.
+
+</p>
+
+<p class="legal">
+
+<strong>Cadre réglementaire :</strong>
+
+Loi n° 13-05 du 23 juillet 2013 ;
+
+Décret exécutif n° 15-213 du 11 août 2015 ;
+
+Décret exécutif n° 23-132 du 18 mars 2023 modifiant et complétant le décret n° 15-213.
+
+</p>
+
+<p class="major">
+
+<strong>Élément sportif majeur :</strong>
+
+participation au Championnat du Monde U21 2017 et qualification de l’équipe nationale algérienne au deuxième tour.
+
+</p>
+
+</div>
+
+<div class="role">
+
+Pivot / Line Player · Right-Handed · 183 cm · 08/09/1996
+
+</div>
+
+<div class="chips">
+
+<span class="chip">Algeria U17 · U19 · U21</span>
+
+<span class="chip">14+ Years</span>
+
+<span class="chip">IHF World Championship 2017</span>
+
+<span class="chip">#18</span>
+
+</div>
+
+<div class="cta">
+
+<a class="btn primary" href="#profile">
+
+Player Profile
+
+</a>
+
+<a class="btn alt" href="#documentation">
+
+Official Documentation
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -1456,203 +1830,97 @@ SEGUENI ABDERRAOUF
 
 <main>
 
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-<div class="container">
-
-<div class="eyebrow">
-
-Algerian Handball
-
-</div>
-
-<h1>
-
-<span class="last-name">SEGUENI</span>
-
-<span class="first-name">Abderraouf</span>
-
-</h1>
-
-<div class="role">
-
-<strong>International Handball Player</strong>
-
-</div>
-
-<div class="status">
-
-Statut juridique: Athlète de Haut Niveau Classe A &amp; Élite
-
-</div>
-
-<div class="main-photo">
-
-<img
-
-src="IMG_9755.jpeg"
-
-alt="SEGUENI Abderraouf — International Handball Player"
-
->
-
-<div class="photo-info">
-
-<span>International Handball Player</span>
-
-<span>Pivot · #18</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 <!-- ================= PROFILE ================= -->
 
 <section id="profile">
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-01 — Profile
+<div>
+
+<div class="kicker">01 · Player Profile</div>
+
+<h2>The Pivot</h2>
 
 </div>
 
-<h2>
-
-Player Profile
-
-</h2>
-
-<div class="profile-layout">
-
-<div class="profile-box">
-
-<h3>
-
-Pivot / Line Player
-
-</h3>
-
 <p>
 
-Algerian international handball player with a national-team pathway
+Elite professional scouting profile focused on international experience,
 
-through U17, U19, U21 and senior level, combining physical strength,
+physical presence, positioning, contact strength, space creation and
 
-tactical positioning, movement and close-range finishing.
+close-range finishing.
 
 </p>
 
-<!-- PLAYER PROFILE INFORMATION -->
+</div>
 
 <div class="profile-info-grid">
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Date of Birth</div>
 
-Date of Birth
-
-</div>
-
-<div class="profile-info-value">
-
-08/09/1996
-
-</div>
+<div class="profile-info-value">08/09/1996</div>
 
 </div>
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Height</div>
 
-Height
-
-</div>
-
-<div class="profile-info-value">
-
-183 cm
-
-</div>
+<div class="profile-info-value">183 cm</div>
 
 </div>
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Position</div>
 
-Position
-
-</div>
-
-<div class="profile-info-value">
-
-Pivot
-
-</div>
+<div class="profile-info-value">Pivot</div>
 
 </div>
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Nationality</div>
 
-Nationality
-
-</div>
-
-<div class="profile-info-value">
-
-🇩🇿 Algerian
-
-</div>
+<div class="profile-info-value">🇩🇿 Algerian</div>
 
 </div>
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Experience</div>
 
-Experience
-
-</div>
-
-<div class="profile-info-value gold">
-
-+14 Years
-
-</div>
+<div class="profile-info-value">+14 Years</div>
 
 </div>
 
 <div class="profile-info">
 
-<div class="profile-info-label">
+<div class="profile-info-label">Status</div>
 
-Status
-
-</div>
-
-<div class="profile-info-value gold">
-
-International Player
+<div class="profile-info-value">International Player</div>
 
 </div>
 
 </div>
 
-</div>
+<p class="profile-lead">
 
-<!-- SPORTS ATTRIBUTES -->
+SEGUENI Abderraouf is an Algerian international handball player
+
+specialized as a Pivot / Line Player, with more than 14 years of
+
+competitive experience and international exposure through Algeria's
+
+national-team pathway and international preparation periods.
+
+</p>
 
 <div class="qualities-title">
 
@@ -1660,165 +1928,163 @@ Sports Attributes
 
 </div>
 
-<div class="qualities">
+<div class="qualities-grid">
+
+<!-- POWER -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<path d="M8 4h8"></path>
+<path d="M12 2v20M4 7h16M5 17h14"/>
 
-<path d="M9 4v5l-3 3a4 4 0 0 0 3 7h6a4 4 0 0 0 3-7l-3-3V4"></path>
-
-<path d="M9 9h6"></path>
-
-<path d="M8 15h8"></path>
+<path d="M7 4L4 7l3 3M17 4l3 3-3 3"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Power &amp; Contact Strength
+<h3>Power &amp; Contact Strength</h3>
 
-<span>Physical power</span>
+<p>Physical presence and strong contact play.</p>
+
+</div>
 
 </div>
 
-</div>
+<!-- SPACE -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+<circle cx="12" cy="12" r="3"/>
 
-<path d="M8 16l8-8"></path>
+<path d="M12 2v6M12 16v6M2 12h6M16 12h6"/>
 
-<path d="M8 8h.01"></path>
-
-<path d="M16 16h.01"></path>
+<path d="M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Space Creation
+<h3>Space Creation</h3>
 
-<span>Movement &amp; positioning</span>
+<p>Creating and exploiting space around the line.</p>
+
+</div>
 
 </div>
 
-</div>
+<!-- POSITIONING -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<circle cx="12" cy="12" r="8"></circle>
+<circle cx="12" cy="12" r="8"/>
 
-<circle cx="12" cy="12" r="3"></circle>
+<circle cx="12" cy="12" r="2"/>
 
-<path d="M12 4v3"></path>
-
-<path d="M20 12h-3"></path>
+<path d="M12 4v4M20 12h-4M12 20v-4M4 12h4"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Positioning &amp; Timing
+<h3>Positioning &amp; Timing</h3>
 
-<span>Tactical intelligence</span>
+<p>Reading the defence and timing movement.</p>
+
+</div>
 
 </div>
 
-</div>
+<!-- EXPLOSIVE -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<path d="M13 2L5 13h6l-1 9 9-13h-6z"></path>
+<path d="M13 2L4 14h7l-1 8 10-13h-7z"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Explosive Movement
+<h3>Explosive Movement</h3>
 
-<span>Mobility &amp; acceleration</span>
+<p>Acceleration and decisive movement near the zone.</p>
+
+</div>
 
 </div>
 
-</div>
+<!-- BALL PROTECTION -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"></path>
+<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/>
 
-<path d="M9 12l2 2 4-4"></path>
+<circle cx="12" cy="11" r="2.5"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Ball Protection
+<h3>Ball Protection</h3>
 
-<span>Contact control</span>
+<p>Secure reception and protection under pressure.</p>
+
+</div>
 
 </div>
 
-</div>
+<!-- FINISHING -->
 
 <div class="quality">
 
 <div class="quality-icon">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg viewBox="0 0 24 24">
 
-<path d="M4 18c4-1 7-4 8-9"></path>
+<circle cx="12" cy="12" r="8"/>
 
-<path d="M12 9l5-5"></path>
+<path d="M4 12h16M12 4c3 3 3 13 0 16"/>
 
-<path d="M14 4h3v3"></path>
-
-<path d="M5 19l3-3"></path>
-
-<circle cx="5" cy="19" r="1.5"></circle>
+<path d="M8 5c2 2 2 12 0 14M16 5c-2 2-2 12 0 14"/>
 
 </svg>
 
 </div>
 
-<div class="quality-text">
+<div>
 
-Close-Range Finishing
+<h3>Close-Range Finishing</h3>
 
-<span>Finishing efficiency</span>
-
-</div>
+<p>Finishing actions around the six-metre line.</p>
 
 </div>
 
@@ -1828,7 +2094,7 @@ Close-Range Finishing
 
 <!-- IHF -->
 
-<div class="ihf-box">
+<div class="ihf-certification">
 
 <img
 
@@ -1836,21 +2102,19 @@ class="ihf-logo"
 
 src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
 
-alt="International Handball Federation"
+alt="International Handball Federation — IHF"
 
 >
 
-<div class="ihf-title">
+<div class="ihf-certification-text">
 
-Certified by IHF
+<strong>Certified by IHF</strong>
 
-</div>
+<span>
 
-<div class="ihf-subtitle">
+Official international handball federation reference
 
-International Handball Federation
-
-</div>
+</span>
 
 </div>
 
@@ -1860,41 +2124,37 @@ International Handball Federation
 
 </section>
 
-<!-- ================= INTERNATIONAL ================= -->
+<!-- ================= INTERNATIONAL CAREER ================= -->
 
 <section id="international">
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-02 — International Career
+<div>
+
+<div class="kicker">02 · International Career</div>
+
+<h2>Algeria National Team</h2>
 
 </div>
 
-<h2>
+<p>
 
-International Career
+National-team pathway from youth categories through African competition
 
-</h2>
-
-<p class="section-intro">
-
-International pathway with Algeria across youth national teams,
-
-African championships, the World Championship and international
-
-preparation camps in Europe.
+and the 2017 IHF Men’s Junior World Championship.
 
 </p>
 
+</div>
+
 <div class="timeline">
 
-<!-- ARAB CHAMPIONSHIP 2013 -->
+<div class="timeline-item">
 
-<div class="event">
-
-<div class="event-year">
+<div class="timeline-year">
 
 2013
 
@@ -1902,19 +2162,11 @@ preparation camps in Europe.
 
 <div>
 
-<h3>
-
-<span class="flag">🇹🇳</span>
-
-Championnat Arabe des Nations
-
-</h3>
+<h3>Championnat Arabe des Nations — Tunisie</h3>
 
 <p>
 
-Tunisie — Participation with Algeria in the
-
-<strong>Arab Nations Championship</strong>.
+Participation with the Algerian national-team pathway.
 
 </p>
 
@@ -1922,13 +2174,11 @@ Tunisie — Participation with Algeria in the
 
 </div>
 
-<!-- U19 2014 -->
+<div class="timeline-item">
 
-<div class="event">
+<div class="timeline-year">
 
-<div class="event-year">
-
-U19 · 2014
+2014
 
 </div>
 
@@ -1936,17 +2186,13 @@ U19 · 2014
 
 <h3>
 
-<span class="flag">🇰🇪</span>
-
-African Championship
+African U19 Championship · Nairobi, Kenya
 
 </h3>
 
 <p>
 
-Nairobi, Kenya — Algeria finished 2nd and earned the
-
-<span class="gold">silver medal</span>.
+Silver medal — Algeria.
 
 </p>
 
@@ -1954,13 +2200,11 @@ Nairobi, Kenya — Algeria finished 2nd and earned the
 
 </div>
 
-<!-- U21 2016 -->
+<div class="timeline-item">
 
-<div class="event">
+<div class="timeline-year">
 
-<div class="event-year">
-
-U21 · 2016
+2016
 
 </div>
 
@@ -1968,17 +2212,15 @@ U21 · 2016
 
 <h3>
 
-<span class="flag">🇲🇱</span>
-
-African Championship
+African U21 Championship · Bamako, Mali
 
 </h3>
 
 <p>
 
-Bamako, Mali — Algeria finished 3rd and earned the
+Bronze medal / 3rd place — Algeria.
 
-<span class="gold">bronze medal</span>.
+Official participation documentation and medal evidence retained.
 
 </p>
 
@@ -1986,13 +2228,11 @@ Bamako, Mali — Algeria finished 3rd and earned the
 
 </div>
 
-<!-- U21 WORLD 2017 -->
+<div class="timeline-item">
 
-<div class="event">
+<div class="timeline-year">
 
-<div class="event-year">
-
-U21 · 2017
+2017
 
 </div>
 
@@ -2000,19 +2240,17 @@ U21 · 2017
 
 <h3>
 
-<span class="flag">🇩🇿</span>
-
-World Championship
+IHF Men’s Junior U21 World Championship
 
 </h3>
 
 <p>
 
-Participation in the U21 World Championship with Algeria as a
+Official IHF player record identifying SEGUENI Abderraouf,
 
-Pivot / Line Player and qualification to the
+No. 18, Pivot, Algeria.
 
-<strong>Second Round</strong>.
+Algeria qualified for the second round.
 
 </p>
 
@@ -2020,13 +2258,11 @@ Pivot / Line Player and qualification to the
 
 </div>
 
-<!-- INTERNATIONAL CAMPS -->
+<div class="timeline-item">
 
-<div class="event">
+<div class="timeline-year">
 
-<div class="event-year">
-
-Europe
+U17 → U19 → U21 → Senior
 
 </div>
 
@@ -2034,33 +2270,55 @@ Europe
 
 <h3>
 
-25+ International Camps
+Algerian National-Team Pathway
 
 </h3>
 
 <p>
 
-More than 25 international preparation camps in Europe with
+Progression through Algeria's national-team categories,
 
-international opposition, including
-
-<span class="flag">🇭🇺</span> Hungary,
-
-<span class="flag">🇸🇮</span> Slovenia,
-
-<span class="flag">🇭🇷</span> Croatia,
-
-<span class="flag">🇷🇸</span> Serbia,
-
-<span class="flag">🇦🇹</span> Austria and
-
-<span class="flag">🇮🇸</span> Iceland.
+with international preparation and competition experience.
 
 </p>
 
 </div>
 
 </div>
+
+</div>
+
+<div class="camps">
+
+<h3>
+
+International Camps &amp; European Preparation
+
+</h3>
+
+<div class="camp-flags">
+
+<span class="flag">🇭🇺 Hungary</span>
+
+<span class="flag">🇸🇮 Slovenia</span>
+
+<span class="flag">🇭🇷 Croatia</span>
+
+<span class="flag">🇷🇸 Serbia</span>
+
+<span class="flag">🇦🇹 Austria</span>
+
+<span class="flag">🇮🇸 Iceland</span>
+
+</div>
+
+<p style="color:var(--muted);margin-top:15px;">
+
+More than 25 international camps and preparation periods in Europe,
+
+including international friendly matches.
+
+</p>
 
 </div>
 
@@ -2068,77 +2326,83 @@ international opposition, including
 
 </section>
 
-<!-- ================= MEDALS ================= -->
+<!-- ================= ACHIEVEMENTS ================= -->
 
-<section>
+<section id="achievements">
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-03 — Achievements
+<div>
 
-</div>
+<div class="kicker">03 · Achievements</div>
 
-<h2>
-
-International Medals
-
-</h2>
-
-<div class="medals">
-
-<div class="medal">
-
-<div class="medal-icon">
-
-🥈
+<h2>Selected Milestones</h2>
 
 </div>
-
-<div class="medal-label">
-
-Silver · 2014
-
-</div>
-
-<h3>
-
-U19 African Championship
-
-</h3>
 
 <p>
 
-🇰🇪 Nairobi, Kenya · Algeria — 2nd Place
+Major international milestones presented together with the supporting
+
+documentary and photographic archive.
 
 </p>
 
 </div>
 
-<div class="medal">
+<div class="achievements">
 
-<div class="medal-icon">
+<div class="achievement">
 
-🥉
-
-</div>
-
-<div class="medal-label">
-
-Bronze · 2016
-
-</div>
+<div class="medal">🥈</div>
 
 <h3>
 
-U21 African Championship
+Silver Medal
 
 </h3>
 
 <p>
 
-🇲🇱 Bamako, Mali · Algeria — 3rd Place
+African U19 Championship · Nairobi, Kenya · 2014
+
+</p>
+
+</div>
+
+<div class="achievement">
+
+<div class="medal">🥉</div>
+
+<h3>
+
+Bronze Medal
+
+</h3>
+
+<p>
+
+African U21 Championship · Bamako, Mali · 2016
+
+</p>
+
+</div>
+
+<div class="achievement">
+
+<div class="medal">🌎</div>
+
+<h3>
+
+World Championship
+
+</h3>
+
+<p>
+
+21st IHF Men’s Junior U21 World Championship · 2017
 
 </p>
 
@@ -2156,59 +2420,49 @@ U21 African Championship
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-04 — Club Career
+<div>
+
+<div class="kicker">04 · Club Career</div>
+
+<h2>Career Timeline</h2>
 
 </div>
 
-<h2>
+<p>
 
-Club Career
+Club career sequence from 2013 to present.
 
-</h2>
+</p>
 
-<div class="clubs">
+</div>
+
+<div class="club-grid">
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9779.jpeg"
 
-01
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9779.jpeg"
-
-alt="CRBBA Bordj Bou Arreridj logo"
-
->
-
-</div>
-
-</div>
+alt="CRBBA Bordj Bou Arreridj">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">01</div>
+
+<h3>
 
 CRBBA Bordj Bou Arreridj
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2013 — 2017<br>
+2013 — 2017
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
 
@@ -2216,43 +2470,27 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9789.jpeg"
 
-02
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9789.jpeg"
-
-alt="MBT Tadjenanet logo"
-
->
-
-</div>
-
-</div>
+alt="MBT Tadjenanet">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">02</div>
+
+<h3>
 
 MBT Tadjenanet
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2017 — 2021<br>
+2017 — 2021
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
 
@@ -2260,43 +2498,27 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9781.jpeg"
 
-03
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9781.jpeg"
-
-alt="CRBM Mila logo"
-
->
-
-</div>
-
-</div>
+alt="CRBM Mila">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">03</div>
+
+<h3>
 
 CRBM Mila
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2021 — 2022<br>
+2021 — 2022
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
 
@@ -2304,43 +2526,27 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9788.jpeg"
 
-04
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9788.jpeg"
-
-alt="CHBZY Zighoud Youcef logo"
-
->
-
-</div>
-
-</div>
+alt="CHBZY Zighoud Youcef">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">04</div>
+
+<h3>
 
 CHBZY — Zighoud Youcef
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2022 — 2023<br>
+2022 — 2023
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
 
@@ -2348,43 +2554,27 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9783.jpeg"
 
-05
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9783.jpeg"
-
-alt="MBBA Mouloudia Bordj Bou Arreridj logo"
-
->
-
-</div>
-
-</div>
+alt="MBBA Mouloudia Bordj Bou Arreridj">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">05</div>
+
+<h3>
 
 MBBA — Mouloudia Bordj Bou Arreridj
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2023 — 2024<br>
+2023 — 2024
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
 
@@ -2392,45 +2582,313 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="club">
 
-<div>
+<img class="club-logo"
 
-<div class="club-number">
+src="IMG_9786.jpeg"
 
-06
-
-</div>
-
-<div class="club-logo">
-
-<img
-
-src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9786.jpeg"
-
-alt="OMA Annaba logo"
-
->
-
-</div>
-
-</div>
+alt="OMA Annaba">
 
 <div>
 
-<div class="club-name">
+<div class="club-number">06</div>
+
+<h3>
 
 OMA Annaba
 
-</div>
+</h3>
 
-<div class="club-level">
+<p>
 
-2024 — Present<br>
+2024 — Present
 
-Division Excellence — Top Division of Algerian Handball
-
-</div>
+</p>
 
 </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= REFERENCEMENT & DOCUMENTATION ================= -->
+
+<section id="documentation">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="kicker">05 · Certification / Referencement</div>
+
+<h2>RÉFÉRENCEMENT &amp; DOCUMENTATION</h2>
+
+</div>
+
+<p>
+
+Official sources, federation records and documentary evidence supporting
+
+the international sporting pathway.
+
+</p>
+
+</div>
+
+<div class="documentation">
+
+<h3>
+
+RÉFÉRENCEMENT &amp; DOCUMENTATION
+
+</h3>
+
+<p class="documentation-intro">
+
+Parcours international documenté et référencé par l’IHF —
+
+International Handball Federation.
+
+</p>
+
+<p class="documentation-text">
+
+Documents disponibles : Official Match Reports, feuilles de matchs,
+
+licences sportives, attestations et justificatifs de participations
+
+nationales et internationales.
+
+</p>
+
+<div class="documentation-banner">
+
+HAUT NIVEAU • CLASSE A &amp; ÉLITE • INTERNATIONAL
+
+</div>
+
+<div class="documentation-links">
+
+<a
+
+class="doc-link"
+
+href="https://www.ihf.info/"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+International Handball Federation — IHF
+
+</strong>
+
+<span>
+
+Official IHF website
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+OFFICIAL
+
+</div>
+
+</a>
+
+<a
+
+class="doc-link"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/ALG.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+IHF Official Team Roster — Algeria
+
+</strong>
+
+<span>
+
+2017 Men’s Junior World Championship · No. 18 · Pivot
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+IHF
+
+</div>
+
+</a>
+
+<a
+
+class="doc-link"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/12OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+Algeria vs Morocco
+
+</strong>
+
+<span>
+
+18 July 2017 · Official IHF Match Report
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+MATCH
+
+</div>
+
+</a>
+
+<a
+
+class="doc-link"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/18OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+Argentina vs Algeria
+
+</strong>
+
+<span>
+
+19 July 2017 · Official IHF Match Report
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+MATCH
+
+</div>
+
+</a>
+
+<a
+
+class="doc-link"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/60OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+Algeria vs Saudi Arabia
+
+</strong>
+
+<span>
+
+24 July 2017 · Official IHF Match Report
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+MATCH
+
+</div>
+
+</a>
+
+<a
+
+class="doc-link"
+
+href="https://radioalgerie.dz/news/fr/article/20160317/71885.html"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div>
+
+<strong>
+
+Radio Algérienne
+
+</strong>
+
+<span>
+
+U21 national-team preparation · 17 March 2016
+
+</span>
+
+</div>
+
+<div class="doc-tag">
+
+ARCHIVE
+
+</div>
+
+</a>
 
 </div>
 
@@ -2446,471 +2904,537 @@ Division Excellence — Top Division of Algerian Handball
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-05 — Media
+<div>
+
+<div class="kicker">06 · Media</div>
+
+<h2>Photo Archive</h2>
 
 </div>
 
-<h2>
+<p>
 
-Selected Media
+Original sporting, national-team, competition and club photographs
 
-</h2>
+preserved as part of the athlete's visual archive.
+
+</p>
+
+</div>
 
 <div class="media">
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9042.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9042.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9047.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9047.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>National Team Archive</figcaption>
 
-<img src="IMG_9289.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9289.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9300.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>International Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9308.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9300.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Handball Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9539.png" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9308.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9540.png" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9539.png" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9541.png" alt="SEGUENI Abderraouf">
+<figcaption>International Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9726.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9540.png" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>International Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9685.png" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9541.png" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>International Archive</figcaption>
 
-<img src="IMG_9686.png" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9726.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9690.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9693.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9685.png" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9695.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9686.png" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9696.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9690.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9702.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9703.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9693.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9704.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9695.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9707.png" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9696.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9710.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9712.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9702.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9713.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9703.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9714.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9704.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9718.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9721.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9707.png" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9723.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9710.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9799.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9712.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9798.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9797.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9713.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9796.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9714.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<!-- ================= NEW MEDIA ================= -->
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9830.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9718.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9828.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9721.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9827.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9825.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9723.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9824.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9799.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9823.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9798.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9822.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9821.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9797.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9814.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9796.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9706.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9830.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9694.jpeg" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9705.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9828.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9697.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9827.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9687.png" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
 
-<div class="media-card">
+<img src="IMG_9825.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<img src="IMG_9688.png" alt="SEGUENI Abderraouf">
+<figcaption>Sporting Archive</figcaption>
 
-</div>
+</figure>
 
-<div class="media-card">
+<figure class="media-card">
 
-<img src="IMG_9751.jpeg" alt="SEGUENI Abderraouf">
+<img src="IMG_9824.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-</div>
+<figcaption>Sporting Archive</figcaption>
 
-<div class="media-card">
+</figure>
 
-<img src="IMG_9793.jpeg" alt="SEGUENI Abderraouf">
+<figure class="media-card">
 
-</div>
+<img src="IMG_9823.jpeg" alt="SEGUENI Abderraouf handball archive">
 
-<div class="media-card">
+<figcaption>Sporting Archive</figcaption>
 
-<img src="IMG_9819.jpeg" alt="SEGUENI Abderraouf">
+</figure>
 
-</div>
+<figure class="media-card">
+
+<img src="IMG_9822.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9821.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9814.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9706.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9694.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9705.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9697.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9687.png" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9688.png" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9751.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9793.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
+
+<figure class="media-card">
+
+<img src="IMG_9819.jpeg" alt="SEGUENI Abderraouf handball archive">
+
+<figcaption>Sporting Archive</figcaption>
+
+</figure>
 
 </div>
 
 <!-- ================= VIDEOS ================= -->
 
-<div class="video-section-title">
+<div class="video-grid">
 
-Videos
-
-</div>
-
-<div class="videos">
+<div class="video-card">
 
 <a
-
-class="video-card"
 
 href="https://www.facebook.com/share/v/1QU5F6M8tT/?mibextid=wwXIfr"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
-
-<div class="video-preview">
 
 <img
 
 src="IMG_9042.jpeg"
 
-alt="SEGUENI Abderraouf — Video 01"
+alt="SEGUENI Abderraouf Facebook handball video"
 
 >
 
-<span class="play-button">▶</span>
+<div class="video-content">
 
-</div>
+<strong>
 
-<div class="video-info">
+International Handball Video
 
-<span class="video-number">
+</strong>
 
-VIDEO 01
-
-</span>
-
-<h3>
-
-SEGUENI Abderraouf
-
-</h3>
-
-<p>
+<span>
 
 Watch on Facebook
 
-</p>
+</span>
 
 </div>
 
 </a>
 
-<a
+</div>
 
-class="video-card"
+<div class="video-card">
+
+<a
 
 href="https://www.facebook.com/share/v/1EjZMj5EjA/?mibextid=wwXIfr"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
-
-<div class="video-preview">
 
 <img
 
 src="IMG_9047.jpeg"
 
-alt="SEGUENI Abderraouf — Video 02"
+alt="SEGUENI Abderraouf Facebook handball video"
 
 >
 
-<span class="play-button">▶</span>
+<div class="video-content">
 
-</div>
+<strong>
 
-<div class="video-info">
+Handball Career Archive
 
-<span class="video-number">
+</strong>
 
-VIDEO 02
-
-</span>
-
-<h3>
-
-SEGUENI Abderraouf
-
-</h3>
-
-<p>
+<span>
 
 Watch on Facebook
 
-</p>
+</span>
 
 </div>
 
 </a>
 
-<a
+</div>
 
-class="video-card"
+<div class="video-card">
+
+<a
 
 href="https://www.facebook.com/share/v/1JvLLiQvyj/?mibextid=wwXIfr"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
-
-<div class="video-preview">
 
 <img
 
 src="IMG_9289.jpeg"
 
-alt="SEGUENI Abderraouf — Video 03"
+alt="SEGUENI Abderraouf Facebook handball video"
 
 >
 
-<span class="play-button">▶</span>
+<div class="video-content">
 
-</div>
+<strong>
 
-<div class="video-info">
+Sporting Archive Video
 
-<span class="video-number">
+</strong>
 
-VIDEO 03
-
-</span>
-
-<h3>
-
-SEGUENI Abderraouf
-
-</h3>
-
-<p>
+<span>
 
 Watch on Facebook
 
-</p>
+</span>
 
 </div>
 
 </a>
+
+</div>
 
 </div>
 
@@ -2918,169 +3442,117 @@ Watch on Facebook
 
 </section>
 
-<!-- ================= SIGNATURE ================= -->
+<!-- ================= CONTACT ================= -->
 
-<section class="signature-section">
+<section id="contact">
 
 <div class="container">
 
-<div class="section-label">
+<div class="section-head">
 
-06 — Signature
+<div>
 
-</div>
+<div class="kicker">07 · Contact</div>
 
-<h2>
-
-SEGUENI Abderraouf
-
-</h2>
-
-<div class="signature-wrap">
-
-<div class="signature-name">
-
-A. Segueni
+<h2>Professional Contact</h2>
 
 </div>
 
-<div class="signature-line"></div>
+<p>
 
-<img
+For sporting opportunities, scouting, professional enquiries and
 
-class="end-ihf"
+international handball contacts.
 
-src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
-
-alt="International Handball Federation"
-
->
-
-<div class="fahb-mark">
-
-<span class="fahb-symbol">
-
-FAHB
-
-</span>
-
-<span>
-
-Fédération Algérienne de Handball
-
-</span>
+</p>
 
 </div>
 
-<div class="algeria">
-
-🇩🇿
-
-</div>
-
-<div class="signature-caption">
-
-International Handball Player · Pivot · #18
-
-</div>
-
-<!-- ================= CONTACT ================= -->
-
-<div class="contact">
+<div class="contact-grid">
 
 <a
 
-class="contact-link"
+class="contact-card"
 
 href="mailto:segueniabderraouf001@gmail.com"
 
 >
 
-<span class="contact-icon">✉</span>
+<small>Email</small>
 
-<span>
+<strong>
 
-<span class="contact-label">Email</span>
+segueniabderraouf001@gmail.com
 
-&nbsp; segueniabderraouf001@gmail.com
-
-</span>
+</strong>
 
 </a>
 
 <a
 
-class="contact-link"
+class="contact-card"
 
 href="https://www.instagram.com/aymenseg18/"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
 
-<span class="contact-icon">◎</span>
+<small>Instagram</small>
 
-<span>
+<strong>
 
-<span class="contact-label">Instagram</span>
+@aymenseg18
 
-&nbsp; @aymenseg18
-
-</span>
+</strong>
 
 </a>
 
 <a
 
-class="contact-link"
+class="contact-card"
 
 href="https://www.facebook.com/share/1MWFu4s94c/?mibextid=wwXIfr"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
 
-<span class="contact-icon">f</span>
+<small>Facebook</small>
 
-<span>
+<strong>
 
-<span class="contact-label">Facebook</span>
+SEGUENI Abderraouf
 
-&nbsp; SEGUENI Abderraouf
-
-</span>
+</strong>
 
 </a>
 
 <a
 
-class="contact-link"
+class="contact-card"
 
 href="https://wa.me/213559067688"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
 
-<span class="contact-icon">◉</span>
+<small>WhatsApp</small>
 
-<span>
+<strong>
 
-<span class="contact-label">WhatsApp</span>
++213 559 067 688
 
-&nbsp; 0559 06 76 88
-
-</span>
+</strong>
 
 </a>
-
-</div>
 
 </div>
 
@@ -3094,19 +3566,37 @@ rel="noopener noreferrer"
 
 <footer>
 
-<div class="container footer">
+<div class="container">
 
-<span>
+<strong>
 
 SEGUENI Abderraouf
 
-</span>
+</strong>
 
-<span>
+· International Handball Player
 
-International Handball Player · Pivot · #18
+· Pivot / Line Player
 
-</span>
+· No. 18
+
+<div class="footer-algeria">
+
+🇩🇿
+
+</div>
+
+<div style="margin-top:10px;">
+
+🌎 HAUT NIVEAU • CLASSE A &amp; ÉLITE • INTERNATIONAL
+
+</div>
+
+<div style="margin-top:12px;">
+
+© 2026 SEGUENI Abderraouf — Official Web Profile
+
+</div>
 
 </div>
 
