@@ -306,7 +306,7 @@ nav{
 
     gap:14px;
 
-    margin-bottom:18px;
+    margin-bottom:10px;
 
 }
 
@@ -366,17 +366,43 @@ nav{
 
 }
 
+/* ================= PERSONAL WEBSITE LINK ================= */
+
+.personal-site-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    color:#f2f4f7;
+
+    font-size:.72rem;
+
+    font-weight:800;
+
+    white-space:nowrap;
+
+    transition:.25s;
+
+}
+
+.personal-site-link:hover{
+
+    color:var(--gold);
+
+}
+
 /* ================= STATUT SPORTIF ================= */
 
 .status-sportif{
 
-    margin:18px 0 25px;
+    margin:10px 0 18px;
 
-    padding:18px 20px;
+    padding:9px 12px;
 
-    border-radius:13px;
-
-    /* الأزرق والأبيض فقط */
+    border-radius:9px;
 
     background:
 
@@ -394,13 +420,13 @@ nav{
 
     box-shadow:
 
-        0 10px 35px rgba(0,0,0,.28),
+        0 7px 22px rgba(0,0,0,.22),
 
-        inset 0 0 25px rgba(255,255,255,.05);
+        inset 0 0 16px rgba(255,255,255,.04);
 
     color:#fff;
 
-    max-width:850px;
+    max-width:620px;
 
 }
 
@@ -410,29 +436,37 @@ nav{
 
     align-items:center;
 
-    gap:10px;
+    gap:7px;
 
-    font-size:.86rem;
+    font-size:.82rem;
 
     font-weight:950;
 
-    letter-spacing:.14em;
+    letter-spacing:.12em;
 
     text-transform:uppercase;
 
-    margin-bottom:9px;
+    margin-bottom:2px;
 
 }
 
 .status-earth{
 
-    font-size:1.1rem;
+    font-size:.92rem;
 
 }
 
 .status-sportif strong{
 
+    display:block;
+
     color:#fff;
+
+    font-size:.80rem;
+
+    font-weight:950;
+
+    line-height:1.35;
 
 }
 
@@ -440,33 +474,35 @@ nav{
 
     color:#f4f8ff;
 
-    font-size:.91rem;
+    font-size:.67rem;
 
-    margin-top:7px;
+    line-height:1.35;
+
+    margin-top:2px;
 
 }
 
 .status-sportif .legal{
 
-    font-size:.78rem;
+    font-size:.58rem;
 
-    line-height:1.55;
+    line-height:1.35;
 
-    color:#eef6ff;
+    color:#e7f1fb;
 
-    margin-top:9px;
+    margin-top:3px;
 
 }
 
 .status-sportif .major{
 
-    font-size:.78rem;
+    font-size:.58rem;
 
-    line-height:1.55;
+    line-height:1.35;
 
     color:#fff;
 
-    margin-top:8px;
+    margin-top:3px;
 
 }
 
@@ -1624,7 +1660,35 @@ footer strong{
 
     .status-sportif{
 
-        padding:16px;
+        padding:9px 11px;
+
+        max-width:100%;
+
+    }
+
+    .status-sportif-title{
+
+        font-size:.76rem;
+
+    }
+
+    .status-sportif strong{
+
+        font-size:.75rem;
+
+    }
+
+    .status-sportif p{
+
+        font-size:.63rem;
+
+    }
+
+    .status-sportif .legal,
+
+    .status-sportif .major{
+
+        font-size:.55rem;
 
     }
 
@@ -1722,6 +1786,24 @@ International
 
 <a
 
+class="personal-site-link"
+
+href="https://abderraoufseg.github.io/"
+
+target="_blank"
+
+rel="noopener"
+
+title="SEGUENI Abderraouf — Official Website"
+
+>
+
+Official Website
+
+</a>
+
+<a
+
 class="ihf-link"
 
 href="https://www.ihf.info/"
@@ -1756,13 +1838,13 @@ STATUT SPORTIF
 
 <strong>
 
-Joueur international algérien — Haut niveau, Classe A &amp; Élite.
+Haut Niveau · Classe A &amp; Élite
 
 </strong>
 
 <p>
 
-Parcours sportif documenté au niveau national, africain et mondial.
+Joueur international algérien.
 
 </p>
 
@@ -1930,8 +2012,6 @@ Sports Attributes
 
 <div class="qualities-grid">
 
-<!-- POWER -->
-
 <div class="quality">
 
 <div class="quality-icon">
@@ -1955,8 +2035,6 @@ Sports Attributes
 </div>
 
 </div>
-
-<!-- SPACE -->
 
 <div class="quality">
 
@@ -1984,8 +2062,6 @@ Sports Attributes
 
 </div>
 
-<!-- POSITIONING -->
-
 <div class="quality">
 
 <div class="quality-icon">
@@ -2012,8 +2088,6 @@ Sports Attributes
 
 </div>
 
-<!-- EXPLOSIVE -->
-
 <div class="quality">
 
 <div class="quality-icon">
@@ -2035,8 +2109,6 @@ Sports Attributes
 </div>
 
 </div>
-
-<!-- BALL PROTECTION -->
 
 <div class="quality">
 
@@ -2061,8 +2133,6 @@ Sports Attributes
 </div>
 
 </div>
-
-<!-- FINISHING -->
 
 <div class="quality">
 
@@ -2091,8 +2161,6 @@ Sports Attributes
 </div>
 
 </div>
-
-<!-- IHF -->
 
 <div class="ihf-certification">
 
