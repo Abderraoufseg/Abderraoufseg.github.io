@@ -8,19 +8,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="SEGUENI Abderraouf — International Handball Player, Athlète de Haut Niveau, Classe A & Élite, Pivot / Line Player, Algeria.">
+<title>SEGUENI Abderraouf — International Handball Player</title>
 
-<title>SEGUENI Abderraouf | International Handball Player</title>
+<meta name="description" content="SEGUENI Abderraouf — Algerian international handball player, Pivot / Line Player, Right-Handed, 183 cm, #18. Haut Niveau Classe A & Élite.">
+
+<meta name="author" content="SEGUENI Abderraouf">
 
 <style>
 
 *{
 
+    box-sizing:border-box;
+
     margin:0;
 
     padding:0;
-
-    box-sizing:border-box;
 
 }
 
@@ -34,7 +36,7 @@ body{
 
     font-family:Arial,Helvetica,sans-serif;
 
-    background:#07111f;
+    background:#050b14;
 
     color:#f4f7fb;
 
@@ -52,349 +54,49 @@ a{
 
 .container{
 
-    width:min(1120px,92%);
+    width:min(1150px,92%);
 
     margin:auto;
 
 }
 
+/* HEADER */
+
 header{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
 
     position:relative;
 
+    min-height:92vh;
+
+    display:flex;
+
+    align-items:flex-end;
+
     overflow:hidden;
 
-    background:
-
-        radial-gradient(circle at 80% 20%,rgba(38,111,255,.25),transparent 35%),
-
-        radial-gradient(circle at 20% 80%,rgba(0,196,255,.12),transparent 30%),
-
-        #07111f;
-
-}
-
-.hero{
-
-    padding:100px 0;
-
-    width:100%;
-
-    text-align:center;
+    background:#07111f;
 
 }
 
 .hero-image{
 
-    width:100%;
-
-    max-width:850px;
-
-    max-height:620px;
-
-    object-fit:contain;
-
-    display:block;
-
-    margin:0 auto 45px auto;
-
-    border-radius:22px;
-
-    border:1px solid rgba(255,255,255,.12);
-
-    box-shadow:0 20px 60px rgba(0,0,0,.45);
-
-}
-
-.badge{
-
-    display:inline-block;
-
-    padding:8px 16px;
-
-    border:1px solid rgba(255,255,255,.2);
-
-    border-radius:30px;
-
-    font-size:13px;
-
-    letter-spacing:2px;
-
-    color:#8ec5ff;
-
-    margin-bottom:25px;
-
-}
-
-h1{
-
-    font-size:clamp(48px,8vw,92px);
-
-    line-height:.95;
-
-    letter-spacing:-3px;
-
-    margin-bottom:25px;
-
-}
-
-.hero h2{
-
-    font-size:clamp(22px,4vw,38px);
-
-    font-weight:400;
-
-    color:#cbd7e8;
-
-    margin-bottom:12px;
-
-}
-
-.hero h3{
-
-    font-size:clamp(20px,3vw,30px);
-
-    color:#8ec5ff;
-
-    font-weight:700;
-
-    margin-bottom:18px;
-
-}
-
-.position{
-
-    font-size:18px;
-
-    color:#cbd7e8;
-
-    margin-bottom:35px;
-
-}
-
-.hero-description{
-
-    max-width:720px;
-
-    margin:auto;
-
-    color:#aebed2;
-
-    font-size:18px;
-
-}
-
-nav{
-
     position:absolute;
 
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    padding:24px 0;
-
-    z-index:10;
-
-    background:linear-gradient(to bottom,rgba(7,17,31,.9),transparent);
-
-}
-
-.nav-inner{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-}
-
-.logo{
-
-    font-weight:800;
-
-    letter-spacing:2px;
-
-}
-
-.nav-links{
-
-    display:flex;
-
-    gap:25px;
-
-    font-size:14px;
-
-    color:#b9c7d9;
-
-}
-
-.nav-links a:hover{
-
-    color:#fff;
-
-}
-
-section{
-
-    padding:100px 0;
-
-}
-
-.section-title{
-
-    font-size:38px;
-
-    margin-bottom:15px;
-
-}
-
-.section-subtitle{
-
-    color:#8fa2b9;
-
-    margin-bottom:45px;
-
-    max-width:700px;
-
-}
-
-.grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-}
-
-.card{
-
-    background:rgba(255,255,255,.045);
-
-    border:1px solid rgba(255,255,255,.09);
-
-    border-radius:20px;
-
-    padding:30px;
-
-}
-
-.card h3{
-
-    font-size:22px;
-
-    margin-bottom:12px;
-
-}
-
-.card p{
-
-    color:#aebed2;
-
-}
-
-.stats{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:18px;
-
-    margin-top:40px;
-
-}
-
-.stat{
-
-    padding:25px;
-
-    border-radius:18px;
-
-    background:rgba(255,255,255,.045);
-
-    border:1px solid rgba(255,255,255,.08);
-
-}
-
-.stat strong{
-
-    display:block;
-
-    font-size:30px;
-
-    margin-bottom:5px;
-
-}
-
-.stat span{
-
-    color:#91a4bb;
-
-    font-size:14px;
-
-}
-
-/* PHOTO GALLERY */
-
-.gallery{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:18px;
-
-}
-
-.gallery-item{
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:18px;
-
-    background:rgba(255,255,255,.045);
-
-    border:1px solid rgba(255,255,255,.09);
-
-    aspect-ratio:4/3;
-
-}
-
-.gallery-item img{
+    inset:0;
 
     width:100%;
 
     height:100%;
 
-    display:block;
-
     object-fit:cover;
 
-    transition:transform .4s ease;
+    object-position:center center;
+
+    z-index:0;
 
 }
 
-.gallery-item:hover img{
-
-    transform:scale(1.05);
-
-}
-
-.gallery-item::after{
+header::after{
 
     content:"";
 
@@ -402,57 +104,663 @@ section{
 
     inset:0;
 
-    background:linear-gradient(to top,rgba(0,0,0,.35),transparent 50%);
+    background:
 
-    pointer-events:none;
+        linear-gradient(
+
+            to top,
+
+            rgba(3,8,15,1) 0%,
+
+            rgba(3,8,15,.82) 30%,
+
+            rgba(3,8,15,.30) 70%,
+
+            rgba(3,8,15,.18) 100%
+
+        );
+
+    z-index:1;
 
 }
 
-.gallery-caption{
+.hero-content{
 
-    position:absolute;
-
-    left:14px;
-
-    bottom:12px;
+    position:relative;
 
     z-index:2;
 
+    width:min(1150px,92%);
+
+    margin:0 auto;
+
+    padding:80px 0 70px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:30px;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(10px);
+
     font-size:13px;
 
-    color:#fff;
+    font-weight:bold;
 
-    font-weight:600;
+    letter-spacing:2px;
 
-    text-shadow:0 2px 6px rgba(0,0,0,.7);
+    margin-bottom:18px;
+
+}
+
+.hero-content h1{
+
+    font-size:clamp(38px,7vw,82px);
+
+    line-height:.95;
+
+    letter-spacing:-2px;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
 
 }
 
-@media(max-width:900px){
+.hero-title{
 
-    .gallery{
+    font-size:clamp(22px,4vw,42px);
 
-        grid-template-columns:repeat(2,1fr);
+    font-weight:800;
 
-    }
+    margin-bottom:10px;
 
 }
+
+.hero-status{
+
+    font-size:clamp(18px,3vw,28px);
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+}
+
+.hero-info{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.hero-info span{
+
+    padding:9px 14px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.09);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    font-size:14px;
+
+}
+
+/* NAV */
+
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:20;
+
+    background:rgba(4,9,17,.88);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.nav-inner{
+
+    width:min(1150px,92%);
+
+    margin:auto;
+
+    display:flex;
+
+    gap:8px;
+
+    overflow-x:auto;
+
+    padding:12px 0;
+
+}
+
+.nav-inner a{
+
+    white-space:nowrap;
+
+    padding:8px 13px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    color:#cdd6e4;
+
+}
+
+.nav-inner a:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+}
+
+/* SECTIONS */
+
+section{
+
+    padding:75px 0;
+
+}
+
+.section-label{
+
+    color:#9fb2ca;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+.section-title{
+
+    font-size:clamp(30px,5vw,48px);
+
+    line-height:1.05;
+
+    margin-bottom:35px;
+
+}
+
+/* CARDS */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:linear-gradient(
+
+        145deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.025)
+
+    );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:22px;
+
+    padding:27px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+}
+
+.card h3{
+
+    font-size:22px;
+
+    margin-bottom:9px;
+
+}
+
+.card p{
+
+    color:#b9c5d5;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    padding:7px 11px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+.flag{
+
+    font-size:32px;
+
+    margin-bottom:12px;
+
+}
+
+/* PROFILE */
+
+.profile-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.profile-list{
+
+    list-style:none;
+
+}
+
+.profile-list li{
+
+    padding:13px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#dce4ef;
+
+}
+
+.profile-list strong{
+
+    color:white;
+
+}
+
+/* WORLD FEATURE */
+
+.world{
+
+    margin-top:20px;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    background:
+
+        radial-gradient(circle at top right,rgba(255,255,255,.13),transparent 35%),
+
+        linear-gradient(135deg,#111d2d,#070d16);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.world h3{
+
+    font-size:clamp(28px,5vw,48px);
+
+    margin-bottom:12px;
+
+}
+
+.world .big-badge{
+
+    display:inline-block;
+
+    margin:15px 0 20px;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    color:#050b14;
+
+    font-weight:900;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+}
+
+/* CAMPS */
+
+.camps{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.camp-number{
+
+    font-size:55px;
+
+    font-weight:900;
+
+    line-height:1;
+
+}
+
+.camp-number small{
+
+    font-size:20px;
+
+}
+
+/* PALMARES */
+
+.palmares{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.medal{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+.medal .year{
+
+    font-size:14px;
+
+    color:#9fb2ca;
+
+    margin-bottom:8px;
+
+}
+
+.medal .place{
+
+    font-size:27px;
+
+    font-weight:900;
+
+}
+
+/* EVIDENCE */
+
+.evidence{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.evidence-card{
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#091321;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.evidence-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.evidence-card p{
+
+    color:#aebdce;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display:block;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s ease;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* SCOUTING */
+
+.scouting{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.skill{
+
+    padding:20px;
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.045);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.skill h3{
+
+    margin-bottom:7px;
+
+}
+
+.skill p{
+
+    color:#aebbd0;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+    text-align:center;
+
+    padding:55px 25px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(255,255,255,.09),
+
+        rgba(255,255,255,.025)
+
+    );
+
+    border:1px solid rgba(255,255,255,.10);
+
+}
+
+.contact h2{
+
+    font-size:clamp(30px,5vw,48px);
+
+    margin-bottom:12px;
+
+}
+
+.contact p{
+
+    color:#b8c4d4;
+
+    margin-bottom:20px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:13px 21px;
+
+    border-radius:13px;
+
+    background:#fff;
+
+    color:#050b14;
+
+    font-weight:800;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#718096;
+
+    font-size:13px;
+
+}
+
+/* MOBILE */
 
 @media(max-width:800px){
 
-    .nav-links{
+    header{
 
-        display:none;
+        min-height:82vh;
 
     }
 
-    .grid{
+    .hero-content{
+
+        padding-bottom:45px;
+
+    }
+
+    .hero-content h1{
+
+        letter-spacing:-1px;
+
+    }
+
+    .grid,
+
+    .profile-box,
+
+    .camps,
+
+    .evidence,
+
+    .scouting{
 
         grid-template-columns:1fr;
 
     }
 
-    .stats{
+    .palmares{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery{
 
         grid-template-columns:repeat(2,1fr);
 
@@ -460,19 +768,19 @@ section{
 
     section{
 
-        padding:75px 0;
+        padding:55px 0;
 
     }
 
-    .hero-image{
+    .world{
 
-        max-height:500px;
+        padding:30px 22px;
 
     }
 
 }
 
-@media(max-width:500px){
+@media(max-width:480px){
 
     .gallery{
 
@@ -480,23 +788,15 @@ section{
 
     }
 
-    .stats{
+    .hero-info span{
 
-        grid-template-columns:1fr;
-
-    }
-
-    h1{
-
-        letter-spacing:-2px;
+        width:100%;
 
     }
 
-    .hero-image{
+    .hero-content h1{
 
-        max-height:420px;
-
-        border-radius:16px;
+        font-size:42px;
 
     }
 
@@ -508,47 +808,23 @@ section{
 
 <body>
 
-<nav>
-
-<div class="container nav-inner">
-
-<div class="logo">SEGUENI ABDERRAOUF</div>
-
-<div class="nav-links">
-
-<a href="#profile">Profile</a>
-
-<a href="#international">International</a>
-
-<a href="#career">Career</a>
-
-<a href="#evidence">Evidence</a>
-
-<a href="#media">Media</a>
-
-</div>
-
-</div>
-
-</nav>
-
 <header>
-
-<div class="container hero">
 
 <img
 
-src="IMG_9726.jpeg"
+    class="hero-image"
 
-alt="SEGUENI Abderraouf — International Handball Player #18"
+    src="IMG_9726.jpeg"
 
-class="hero-image"
+    alt="SEGUENI Abderraouf — International Handball Player #18"
 
 >
 
-<div class="badge">
+<div class="hero-content">
 
-INTERNATIONAL PLAYER • ALGERIA
+<div class="hero-tag">
+
+🇩🇿 ALGERIA • INTERNATIONAL HANDBALL
 
 </div>
 
@@ -560,71 +836,99 @@ ABDERRAOUF
 
 </h1>
 
-<h2>
+<div class="hero-title">
 
-International Handball Player
-
-</h2>
-
-<h3>
-
-Athlète de Haut Niveau — Classe A &amp; Élite
-
-</h3>
-
-<div class="position">
-
-Pivot / Line Player · Right-Handed · 183 cm · #18
+joueur international de handball
 
 </div>
 
-<p class="hero-description">
+<div class="hero-status">
 
-Elite-level handball player with international experience representing Algeria.
+statut : Haut niveau Classe À & Élite
 
-A physical and tactically aware Pivot / Line Player focused on contact strength,
+</div>
 
-space creation, positioning, timing and close-range finishing.
+<div class="hero-info">
 
-</p>
+<span>🤾 Pivot / Line Player</span>
+
+<span>➡️ Right-Handed</span>
+
+<span>📏 183 cm</span>
+
+<span>🔢 #18</span>
+
+<span>🏆 14+ years</span>
+
+</div>
 
 </div>
 
 </header>
 
+<nav>
+
+<div class="nav-inner">
+
+<a href="#profile">Profile</a>
+
+<a href="#international">International</a>
+
+<a href="#palmares">Palmarès</a>
+
+<a href="#evidence">Evidence</a>
+
+<a href="#media">Media</a>
+
+<a href="#scouting">Scouting</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<main>
+
 <section id="profile">
 
 <div class="container">
 
+<div class="section-label">
+
+Athlete Profile
+
+</div>
+
 <h2 class="section-title">
 
-Professional Profile
+International Handball Player
 
 </h2>
 
-<p class="section-subtitle">
-
-A competitive handball profile built around physical presence,
-
-tactical intelligence and experience at national and international level.
-
-</p>
-
-<div class="grid">
+<div class="profile-box">
 
 <div class="card">
 
-<h3>
-
-Playing Position
-
-</h3>
+<h3>SEGUENI Abderraouf</h3>
 
 <p>
 
-Pivot / Line Player. Specialized in operating around the 6-metre line,
+Algerian international handball player specialised as a
 
-creating space, fixing defenders and providing a strong target for attacking combinations.
+Pivot / Line Player. Right-handed athlete with more than
+
+14 years of handball experience and international exposure.
+
+</p>
+
+<br>
+
+<p>
+
+International pathway through U17, U19 and U21 national teams,
+
+followed by senior-level international experience.
 
 </p>
 
@@ -632,55 +936,51 @@ creating space, fixing defenders and providing a strong target for attacking com
 
 <div class="card">
 
-<h3>
+<ul class="profile-list">
 
-Scouting Characteristics
+<li>
 
-</h3>
+<strong>Nationality:</strong> Algeria 🇩🇿
 
-<p>
+</li>
 
-Physical power, contact strength, positioning, timing, explosive movement,
+<li>
 
-ball protection under pressure, close-range finishing and tactical awareness.
+<strong>Position:</strong> Pivot / Line Player
 
-</p>
+</li>
 
-</div>
+<li>
 
-</div>
+<strong>Hand:</strong> Right-Handed
 
-<div class="stats">
+</li>
 
-<div class="stat">
+<li>
 
-<strong>Pivot</strong>
+<strong>Height:</strong> 183 cm
 
-<span>Primary Position</span>
+</li>
 
-</div>
+<li>
 
-<div class="stat">
+<strong>Jersey:</strong> #18
 
-<strong>183 cm</strong>
+</li>
 
-<span>Height</span>
+<li>
 
-</div>
+<strong>Experience:</strong> 14+ years
 
-<div class="stat">
+</li>
 
-<strong>#18</strong>
+<li>
 
-<span>Shirt Number</span>
+<strong>Status:</strong> Haut Niveau Classe À & Élite
 
-</div>
+</li>
 
-<div class="stat">
-
-<strong>14+</strong>
-
-<span>Years of Experience</span>
+</ul>
 
 </div>
 
@@ -694,35 +994,45 @@ ball protection under pressure, close-range finishing and tactical awareness.
 
 <div class="container">
 
+<div class="section-label">
+
+International Career
+
+</div>
+
 <h2 class="section-title">
 
-International Experience
+International Achievements
 
 </h2>
-
-<p class="section-subtitle">
-
-International competition experience with Algeria across youth national teams,
-
-African championships and the IHF U21 World Championship.
-
-</p>
 
 <div class="grid">
 
 <div class="card">
 
+<div class="flag">
+
+🇰🇪
+
+</div>
+
+<div class="badge">
+
+U19 AFRICAN CHAMPIONSHIP
+
+</div>
+
 <h3>
 
-U19 African Championship — Kenya 2014
+Kenya — Nairobi 2014
 
 </h3>
 
 <p>
 
-Represented Algeria at the African U19 Championship in Nairobi, Kenya,
+Algeria finished second and earned the
 
-and won the <strong>Silver Medal</strong>.
+<strong>Silver Medal</strong>.
 
 </p>
 
@@ -730,17 +1040,91 @@ and won the <strong>Silver Medal</strong>.
 
 <div class="card">
 
+<div class="flag">
+
+🇲🇱
+
+</div>
+
+<div class="badge">
+
+U21 AFRICAN CHAMPIONSHIP
+
+</div>
+
 <h3>
 
-U21 African Championship — Mali 2016
+Mali — Bamako 2016
 
 </h3>
 
 <p>
 
-Represented Algeria at the African U21 Championship in Bamako, Mali,
+Algeria finished in <strong>3rd place</strong>
 
-and finished in <strong>3rd place, winning the Bronze Medal</strong>.
+and earned the <strong>Bronze Medal</strong>.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="world">
+
+<div class="badge">
+
+🌍 IHF • U21 WORLD CHAMPIONSHIP
+
+</div>
+
+<h3>
+
+2017 World Championship
+
+</h3>
+
+<div class="big-badge">
+
+QUALIFIED FOR THE SECOND ROUND
+
+</div>
+
+<p>
+
+International World Championship experience with Algeria.
+
+Official competition records identify
+
+<strong>SEGUENI Abderraouf</strong> as a
+
+<strong>Pivot</strong> for Algeria.
+
+</p>
+
+</div>
+
+<div class="camps">
+
+<div class="card">
+
+<div class="camp-number">
+
+25+
+
+</div>
+
+<h3>
+
+International Camps
+
+</h3>
+
+<p>
+
+More than 25 international preparation camps
+
+and friendly matches in Europe with national teams.
 
 </p>
 
@@ -748,145 +1132,23 @@ and finished in <strong>3rd place, winning the Bronze Medal</strong>.
 
 <div class="card">
 
+<div class="camp-number">
+
+🇩🇿 🇪🇺
+
+</div>
+
 <h3>
 
-U21 World Championship — 2017
+International Exposure
 
 </h3>
 
 <p>
 
-Represented Algeria at the U21 World Championship in 2017.
+National-team preparation and international
 
-The competition provided international exposure at world level against
-
-strong national teams.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-International Preparation
-
-</h3>
-
-<p>
-
-More than 25 international preparation camps and friendly-match
-
-experiences in Europe formed part of the development pathway.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="career">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Club Career
-
-</h2>
-
-<p class="section-subtitle">
-
-Competitive experience across Algerian handball, with a career developed
-
-through several clubs and different stages of senior competition.
-
-</p>
-
-<div class="card">
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>
-
-2013 – 2017
-
-</h3>
-
-<p>
-
-Early competitive career and development in Algerian handball,
-
-including experience with the Bordj Bou Arreridj club pathway.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>
-
-MBT Tadjenanet
-
-</h3>
-
-<p>
-
-Competitive senior club experience.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>
-
-CRBM Mila
-
-</h3>
-
-<p>
-
-Continued senior-level competitive experience in Algerian handball.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>
-
-Mouloudia Bordj Bou Arreridj
-
-</h3>
-
-<p>
-
-Senior competitive experience with Mouloudia Bordj Bou Arreridj.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;">
-
-<h3>
-
-Olympique Annaba
-
-</h3>
-
-<p>
-
-Continued senior competitive experience with Olympique Annaba.
+friendly experience across Europe.
 
 </p>
 
@@ -902,87 +1164,81 @@ Continued senior competitive experience with Olympique Annaba.
 
 <div class="container">
 
-<h2 class="section-title">
+<div class="section-label">
 
 Palmarès
 
+</div>
+
+<h2 class="section-title">
+
+International Honours
+
 </h2>
 
-<p class="section-subtitle">
+<div class="palmares">
 
-Key international achievements representing Algeria.
+<div class="card medal">
 
-</p>
+<div class="year">
 
-<div class="grid">
+2014 • Kenya
 
-<div class="card">
+</div>
 
-<h3>
+<div class="place">
 
-🥈 Silver Medal
+🥈 Silver
 
-</h3>
+</div>
 
 <p>
 
-<strong>U19 African Championship — Kenya 2014</strong><br>
-
-Algeria
+U19 African Championship
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="card medal">
 
-<h3>
+<div class="year">
 
-🥉 Bronze Medal
+2016 • Mali
 
-</h3>
+</div>
+
+<div class="place">
+
+🥉 Bronze
+
+</div>
 
 <p>
 
-<strong>U21 African Championship — Mali 2016</strong><br>
-
-3rd Place — Algeria
+U21 African Championship
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="card medal">
 
-<h3>
+<div class="year">
 
-🌍 World Championship
-
-</h3>
-
-<p>
-
-<strong>U21 World Championship — 2017</strong><br>
-
-International representation with Algeria.
-
-</p>
+2017 • World
 
 </div>
 
-<div class="card">
+<div class="place">
 
-<h3>
+🌍 Second Round
 
-🇩🇿 National Team
-
-</h3>
+</div>
 
 <p>
 
-International experience through Algeria's youth national-team pathway,
-
-from U19 to U21 level.
+U21 World Championship
 
 </p>
 
@@ -998,89 +1254,87 @@ from U19 to U21 level.
 
 <div class="container">
 
+<div class="section-label">
+
+Official Evidence
+
+</div>
+
 <h2 class="section-title">
 
-Evidence &amp; Documentation
+Career Evidence
 
 </h2>
 
-<p class="section-subtitle">
+<div class="evidence">
 
-Official and documentary evidence supporting the international and
-
-competitive career of SEGUENI Abderraouf.
-
-</p>
-
-<div class="grid">
-
-<div class="card">
+<div class="evidence-card">
 
 <h3>
 
-IHF Evidence
+🌍 International Competition
 
 </h3>
 
 <p>
 
-Official International Handball Federation documentation and player
+African and World Championship participation,
 
-listing supporting international participation with Algeria at U21 level.
+national-team records and international competition evidence.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="evidence-card">
 
 <h3>
 
-FAHB Evidence
+📜 CAHB Documentation
 
 </h3>
 
 <p>
 
-Federation-related documentation, national-team records, licenses and
+Official championship documentation and certificate
 
-supporting documents can be used to verify the player's competitive career.
+related to international participation.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="evidence-card">
 
 <h3>
 
-Competition Evidence
+🏅 Medals & Diplomas
 
 </h3>
 
 <p>
 
-African Championship and World Championship participation can be
+Visual evidence from the Kenya 2014 Silver Medal
 
-supported through official competition records, photographs and documents.
+and Mali 2016 Bronze Medal campaigns.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="evidence-card">
 
 <h3>
 
-Club Evidence
+📋 Match Documentation
 
 </h3>
 
 <p>
 
-Club photographs, presentation material, licenses and other official
+International competition match documentation and
 
-documents provide documentary support for the club career timeline.
+World Championship evidence.
 
 </p>
 
@@ -1096,163 +1350,71 @@ documents provide documentary support for the club career timeline.
 
 <div class="container">
 
+<div class="section-label">
+
+Media
+
+</div>
+
 <h2 class="section-title">
 
-Media &amp; Gallery
+International Career Gallery
 
 </h2>
-
-<p class="section-subtitle">
-
-Visual evidence from the player's international and club career.
-
-</p>
 
 <div class="gallery">
 
-<div class="gallery-item">
-
 <img src="02f64a06bbb4a936319d9180cffeb978.jpeg"
 
-alt="SEGUENI Abderraouf — Career Evidence"
-
-loading="lazy">
-
-<div class="gallery-caption">Career Evidence</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9032.jpeg"
 
-alt="SEGUENI Abderraouf — Handball"
-
-loading="lazy">
-
-<div class="gallery-caption">Handball Career</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9042.jpeg"
 
-alt="SEGUENI Abderraouf — Handball Career"
-
-loading="lazy">
-
-<div class="gallery-caption">Career</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9047.jpeg"
 
-alt="SEGUENI Abderraouf — Club Career"
-
-loading="lazy">
-
-<div class="gallery-caption">Club Career</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9289.jpeg"
 
-alt="SEGUENI Abderraouf — International Handball"
-
-loading="lazy">
-
-<div class="gallery-caption">International</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9300.jpeg"
 
-alt="SEGUENI Abderraouf — Sporting Career"
-
-loading="lazy">
-
-<div class="gallery-caption">Sporting Career</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9302.png"
 
-alt="SEGUENI Abderraouf — International Player"
-
-loading="lazy">
-
-<div class="gallery-caption">International Player</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9308.jpeg"
 
-alt="SEGUENI Abderraouf — Club Evidence"
-
-loading="lazy">
-
-<div class="gallery-caption">Club Evidence</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9539.png"
 
-alt="SEGUENI Abderraouf — Handball Evidence"
-
-loading="lazy">
-
-<div class="gallery-caption">Handball Evidence</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9540.png"
 
-alt="SEGUENI Abderraouf — International Career"
-
-loading="lazy">
-
-<div class="gallery-caption">International Career</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9541.png"
 
-alt="SEGUENI Abderraouf — Career Documentation"
-
-loading="lazy">
-
-<div class="gallery-caption">Career Documentation</div>
-
-</div>
-
-<div class="gallery-item">
+alt="SEGUENI Abderraouf handball">
 
 <img src="IMG_9542.png"
 
-alt="SEGUENI Abderraouf — Sporting Documentation"
+alt="SEGUENI Abderraouf handball">
 
-loading="lazy">
+<img src="IMG_9726.jpeg"
 
-<div class="gallery-caption">Sporting Documentation</div>
-
-</div>
+alt="SEGUENI Abderraouf International Handball Player">
 
 </div>
 
@@ -1260,187 +1422,127 @@ loading="lazy">
 
 </section>
 
-<section id="timeline">
+<section id="scouting">
 
 <div class="container">
 
-<h2 class="section-title">
+<div class="section-label">
 
-Career Timeline
-
-</h2>
-
-<p class="section-subtitle">
-
-A chronological overview of the player's competitive development
-
-and international pathway.
-
-</p>
-
-<div class="card">
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>2013</h3>
-
-<p>
-
-Beginning of the documented competitive career pathway.
-
-</p>
+Elite Scouting
 
 </div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>2014</h3>
-
-<p>
-
-<strong>U19 African Championship — Kenya</strong><br>
-
-Silver Medal with Algeria.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>2016</h3>
-
-<p>
-
-<strong>U21 African Championship — Mali</strong><br>
-
-Bronze Medal with Algeria.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);">
-
-<h3>2017</h3>
-
-<p>
-
-<strong>U21 World Championship</strong><br>
-
-International representation with Algeria.
-
-</p>
-
-</div>
-
-<div style="padding:18px 0;">
-
-<h3>2017 – Present</h3>
-
-<p>
-
-Continued senior competitive career in Algeria through several clubs,
-
-including Tadjenanet, Mila, Mouloudia Bordj Bou Arreridj and Olympique Annaba.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="summary">
-
-<div class="container">
 
 <h2 class="section-title">
 
-Professional Scouting Summary
+Professional Scouting Profile
 
 </h2>
 
-<p class="section-subtitle">
+<div class="scouting">
 
-A Pivot profile built for competitive environments where physical presence,
-
-tactical discipline and intelligent movement around the defensive line are essential.
-
-</p>
-
-<div class="grid">
-
-<div class="card">
+<div class="skill">
 
 <h3>
 
-Physical Profile
+💪 Physical Strength
 
 </h3>
 
 <p>
 
-Strong physical presence in contact situations, with the ability to compete
+Strong contact presence, powerful body positioning
 
-for position and maintain balance while operating under defensive pressure.
+and physical resistance around the 6-metre line.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="skill">
 
 <h3>
 
-Attacking Profile
+🧠 Tactical Intelligence
 
 </h3>
 
 <p>
 
-Effective movement around the 6-metre area, space creation, defensive fixation,
+Space creation, positioning, timing, screens,
 
-ball protection and close-range finishing.
+blocks and intelligent movement away from the ball.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="skill">
 
 <h3>
 
-Tactical Profile
+⚡ Explosive Movement
 
 </h3>
 
 <p>
 
-Understands positioning, timing and defensive manipulation, creating opportunities
+Quick movement around the line, strong changes
 
-for both individual finishing and team attacking combinations.
+of direction and explosive close-range actions.
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="skill">
 
 <h3>
 
-Competitive Experience
+🤾 Ball Protection
 
 </h3>
 
 <p>
 
-International experience with Algeria combined with extensive competitive
+Secure receiving under pressure and strong
 
-experience in Algerian club handball.
+ball protection in physical defensive contact.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>
+
+🎯 Finishing
+
+</h3>
+
+<p>
+
+Reliable close-range finishing with the ability
+
+to receive with both hands and finish naturally right-handed.
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<h3>
+
+🔥 Competitive Responsibility
+
+</h3>
+
+<p>
+
+Comfortable taking responsibility in high-pressure
+
+moments and decisive final possessions.
 
 </p>
 
@@ -1456,45 +1558,33 @@ experience in Algerian club handball.
 
 <div class="container">
 
-<h2 class="section-title">
+<div class="contact">
 
-Professional Contact
-
-</h2>
-
-<p class="section-subtitle">
-
-For scouting opportunities, trials, sporting collaborations and professional
-
-handball opportunities.
-
-</p>
-
-<div class="card" style="text-align:center;">
-
-<h3>
+<h2>
 
 SEGUENI Abderraouf
 
-</h3>
+</h2>
 
-<p style="margin-top:12px;">
+<p>
 
-International Handball Player<br>
-
-Athlète de Haut Niveau — Classe A &amp; Élite<br>
-
-Pivot / Line Player<br>
-
-Algeria
+International Handball Player • Pivot / Line Player • Algeria 🇩🇿
 
 </p>
 
-<p style="margin-top:20px;color:#8ec5ff;">
+<a
 
-Professional Scouting Profile
+class="button"
 
-</p>
+href="https://abderraoufseg.github.io/"
+
+target="_blank"
+
+>
+
+Official Athlete Website
+
+</a>
 
 </div>
 
@@ -1502,53 +1592,17 @@ Professional Scouting Profile
 
 </section>
 
-<footer style="padding:45px 0;border-top:1px solid rgba(255,255,255,.08);">
+</main>
 
-<div class="container" style="text-align:center;">
+<footer>
 
-<p style="color:#8fa2b9;">
+SEGUENI Abderraouf — International Handball Player 🇩🇿
 
-SEGUENI Abderraouf · International Handball Player · Algeria
+<br>
 
-</p>
-
-<p style="margin-top:8px;color:#61748b;font-size:13px;">
-
-Pivot / Line Player · Classe A &amp; Élite
-
-</p>
-
-</div>
+Pivot / Line Player • #18 • 183 cm
 
 </footer>
-
-<script>
-
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-    link.addEventListener('click', function(e) {
-
-        const target =
-
-        document.querySelector(this.getAttribute('href'));
-
-        if(target){
-
-            e.preventDefault();
-
-            target.scrollIntoView({
-
-                behavior:'smooth'
-
-            });
-
-        }
-
-    });
-
-});
-
-</script>
 
 </body>
 
