@@ -10,7 +10,9 @@
 
 <title>SEGUENI Abderraouf — International Handball Player</title>
 
-<meta name="description" content="SEGUENI Abderraouf — Algerian international handball player, Pivot / Line Player, athlete of High Level Class A & Elite.">
+<meta name="description"
+
+content="SEGUENI Abderraouf — Algerian international handball player, Pivot / Line Player, athlete of High Level Class A & Elite.">
 
 <meta name="author" content="SEGUENI Abderraouf">
 
@@ -36,13 +38,15 @@ body{
 
     font-family:Arial,Helvetica,sans-serif;
 
-    background:#050b14;
+    background:#050a12;
 
     color:#f5f7fa;
 
     line-height:1.7;
 
 }
+
+/* ================= HEADER ================= */
 
 header{
 
@@ -52,9 +56,9 @@ header{
 
     z-index:1000;
 
-    background:rgba(5,11,20,.94);
+    background:rgba(5,10,18,.96);
 
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
@@ -62,11 +66,11 @@ header{
 
 .nav{
 
-    max-width:1200px;
+    max-width:1180px;
 
     margin:auto;
 
-    padding:16px 22px;
+    padding:17px 22px;
 
     display:flex;
 
@@ -78,83 +82,59 @@ header{
 
 .logo{
 
-    font-size:20px;
+    font-size:19px;
 
-    font-weight:800;
+    font-weight:900;
 
-    letter-spacing:1px;
+    letter-spacing:1.5px;
 
 }
 
 .logo span{
 
-    color:#d71920;
+    color:#ffffff;
 
 }
 
 nav a{
 
-    color:#dfe6ee;
+    color:#cfd8e2;
 
     text-decoration:none;
 
     margin-left:22px;
 
-    font-size:14px;
+    font-size:13px;
 
-    font-weight:600;
+    font-weight:700;
+
+    transition:.2s;
 
 }
 
 nav a:hover{
 
-    color:#fff;
+    color:#ffffff;
 
 }
+
+/* ================= HERO ================= */
 
 .hero{
 
-    max-width:1200px;
+    max-width:1180px;
 
     margin:auto;
 
-    padding:50px 22px 35px;
-
-}
-
-.hero-image{
-
-    width:100%;
-
-    display:block;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    background:#0c1522;
-
-    box-shadow:0 25px 70px rgba(0,0,0,.45);
-
-}
-
-.hero-image img{
-
-    width:100%;
-
-    height:auto;
-
-    max-height:760px;
-
-    object-fit:cover;
-
-    display:block;
+    padding:70px 22px 50px;
 
 }
 
 .hero-content{
 
-    padding:42px 10px 15px;
+    max-width:1000px;
+
+    padding:0 5px 35px;
 
 }
 
@@ -162,53 +142,51 @@ nav a:hover{
 
     color:#d71920;
 
-    font-size:14px;
+    font-size:13px;
 
-    font-weight:800;
+    font-weight:900;
 
     letter-spacing:3px;
 
     text-transform:uppercase;
 
-    margin-bottom:12px;
+    margin-bottom:16px;
 
 }
 
 h1{
 
-    font-size:clamp(38px,7vw,76px);
+    font-size:clamp(40px,7vw,78px);
 
-    line-height:1.02;
+    line-height:1;
 
-    letter-spacing:-2px;
+    letter-spacing:-2.5px;
 
     font-weight:900;
 
-    margin-bottom:20px;
+    margin-bottom:22px;
 
 }
 
 .hero-subtitle{
 
-    font-size:clamp(20px,3vw,30px);
+    font-size:clamp(21px,3vw,31px);
 
-    color:#fff;
+    color:#ffffff;
 
-    font-weight:700;
+    font-weight:800;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
 }
 
 .status{
 
-    font-size:18px;
+    font-size:17px;
 
-    color:#dce4ed;
+    color:#bfcbd7;
 
     font-weight:600;
-
-    margin-bottom:25px;
 
 }
 
@@ -220,7 +198,7 @@ h1{
 
     height:5px;
 
-    margin:20px 0 28px;
+    margin:25px 0 28px;
 
     border-radius:20px;
 
@@ -238,35 +216,35 @@ h1{
 
 .algeria-line span:last-child{
 
-    background:#fff;
+    background:#ffffff;
 
     width:50%;
 
 }
 
+/* IHF */
+
 .ihf{
 
-    display:inline-flex;
+    display:flex;
 
     align-items:center;
 
     gap:14px;
 
-    margin-top:8px;
-
-    margin-bottom:30px;
+    margin:8px 0 30px;
 
 }
 
 .ihf-logo{
 
-    width:58px;
+    width:55px;
 
-    height:58px;
+    height:55px;
 
     object-fit:contain;
 
-    background:#fff;
+    background:#ffffff;
 
     border-radius:50%;
 
@@ -276,43 +254,49 @@ h1{
 
 .ihf-text{
 
-    font-size:19px;
+    font-size:18px;
 
     font-weight:900;
 
-    letter-spacing:.5px;
+    letter-spacing:.4px;
 
-    color:#fff;
+    color:#ffffff;
+
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+
+    width:100%;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    background:#0b1420;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+
+    border:1px solid rgba(255,255,255,.08);
 
 }
 
-.ihf-fallback{
+.hero-image img{
 
-    width:58px;
+    width:100%;
 
-    height:58px;
+    height:auto;
 
-    border-radius:50%;
+    max-height:780px;
 
-    background:#fff;
+    object-fit:cover;
 
-    display:none;
-
-    align-items:center;
-
-    justify-content:center;
-
-    color:#101820;
-
-    font-size:12px;
-
-    font-weight:900;
-
-    text-align:center;
-
-    line-height:1.1;
+    display:block;
 
 }
+
+/* QUICK INFO */
 
 .quick{
 
@@ -320,41 +304,45 @@ h1{
 
     flex-wrap:wrap;
 
-    gap:12px;
+    gap:10px;
+
+    margin-top:25px;
 
 }
 
 .quick span{
 
-    padding:10px 15px;
+    padding:9px 14px;
 
-    background:#0d1826;
+    background:#0b1420;
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:10px;
+    border-radius:9px;
 
-    color:#e7edf4;
+    color:#e5ebf1;
 
-    font-size:14px;
+    font-size:13px;
 
-    font-weight:600;
+    font-weight:700;
 
 }
 
+/* ================= MAIN ================= */
+
 main{
 
-    max-width:1200px;
+    max-width:1180px;
 
     margin:auto;
 
-    padding:20px 22px 80px;
+    padding:10px 22px 80px;
 
 }
 
 section{
 
-    padding:70px 0;
+    padding:75px 0;
 
     border-top:1px solid rgba(255,255,255,.08);
 
@@ -364,7 +352,7 @@ section{
 
     color:#d71920;
 
-    font-size:13px;
+    font-size:12px;
 
     font-weight:900;
 
@@ -378,17 +366,19 @@ section{
 
 h2{
 
-    font-size:clamp(30px,5vw,48px);
+    font-size:clamp(31px,5vw,50px);
 
-    line-height:1.1;
+    line-height:1.08;
 
     margin-bottom:25px;
+
+    letter-spacing:-1px;
 
 }
 
 .lead{
 
-    color:#c9d3de;
+    color:#c3ced9;
 
     max-width:850px;
 
@@ -396,13 +386,15 @@ h2{
 
 }
 
+/* ================= PROFILE ================= */
+
 .profile-grid{
 
     display:grid;
 
-    grid-template-columns:1.2fr .8fr;
+    grid-template-columns:1.25fr .75fr;
 
-    gap:35px;
+    gap:40px;
 
     align-items:start;
 
@@ -424,25 +416,23 @@ h2{
 
 .algeria-card{
 
-    position:relative;
-
-    overflow:hidden;
-
-    background:#0b1522;
+    background:#0a131f;
 
     border-radius:18px;
 
     padding:28px;
 
-    border-left:5px solid #006233;
+    border:1px solid rgba(255,255,255,.08);
 
-    border-right:5px solid #d71920;
+    border-left:4px solid #006233;
+
+    border-right:4px solid #d71920;
 
 }
 
 .algeria-card h3{
 
-    font-size:22px;
+    font-size:23px;
 
     margin-bottom:15px;
 
@@ -450,9 +440,11 @@ h2{
 
 .algeria-card p{
 
-    color:#c9d3de;
+    color:#c3ced9;
 
 }
+
+/* ================= CAREER ================= */
 
 .career-list{
 
@@ -466,7 +458,7 @@ h2{
 
 .career-card{
 
-    background:#0b1522;
+    background:#0a131f;
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -490,7 +482,7 @@ h2{
 
     color:#d71920;
 
-    font-size:14px;
+    font-size:13px;
 
     font-weight:900;
 
@@ -502,7 +494,7 @@ h2{
 
 .career-card h3{
 
-    font-size:21px;
+    font-size:20px;
 
     margin-bottom:8px;
 
@@ -516,6 +508,8 @@ h2{
 
 }
 
+/* ================= MEDALS ================= */
+
 .medals{
 
     display:grid;
@@ -528,11 +522,11 @@ h2{
 
 .medal{
 
-    background:#0b1522;
+    background:#0a131f;
 
     border-radius:18px;
 
-    padding:28px;
+    padding:30px;
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -540,7 +534,7 @@ h2{
 
 .medal-icon{
 
-    font-size:42px;
+    font-size:40px;
 
     margin-bottom:10px;
 
@@ -560,6 +554,8 @@ h2{
 
 }
 
+/* ================= EXPERIENCE ================= */
+
 .experience{
 
     display:grid;
@@ -572,11 +568,11 @@ h2{
 
 .experience-card{
 
-    background:#0b1522;
+    background:#0a131f;
 
     border-radius:18px;
 
-    padding:27px;
+    padding:28px;
 
     border-top:3px solid #d71920;
 
@@ -596,6 +592,8 @@ h2{
 
 }
 
+/* ================= SCOUTING ================= */
+
 .scouting{
 
     display:grid;
@@ -610,7 +608,7 @@ h2{
 
     padding:19px;
 
-    background:#0b1522;
+    background:#0a131f;
 
     border-radius:13px;
 
@@ -621,6 +619,8 @@ h2{
     color:#e2e8ef;
 
 }
+
+/* ================= EVIDENCE ================= */
 
 .evidence-intro{
 
@@ -644,7 +644,7 @@ h2{
 
 .evidence-card{
 
-    background:#0b1522;
+    background:#0a131f;
 
     border-radius:16px;
 
@@ -688,6 +688,8 @@ h2{
 
 }
 
+/* ================= MEDIA ================= */
+
 .media-grid{
 
     display:grid;
@@ -710,7 +712,7 @@ h2{
 
     display:block;
 
-    background:#0b1522;
+    background:#0a131f;
 
     transition:.25s ease;
 
@@ -721,6 +723,8 @@ h2{
     transform:scale(1.025);
 
 }
+
+/* ================= FOOTER ================= */
 
 footer{
 
@@ -752,6 +756,8 @@ footer{
 
 }
 
+/* ================= TABLET ================= */
+
 @media(max-width:900px){
 
     nav a{
@@ -770,7 +776,7 @@ footer{
 
     .career-list{
 
-        grid-template-columns:1fr;
+        grid-template-columns:1fr 1fr;
 
     }
 
@@ -800,17 +806,19 @@ footer{
 
 }
 
+/* ================= MOBILE ================= */
+
 @media(max-width:600px){
 
     .nav{
 
-        padding:13px 15px;
+        padding:14px 15px;
 
     }
 
     .logo{
 
-        font-size:16px;
+        font-size:15px;
 
     }
 
@@ -822,25 +830,21 @@ footer{
 
     .hero{
 
-        padding:20px 14px 25px;
-
-    }
-
-    .hero-image{
-
-        border-radius:14px;
+        padding:40px 14px 35px;
 
     }
 
     .hero-content{
 
-        padding:32px 4px 10px;
+        padding:0 3px 28px;
 
     }
 
     h1{
 
-        letter-spacing:-1px;
+        font-size:43px;
+
+        letter-spacing:-1.5px;
 
     }
 
@@ -848,23 +852,45 @@ footer{
 
         font-size:21px;
 
+        line-height:1.35;
+
     }
 
     .status{
 
-        font-size:16px;
+        font-size:15px;
+
+    }
+
+    .hero-image{
+
+        border-radius:15px;
+
+    }
+
+    .hero-image img{
+
+        max-height:none;
+
+        object-fit:contain;
 
     }
 
     main{
 
-        padding:10px 14px 60px;
+        padding:5px 14px 60px;
 
     }
 
     section{
 
         padding:55px 0;
+
+    }
+
+    .career-list{
+
+        grid-template-columns:1fr;
 
     }
 
@@ -898,6 +924,14 @@ footer{
 
     }
 
+    .quick span{
+
+        font-size:12px;
+
+        padding:8px 11px;
+
+    }
+
 }
 
 </style>
@@ -912,7 +946,7 @@ footer{
 
 <div class="logo">
 
-SEGUENI <span>ABDERRaouf</span>
+SEGUENI <span>ABDERRAOuf</span>
 
 </div>
 
@@ -934,19 +968,9 @@ SEGUENI <span>ABDERRaouf</span>
 
 </header>
 
+<!-- ================= HERO ================= -->
+
 <div class="hero">
-
-<div class="hero-image">
-
-<img
-
-src="IMG_9755.jpeg"
-
-alt="SEGUENI Abderraouf — International Handball Player #18"
-
-loading="eager">
-
-</div>
 
 <div class="hero-content">
 
@@ -990,19 +1014,7 @@ class="ihf-logo"
 
 src="IHF-logo.png"
 
-alt="International Handball Federation — IHF"
-
-onerror="this.style.display='none';document.getElementById('ihfFallback').style.display='flex';">
-
-<div
-
-id="ihfFallback"
-
-class="ihf-fallback">
-
-IHF
-
-</div>
+alt="International Handball Federation — IHF">
 
 <div class="ihf-text">
 
@@ -1026,9 +1038,25 @@ Certified by IHF
 
 </div>
 
+<!-- MAIN IMAGE UNDER TITLES -->
+
+<div class="hero-image">
+
+<img
+
+src="IMG_9755.jpeg"
+
+alt="SEGUENI Abderraouf — International Handball Player #18"
+
+loading="eager">
+
+</div>
+
 </div>
 
 <main>
+
+<!-- ================= PROFILE ================= -->
 
 <section id="profile">
 
@@ -1106,7 +1134,9 @@ U17 · U19 · U21 · Senior
 
 <p>
 
-Position: <strong>Pivot / Line Player</strong>
+Position:
+
+<strong>Pivot / Line Player</strong>
 
 </p>
 
@@ -1114,7 +1144,9 @@ Position: <strong>Pivot / Line Player</strong>
 
 <p>
 
-Hand: <strong>Right</strong>
+Hand:
+
+<strong>Right</strong>
 
 </p>
 
@@ -1123,6 +1155,8 @@ Hand: <strong>Right</strong>
 </div>
 
 </section>
+
+<!-- ================= INTERNATIONAL ================= -->
 
 <section id="international">
 
@@ -1244,6 +1278,8 @@ Second Round
 
 </section>
 
+<!-- ================= MEDALS ================= -->
+
 <section>
 
 <div class="section-label">
@@ -1324,6 +1360,8 @@ Algeria — 3rd Place
 
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
+
 <section>
 
 <div class="section-label">
@@ -1381,6 +1419,8 @@ international environments.
 </div>
 
 </section>
+
+<!-- ================= CLUB CAREER ================= -->
 
 <section id="career">
 
@@ -1450,6 +1490,8 @@ Club Experience
 
 </section>
 
+<!-- ================= SCOUTING ================= -->
+
 <section>
 
 <div class="section-label">
@@ -1493,6 +1535,8 @@ Elite Scouting Profile
 </div>
 
 </section>
+
+<!-- ================= EVIDENCE ================= -->
 
 <section id="evidence">
 
@@ -1641,6 +1685,8 @@ loading="lazy">
 </div>
 
 </section>
+
+<!-- ================= MEDIA ================= -->
 
 <section id="media">
 
