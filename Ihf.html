@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IHF — SEGUENI Abderraouf #18 Algeria</title>
+
+<meta name="description"
+
+content="SEGUENI Abderraouf #18 — Algerian international handball player. IHF official profile and official match sheets from the 2017 Men's Junior World Championship.">
+
+<style>
+
+*{
+
+    box-sizing:border-box;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:#080808;
+
+    color:#f5f5f5;
+
+    line-height:1.6;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+}
+
+header{
+
+    padding:25px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.back{
+
+    display:inline-block;
+
+    color:#aaa;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.back:hover{
+
+    color:#fff;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px 55px;
+
+}
+
+.ihf-logo{
+
+    width:180px;
+
+    max-width:70%;
+
+    height:auto;
+
+    object-fit:contain;
+
+    margin-bottom:28px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(32px,7vw,62px);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+}
+
+.hero .nation{
+
+    font-size:20px;
+
+    color:#ccc;
+
+    margin-bottom:8px;
+
+}
+
+.hero .identity{
+
+    color:#aaa;
+
+    font-size:17px;
+
+}
+
+.section{
+
+    margin:35px 0;
+
+}
+
+.section-title{
+
+    font-size:25px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:20px;
+
+    border-left:3px solid #fff;
+
+    padding-left:14px;
+
+}
+
+.card{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:14px;
+
+    padding:25px;
+
+    margin-bottom:18px;
+
+}
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:15px;
+
+}
+
+.profile-item{
+
+    padding:16px;
+
+    background:#0b0b0b;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+}
+
+.profile-item span{
+
+    display:block;
+
+    color:#888;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:5px;
+
+}
+
+.profile-item strong{
+
+    font-size:17px;
+
+}
+
+.matches{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+.match{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:14px;
+
+    padding:22px;
+
+    transition:.3s;
+
+}
+
+.match:hover{
+
+    transform:translateY(-2px);
+
+    border-color:rgba(255,255,255,.3);
+
+    background:#151515;
+
+}
+
+.match-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.match-number{
+
+    font-size:12px;
+
+    color:#888;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    min-width:65px;
+
+}
+
+.match-name{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.match-desc{
+
+    color:#999;
+
+    font-size:14px;
+
+    margin-top:4px;
+
+}
+
+.open{
+
+    font-size:14px;
+
+    color:#ccc;
+
+    white-space:nowrap;
+
+}
+
+.official{
+
+    text-align:center;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:15px;
+
+    padding:30px 20px;
+
+}
+
+.official p{
+
+    color:#aaa;
+
+    margin-bottom:20px;
+
+}
+
+.official-link{
+
+    display:inline-block;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:8px;
+
+    padding:12px 20px;
+
+    transition:.3s;
+
+}
+
+.official-link:hover{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+footer{
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:13px;
+
+    padding:50px 20px 30px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    margin-top:60px;
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding:50px 10px 40px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .match{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+    }
+
+    .match-info{
+
+        align-items:flex-start;
+
+    }
+
+    .open{
+
+        padding-left:83px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a class="back" href="index.html">
+
+← Back to Profile
+
+</a>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section class="hero">
+
+<img
+
+class="ihf-logo"
+
+src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
+
+alt="International Handball Federation"
+
+>
+
+<h1>SEGUENI Abderraouf</h1>
+
+<div class="nation">
+
+🇩🇿 Algeria
+
+</div>
+
+<div class="identity">
+
+#18 · Pivot / Line Player
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+International Handball Federation
+
+</h2>
+
+<div class="card">
+
+<div class="profile-grid">
+
+<div class="profile-item">
+
+<span>Player</span>
+
+<strong>SEGUENI Abderraouf</strong>
+
+</div>
+
+<div class="profile-item">
+
+<span>Nation</span>
+
+<strong>Algeria 🇩🇿</strong>
+
+</div>
+
+<div class="profile-item">
+
+<span>Number</span>
+
+<strong>#18</strong>
+
+</div>
+
+<div class="profile-item">
+
+<span>Position</span>
+
+<strong>Pivot</strong>
+
+</div>
+
+<div class="profile-item">
+
+<span>Date of Birth</span>
+
+<strong>08 September 1996</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+International Matches
+
+</h2>
+
+<div class="matches">
+
+<!-- MOROCCO -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/12OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 12
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇩🇿 Algeria — 🇲🇦 Morocco
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Algeria 24–19 Morocco
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+<!-- ARGENTINA MATCH 18 -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/18OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 18
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇦🇷 Argentina — 🇩🇿 Algeria
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Argentina 25–25 Algeria
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+<!-- ICELAND -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/36OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 36
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇮🇸 Iceland — 🇩🇿 Algeria
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Iceland 25–22 Algeria
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+<!-- CROATIA -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/42OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 42
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇩🇿 Algeria — 🇭🇷 Croatia
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Algeria 24–24 Croatia
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+<!-- SAUDI ARABIA -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/60OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 60
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇩🇿 Algeria — 🇸🇦 Saudi Arabia
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Algeria 23–21 Saudi Arabia
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+<!-- ARGENTINA MATCH 80 -->
+
+<a
+
+class="match"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/80OMR.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<div class="match-info">
+
+<div class="match-number">
+
+Match 80
+
+</div>
+
+<div>
+
+<div class="match-name">
+
+🇩🇿 Algeria — 🇦🇷 Argentina
+
+</div>
+
+<div class="match-desc">
+
+2017 Men's Junior World Championship · Algeria 20–21 Argentina
+
+</div>
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open official IHF sheet →
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+IHF Player Profile
+
+</h2>
+
+<div class="official">
+
+<p>
+
+Official International Handball Federation player documentation
+
+for SEGUENI Abderraouf #18 — Algeria.
+
+</p>
+
+<a
+
+class="official-link"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/ALG.pdf"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+Open official IHF profile →
+
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="official">
+
+<p>
+
+Official IHF competition documentation — Men's Junior World Championship 2017.
+
+</p>
+
+<a
+
+class="official-link"
+
+href="https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensjuniorworldchampionship/mensjuniorworldchampionship%2Calg2017/"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+Open IHF competition page →
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+SEGUENI Abderraouf · International Handball Player · Algeria 🇩🇿
+
+</footer>
+
+</body>
+
+</html>
