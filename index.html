@@ -48,6 +48,64 @@ h1{ line-height:.92; letter-spacing:-4px; font-weight:850; }
 
 .role{ margin-top:28px; font-size:clamp(21px,3vw,31px); font-weight:800; text-transform:uppercase; }
 
+.professional-player{
+
+    margin-top:8px;
+
+    color:#b9bec6;
+
+    font-size:clamp(14px,2vw,18px);
+
+    font-weight:700;
+
+    letter-spacing:2.5px;
+
+    text-transform:uppercase;
+
+}
+
+.verification-icon{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:21px;
+
+    height:21px;
+
+    margin-left:8px;
+
+    border:1px solid #d6b36a;
+
+    border-radius:50%;
+
+    color:#d6b36a;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    vertical-align:3px;
+
+    transition:all .25s ease;
+
+}
+
+.verification-icon:hover{
+
+    background:#d6b36a;
+
+    color:#08090b;
+
+    transform:scale(1.08);
+
+}
+
 .status{ display:inline-block; margin-top:14px; padding:9px 15px; border:1px solid #665331; background:#111318; color:#d6b36a; font-size:13px; font-weight:800; text-transform:uppercase; }
 
 .main-photo{ margin-top:50px; }
@@ -270,6 +328,26 @@ h1{letter-spacing:-2.5px;}
 
 .contact-link{justify-content:center;}
 
+.verification-icon{
+
+    width:19px;
+
+    height:19px;
+
+    font-size:11px;
+
+    margin-left:6px;
+
+}
+
+.professional-player{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}
+
 }
 
 @media(max-width:390px){
@@ -326,7 +404,25 @@ h1{letter-spacing:-2.5px;}
 
 <div class="role">
 
-<strong>INTERNATIONAL HANDBALL PLAYER</strong>
+<strong>
+
+INTERNATIONAL HANDBALL PLAYER
+
+<a href="#verified-ihf"
+
+class="verification-icon"
+
+aria-label="Verified by IHF"
+
+title="Verified by IHF">✓</a>
+
+</strong>
+
+</div>
+
+<div class="professional-player">
+
+PROFESSIONAL PLAYER
 
 </div>
 
@@ -598,7 +694,9 @@ Close-Range Finishing
 
 <!-- IHF -->
 
-<a href="ihf.html"
+<a id="verified-ihf"
+
+href="ihf.html"
 
 class="ihf-box"
 
