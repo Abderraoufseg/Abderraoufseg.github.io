@@ -6,13 +6,15 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
 
-<title>IHF — SEGUENI Abderraouf #18 Algeria</title>
+      content="width=device-width, initial-scale=1.0">
+
+<title>SEGUENI Abderraouf — IHF Official Record</title>
 
 <meta name="description"
 
-content="SEGUENI Abderraouf #18 — Algerian international handball player. IHF official profile and official match sheets from the 2017 Men's Junior World Championship.">
+content="SEGUENI Abderraouf — Official IHF record. Algeria No.18, Pivot, 2017 IHF Men's Junior World Championship.">
 
 <style>
 
@@ -26,13 +28,45 @@ content="SEGUENI Abderraouf #18 — Algerian international handball player. IHF 
 
 }
 
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 body{
 
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:
 
-    background:#080808;
+        -apple-system,
 
-    color:#f5f5f5;
+        BlinkMacSystemFont,
+
+        "Segoe UI",
+
+        Roboto,
+
+        Arial,
+
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+
+            circle at top,
+
+            #172033 0%,
+
+            #080b11 42%,
+
+            #05070b 100%
+
+        );
+
+    color:#f5f7fa;
+
+    min-height:100vh;
 
     line-height:1.6;
 
@@ -48,179 +82,37 @@ a{
 
 .container{
 
-    width:min(1100px,92%);
+    width:min(1100px, 92%);
 
     margin:auto;
 
 }
 
+/* =========================
+
+   HEADER
+
+========================= */
+
 header{
 
-    padding:25px 0;
+    padding:22px 0;
 
-    border-bottom:1px solid rgba(255,255,255,.12);
+    border-bottom:1px solid rgba(255,255,255,.08);
 
-}
+    background:rgba(5,7,11,.82);
 
-.back{
+    backdrop-filter:blur(16px);
 
-    display:inline-block;
+    position:sticky;
 
-    color:#aaa;
+    top:0;
 
-    font-size:14px;
-
-    transition:.3s;
+    z-index:50;
 
 }
 
-.back:hover{
-
-    color:#fff;
-
-}
-
-.hero{
-
-    text-align:center;
-
-    padding:70px 20px 55px;
-
-}
-
-.ihf-logo{
-
-    width:180px;
-
-    max-width:70%;
-
-    height:auto;
-
-    object-fit:contain;
-
-    margin-bottom:28px;
-
-}
-
-.hero h1{
-
-    font-size:clamp(32px,7vw,62px);
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:15px;
-
-}
-
-.hero .nation{
-
-    font-size:20px;
-
-    color:#ccc;
-
-    margin-bottom:8px;
-
-}
-
-.hero .identity{
-
-    color:#aaa;
-
-    font-size:17px;
-
-}
-
-.section{
-
-    margin:35px 0;
-
-}
-
-.section-title{
-
-    font-size:25px;
-
-    text-transform:uppercase;
-
-    letter-spacing:1.5px;
-
-    margin-bottom:20px;
-
-    border-left:3px solid #fff;
-
-    padding-left:14px;
-
-}
-
-.card{
-
-    background:#111;
-
-    border:1px solid rgba(255,255,255,.1);
-
-    border-radius:14px;
-
-    padding:25px;
-
-    margin-bottom:18px;
-
-}
-
-.profile-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
-    gap:15px;
-
-}
-
-.profile-item{
-
-    padding:16px;
-
-    background:#0b0b0b;
-
-    border-radius:10px;
-
-    border:1px solid rgba(255,255,255,.07);
-
-}
-
-.profile-item span{
-
-    display:block;
-
-    color:#888;
-
-    font-size:12px;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    margin-bottom:5px;
-
-}
-
-.profile-item strong{
-
-    font-size:17px;
-
-}
-
-.matches{
-
-    display:grid;
-
-    gap:15px;
-
-}
-
-.match{
+.nav{
 
     display:flex;
 
@@ -230,171 +122,799 @@ header{
 
     gap:20px;
 
-    background:#111;
+}
 
-    border:1px solid rgba(255,255,255,.1);
+.brand{
 
-    border-radius:14px;
+    font-weight:800;
 
-    padding:22px;
+    letter-spacing:.12em;
 
-    transition:.3s;
+    font-size:14px;
 
 }
 
-.match:hover{
+.back{
 
-    transform:translateY(-2px);
+    border:1px solid rgba(255,255,255,.14);
 
-    border-color:rgba(255,255,255,.3);
+    padding:8px 15px;
 
-    background:#151515;
+    border-radius:999px;
 
-}
+    font-size:13px;
 
-.match-info{
+    color:#dce2ea;
 
-    display:flex;
-
-    align-items:center;
-
-    gap:18px;
+    transition:.25s;
 
 }
 
-.match-number{
+.back:hover{
+
+    background:#fff;
+
+    color:#080b11;
+
+}
+
+/* =========================
+
+   HERO
+
+========================= */
+
+.hero{
+
+    padding:80px 0 60px;
+
+    text-align:center;
+
+}
+
+.eyebrow{
+
+    display:inline-block;
+
+    color:#aeb8c8;
 
     font-size:12px;
 
-    color:#888;
+    letter-spacing:.28em;
 
     text-transform:uppercase;
 
-    letter-spacing:1px;
-
-    min-width:65px;
+    margin-bottom:18px;
 
 }
 
-.match-name{
+.hero h1{
 
-    font-size:18px;
+    font-size:
 
-    font-weight:bold;
+        clamp(38px, 7vw, 76px);
 
-}
+    line-height:1.02;
 
-.match-desc{
+    letter-spacing:-.04em;
 
-    color:#999;
-
-    font-size:14px;
-
-    margin-top:4px;
+    font-weight:900;
 
 }
 
-.open{
+.hero h1 span{
 
-    font-size:14px;
+    display:block;
 
-    color:#ccc;
+    color:#c9d1dc;
 
-    white-space:nowrap;
+}
+
+.subtitle{
+
+    margin-top:22px;
+
+    color:#9faaba;
+
+    font-size:17px;
 
 }
 
 .official{
 
-    text-align:center;
+    display:inline-flex;
 
-    background:#101010;
+    align-items:center;
 
-    border:1px solid rgba(255,255,255,.12);
+    gap:9px;
 
-    border-radius:15px;
+    margin-top:28px;
 
-    padding:30px 20px;
+    padding:11px 18px;
 
-}
+    border-radius:999px;
 
-.official p{
+    background:
 
-    color:#aaa;
+        linear-gradient(
 
-    margin-bottom:20px;
+            135deg,
 
-}
+            rgba(255,255,255,.10),
 
-.official-link{
+            rgba(255,255,255,.035)
 
-    display:inline-block;
+        );
 
-    border:1px solid rgba(255,255,255,.25);
-
-    border-radius:8px;
-
-    padding:12px 20px;
-
-    transition:.3s;
-
-}
-
-.official-link:hover{
-
-    background:#fff;
-
-    color:#000;
-
-}
-
-footer{
-
-    text-align:center;
-
-    color:#777;
+    border:1px solid rgba(255,255,255,.13);
 
     font-size:13px;
 
-    padding:50px 20px 30px;
+    font-weight:700;
 
-    border-top:1px solid rgba(255,255,255,.1);
-
-    margin-top:60px;
+    letter-spacing:.08em;
 
 }
 
-@media(max-width:600px){
+.dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#62d391;
+
+    box-shadow:0 0 15px rgba(98,211,145,.65);
+
+}
+
+/* =========================
+
+   PROFILE CARD
+
+========================= */
+
+.profile-card{
+
+    margin:20px auto 60px;
+
+    max-width:900px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.075),
+
+            rgba(255,255,255,.025)
+
+        );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    padding:30px;
+
+    box-shadow:
+
+        0 25px 80px rgba(0,0,0,.38);
+
+}
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+.profile-item{
+
+    padding:20px 15px;
+
+    border-radius:18px;
+
+    background:rgba(0,0,0,.18);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    text-align:center;
+
+}
+
+.profile-item small{
+
+    display:block;
+
+    color:#7f8a9b;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    font-size:10px;
+
+    margin-bottom:6px;
+
+}
+
+.profile-item strong{
+
+    font-size:17px;
+
+}
+
+/* =========================
+
+   SECTION
+
+========================= */
+
+section{
+
+    padding:30px 0 70px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.section-title small{
+
+    color:#8490a2;
+
+    text-transform:uppercase;
+
+    letter-spacing:.25em;
+
+    font-size:10px;
+
+}
+
+.section-title h2{
+
+    margin-top:8px;
+
+    font-size:32px;
+
+    letter-spacing:-.025em;
+
+}
+
+/* =========================
+
+   IHF RECORD
+
+========================= */
+
+.record{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.065),
+
+            rgba(255,255,255,.02)
+
+        );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+}
+
+.record-head{
+
+    padding:28px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.record-title{
+
+    font-size:22px;
+
+    font-weight:800;
+
+}
+
+.record-sub{
+
+    color:#8f9aaa;
+
+    font-size:13px;
+
+    margin-top:4px;
+
+}
+
+.ihf-badge{
+
+    min-width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            #ffffff,
+
+            #cfd5dd
+
+        );
+
+    color:#080b11;
+
+    font-size:16px;
+
+    font-weight:900;
+
+    letter-spacing:.08em;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.3);
+
+}
+
+.record-body{
+
+    padding:28px;
+
+}
+
+.record-list{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.record-row{
+
+    padding:17px;
+
+    border-radius:15px;
+
+    background:rgba(0,0,0,.18);
+
+    border:1px solid rgba(255,255,255,.055);
+
+}
+
+.record-row span{
+
+    display:block;
+
+    color:#7f8a9b;
+
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+.record-row strong{
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:16px;
+
+}
+
+.notice{
+
+    margin-top:20px;
+
+    padding:17px 18px;
+
+    border-radius:16px;
+
+    background:
+
+        rgba(196,161,75,.08);
+
+    border:1px solid rgba(196,161,75,.18);
+
+    color:#cfd4dc;
+
+    font-size:13px;
+
+}
+
+/* =========================
+
+   DOCUMENTS
+
+========================= */
+
+.documents{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(2,1fr);
+
+    gap:18px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.document{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.065),
+
+            rgba(255,255,255,.018)
+
+        );
+
+    border:1px solid rgba(255,255,255,.09);
+
+    transition:
+
+        transform .25s,
+
+        border-color .25s,
+
+        background .25s;
+
+}
+
+.document:hover{
+
+    transform:translateY(-3px);
+
+    border-color:rgba(255,255,255,.22);
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.09),
+
+            rgba(255,255,255,.025)
+
+        );
+
+}
+
+.doc-info{
+
+    min-width:0;
+
+}
+
+.doc-number{
+
+    color:#7e8999;
+
+    font-size:11px;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
+}
+
+.doc-name{
+
+    font-weight:800;
+
+    margin-top:4px;
+
+    font-size:16px;
+
+}
+
+.doc-detail{
+
+    color:#8e99a9;
+
+    font-size:12px;
+
+    margin-top:3px;
+
+}
+
+.open{
+
+    flex-shrink:0;
+
+    padding:9px 14px;
+
+    border-radius:999px;
+
+    background:#f2f4f7;
+
+    color:#080b11;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    transition:.25s;
+
+}
+
+.open:hover{
+
+    background:white;
+
+    transform:scale(1.04);
+
+}
+
+/* =========================
+
+   IMPORTANT NOTICE
+
+========================= */
+
+.verification{
+
+    max-width:900px;
+
+    margin:35px auto 0;
+
+    padding:20px;
+
+    border-left:3px solid #78879b;
+
+    background:rgba(255,255,255,.035);
+
+    color:#9faaba;
+
+    font-size:12px;
+
+}
+
+.verification strong{
+
+    color:#dce2ea;
+
+}
+
+/* =========================
+
+   SOURCE
+
+========================= */
+
+.source{
+
+    max-width:900px;
+
+    margin:50px auto 0;
+
+    text-align:center;
+
+}
+
+.source p{
+
+    color:#7f8a9b;
+
+    font-size:12px;
+
+}
+
+.source a{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    color:#dce2ea;
+
+    text-decoration:underline;
+
+    text-underline-offset:4px;
+
+}
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+footer{
+
+    border-top:1px solid rgba(255,255,255,.07);
+
+    padding:35px 0 45px;
+
+    text-align:center;
+
+}
+
+footer strong{
+
+    display:block;
+
+    font-size:14px;
+
+    letter-spacing:.08em;
+
+}
+
+footer span{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#6f7a8a;
+
+    font-size:11px;
+
+}
+
+/* =========================
+
+   MOBILE
+
+========================= */
+
+@media(max-width:760px){
 
     .hero{
 
-        padding:50px 10px 40px;
+        padding:60px 0 45px;
 
     }
 
-    .hero h1{
+    .profile-grid{
 
-        font-size:32px;
+        grid-template-columns:
+
+            repeat(2,1fr);
 
     }
 
-    .match{
+    .record-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .documents{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .record-head{
 
         align-items:flex-start;
 
-        flex-direction:column;
+    }
+
+    .ihf-badge{
+
+        min-width:58px;
+
+        width:58px;
+
+        height:58px;
+
+        font-size:13px;
 
     }
 
-    .match-info{
+}
 
-        align-items:flex-start;
+@media(max-width:430px){
+
+    .profile-card,
+
+    .record-body,
+
+    .record-head{
+
+        padding:20px;
 
     }
 
-    .open{
+    .profile-grid{
 
-        padding-left:83px;
+        gap:9px;
+
+    }
+
+    .profile-item{
+
+        padding:15px 8px;
+
+    }
+
+    .profile-item strong{
+
+        font-size:14px;
+
+    }
+
+    .document{
+
+        padding:18px;
 
     }
 
@@ -408,11 +928,23 @@ footer{
 
 <header>
 
-<div class="container">
+<div class="container nav">
 
-<a class="back" href="index.html">
+<div class="brand">
 
-← Back to Profile
+SEGUENI / IHF
+
+</div>
+
+<a
+
+href="https://abderraoufseg.github.io/"
+
+class="back"
+
+>
+
+← Back to Official Profile
 
 </a>
 
@@ -420,51 +952,57 @@ footer{
 
 </header>
 
-<main class="container">
+<main>
+
+<!-- HERO -->
 
 <section class="hero">
 
-<img
+<div class="container">
 
-class="ihf-logo"
+<div class="eyebrow">
 
-src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
-
-alt="International Handball Federation"
-
->
-
-<h1>SEGUENI Abderraouf</h1>
-
-<div class="nation">
-
-🇩🇿 Algeria
+International Handball Federation
 
 </div>
 
-<div class="identity">
+<h1>
 
-#18 · Pivot / Line Player
+SEGUENI Abderraouf
+
+<span>Official IHF Record</span>
+
+</h1>
+
+<p class="subtitle">
+
+Algeria 🇩🇿 · No. 18 · Pivot · 2017 IHF Men's Junior World Championship
+
+</p>
+
+<div class="official">
+
+<span class="dot"></span>
+
+OFFICIAL IHF DOCUMENTATION
+
+</div>
 
 </div>
 
 </section>
 
-<section class="section">
+<!-- PROFILE -->
 
-<h2 class="section-title">
+<div class="container">
 
-International Handball Federation
-
-</h2>
-
-<div class="card">
+<div class="profile-card">
 
 <div class="profile-grid">
 
 <div class="profile-item">
 
-<span>Player</span>
+<small>Player</small>
 
 <strong>SEGUENI Abderraouf</strong>
 
@@ -472,15 +1010,7 @@ International Handball Federation
 
 <div class="profile-item">
 
-<span>Nation</span>
-
-<strong>Algeria 🇩🇿</strong>
-
-</div>
-
-<div class="profile-item">
-
-<span>Number</span>
+<small>Number</small>
 
 <strong>#18</strong>
 
@@ -488,7 +1018,7 @@ International Handball Federation
 
 <div class="profile-item">
 
-<span>Position</span>
+<small>Position</small>
 
 <strong>Pivot</strong>
 
@@ -496,9 +1026,41 @@ International Handball Federation
 
 <div class="profile-item">
 
-<span>Date of Birth</span>
+<small>Country</small>
 
-<strong>08 September 1996</strong>
+<strong>Algeria 🇩🇿</strong>
+
+</div>
+
+<div class="profile-item">
+
+<small>Date of Birth</small>
+
+<strong>08/09/1996</strong>
+
+</div>
+
+<div class="profile-item">
+
+<small>Competition</small>
+
+<strong>2017</strong>
+
+</div>
+
+<div class="profile-item">
+
+<small>Club at IHF Record</small>
+
+<strong>CR Bordj Bou Areridj</strong>
+
+</div>
+
+<div class="profile-item">
+
+<small>Federation</small>
+
+<strong>IHF</strong>
 
 </div>
 
@@ -506,371 +1068,487 @@ International Handball Federation
 
 </div>
 
-</section>
+</div>
 
-<section class="section">
+<!-- IHF OFFICIAL RECORD -->
 
-<h2 class="section-title">
+<section>
 
-International Matches
+<div class="container">
+
+<div class="section-title">
+
+<small>Official Source</small>
+
+<h2>
+
+IHF Team Roster
 
 </h2>
 
-<div class="matches">
-
-<!-- MOROCCO -->
-
-<a
-
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/12OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 12
-
 </div>
+
+<div class="record">
+
+<div class="record-head">
 
 <div>
 
-<div class="match-name">
+<div class="record-title">
 
-🇩🇿 Algeria — 🇲🇦 Morocco
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Algeria 24–19 Morocco
+SEGUENI Abderraouf — Algeria
 
 </div>
 
+<div class="record-sub">
+
+2017 IHF Men's Junior World Championship
+
+</div>
+
+</div>
+
+<div class="ihf-badge">
+
+IHF
+
 </div>
 
 </div>
 
-<div class="open">
+<div class="record-body">
 
-Open official IHF sheet →
+<div class="record-list">
+
+<div class="record-row">
+
+<span>Player</span>
+
+<strong>
+
+SEGUENI Abderraouf
+
+</strong>
 
 </div>
 
-</a>
+<div class="record-row">
 
-<!-- ARGENTINA MATCH 18 -->
+<span>Team</span>
+
+<strong>
+
+Algeria
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>Number</span>
+
+<strong>
+
+18
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>Position</span>
+
+<strong>
+
+Pivot
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>Birth Date</span>
+
+<strong>
+
+08/09/1996
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>Club</span>
+
+<strong>
+
+CR Bordj Bou Areridj
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>IHF Roster Height</span>
+
+<strong>
+
+179 cm
+
+</strong>
+
+</div>
+
+<div class="record-row">
+
+<span>IHF Roster Weight</span>
+
+<strong>
+
+92 kg
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<strong>IHF roster note:</strong><br>
+
+The official IHF roster contains a
+
+“Late Replacement Notice” dated
+
+26-07-2017 referring to
+
+<strong>“10 Replaced 18 SEGUENI A.”</strong>.
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:22px;">
 
 <a
 
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/18OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 18
-
-</div>
-
-<div>
-
-<div class="match-name">
-
-🇦🇷 Argentina — 🇩🇿 Algeria
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Argentina 25–25 Algeria
-
-</div>
-
-</div>
-
-</div>
-
-<div class="open">
-
-Open official IHF sheet →
-
-</div>
-
-</a>
-
-<!-- ICELAND -->
-
-<a
-
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/36OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 36
-
-</div>
-
-<div>
-
-<div class="match-name">
-
-🇮🇸 Iceland — 🇩🇿 Algeria
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Iceland 25–22 Algeria
-
-</div>
-
-</div>
-
-</div>
-
-<div class="open">
-
-Open official IHF sheet →
-
-</div>
-
-</a>
-
-<!-- CROATIA -->
-
-<a
-
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/42OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 42
-
-</div>
-
-<div>
-
-<div class="match-name">
-
-🇩🇿 Algeria — 🇭🇷 Croatia
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Algeria 24–24 Croatia
-
-</div>
-
-</div>
-
-</div>
-
-<div class="open">
-
-Open official IHF sheet →
-
-</div>
-
-</a>
-
-<!-- SAUDI ARABIA -->
-
-<a
-
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/60OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 60
-
-</div>
-
-<div>
-
-<div class="match-name">
-
-🇩🇿 Algeria — 🇸🇦 Saudi Arabia
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Algeria 23–21 Saudi Arabia
-
-</div>
-
-</div>
-
-</div>
-
-<div class="open">
-
-Open official IHF sheet →
-
-</div>
-
-</a>
-
-<!-- ARGENTINA MATCH 80 -->
-
-<a
-
-class="match"
-
-href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/80OMR.pdf"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<div class="match-info">
-
-<div class="match-number">
-
-Match 80
-
-</div>
-
-<div>
-
-<div class="match-name">
-
-🇩🇿 Algeria — 🇦🇷 Argentina
-
-</div>
-
-<div class="match-desc">
-
-2017 Men's Junior World Championship · Algeria 20–21 Argentina
-
-</div>
-
-</div>
-
-</div>
-
-<div class="open">
-
-Open official IHF sheet →
-
-</div>
-
-</a>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-
-IHF Player Profile
-
-</h2>
-
-<div class="official">
-
-<p>
-
-Official International Handball Federation player documentation
-
-for SEGUENI Abderraouf #18 — Algeria.
-
-</p>
-
-<a
-
-class="official-link"
+class="open"
 
 href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/ALG.pdf"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
 
-Open official IHF profile →
+Open Official IHF Roster ↗
 
 </a>
 
 </div>
 
+</div>
+
 </section>
 
-<section class="section">
+<!-- MATCH DOCUMENTS -->
 
-<div class="official">
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<small>2017 World Championship</small>
+
+<h2>
+
+Official Match Reports
+
+</h2>
+
+</div>
+
+<div class="documents">
+
+<!-- MATCH 12 -->
+
+<a
+
+class="document"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/12OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div class="doc-info">
+
+<div class="doc-number">
+
+Match 12
+
+</div>
+
+<div class="doc-name">
+
+Algeria 🇩🇿 vs Morocco 🇲🇦
+
+</div>
+
+<div class="doc-detail">
+
+18 July 2017 · Official IHF Match Report
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open ↗
+
+</div>
+
+</a>
+
+<!-- MATCH 18 -->
+
+<a
+
+class="document"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/18OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div class="doc-info">
+
+<div class="doc-number">
+
+Match 18
+
+</div>
+
+<div class="doc-name">
+
+Argentina 🇦🇷 vs Algeria 🇩🇿
+
+</div>
+
+<div class="doc-detail">
+
+19 July 2017 · Official IHF Match Report
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open ↗
+
+</div>
+
+</a>
+
+<!-- MATCH 36 -->
+
+<a
+
+class="document"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/36OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div class="doc-info">
+
+<div class="doc-number">
+
+Match 36
+
+</div>
+
+<div class="doc-name">
+
+Iceland 🇮🇸 vs Algeria 🇩🇿
+
+</div>
+
+<div class="doc-detail">
+
+2017 · IHF Match Report Archive
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open ↗
+
+</div>
+
+</a>
+
+<!-- MATCH 42 -->
+
+<a
+
+class="document"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/42OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div class="doc-info">
+
+<div class="doc-number">
+
+Match 42
+
+</div>
+
+<div class="doc-name">
+
+Croatia 🇭🇷 vs Algeria 🇩🇿
+
+</div>
+
+<div class="doc-detail">
+
+2017 · IHF Match Report Archive
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open ↗
+
+</div>
+
+</a>
+
+<!-- MATCH 60 -->
+
+<a
+
+class="document"
+
+href="https://archive.ihf.info/files/CompetitionData/12505594-6574-4f32-934a-6edd56021c9c/pdf/60OMR.pdf"
+
+target="_blank"
+
+rel="noopener"
+
+>
+
+<div class="doc-info">
+
+<div class="doc-number">
+
+Match 60
+
+</div>
+
+<div class="doc-name">
+
+Algeria 🇩🇿 vs Saudi Arabia 🇸🇦
+
+</div>
+
+<div class="doc-detail">
+
+24 July 2017 · Official IHF Match Report
+
+</div>
+
+</div>
+
+<div class="open">
+
+Open ↗
+
+</div>
+
+</a>
+
+</div>
+
+<div class="verification">
+
+<strong>Source note:</strong>
+
+The player identity, number, position and historical roster information
+
+on this page are reproduced from the official IHF competition documentation.
+
+The historical IHF roster records SEGUENI Abderraouf as No. 18, Pivot,
+
+born 08/09/1996, with CR Bordj Bou Areridj.
+
+The 179 cm / 92 kg values above are the
+
+<strong>historical IHF roster values for the 2017 competition</strong>
+
+and are not intended to replace the player's current profile information.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- IHF SOURCE -->
+
+<section>
+
+<div class="container source">
 
 <p>
 
-Official IHF competition documentation — Men's Junior World Championship 2017.
+Official competition archive
 
 </p>
 
 <a
 
-class="official-link"
-
 href="https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensjuniorworldchampionship/mensjuniorworldchampionship%2Calg2017/"
 
 target="_blank"
 
-rel="noopener noreferrer"
+rel="noopener"
 
 >
 
-Open IHF competition page →
+IHF — Men's Junior World Championship Algeria 2017 ↗
 
 </a>
 
@@ -882,7 +1560,27 @@ Open IHF competition page →
 
 <footer>
 
-SEGUENI Abderraouf · International Handball Player · Algeria 🇩🇿
+<div class="container">
+
+<strong>
+
+SEGUENI Abderraouf
+
+</strong>
+
+<span>
+
+International Handball Player · Algeria 🇩🇿 · Pivot
+
+</span>
+
+<span>
+
+Official profile: abderraoufseg.github.io
+
+</span>
+
+</div>
 
 </footer>
 
