@@ -160,13 +160,19 @@ h1{
 
 }
 
+/* =========================
+
+   HERO PLAYER TITLES
+
+   ========================= */
+
 .role{
 
-    margin-top:28px;
+    margin-top:30px;
 
-    font-size:clamp(21px,3vw,31px);
+    font-size:clamp(27px,4vw,42px);
 
-    font-weight:800;
+    font-weight:850;
 
     text-transform:uppercase;
 
@@ -176,17 +182,19 @@ h1{
 
     flex-wrap:wrap;
 
-    gap:8px;
+    gap:9px;
+
+    line-height:1.05;
 
 }
 
 .role strong{
 
-    display:inline-flex;
-
-    align-items:center;
+    display:inline;
 
 }
+
+/* Small source / verification unit */
 
 .verification-link{
 
@@ -196,11 +204,19 @@ h1{
 
     justify-content:center;
 
-    gap:8px;
+    gap:5px;
 
     margin-left:2px;
 
+    cursor:pointer;
+
+    vertical-align:middle;
+
+    transform:translateY(-1px);
+
 }
+
+/* Green verified circle */
 
 .verification-icon{
 
@@ -210,81 +226,89 @@ h1{
 
     justify-content:center;
 
-    width:24px;
+    width:27px;
 
-    height:24px;
+    height:27px;
 
-    border:1.5px solid #d6b36a;
+    border:2px solid #35d06f;
 
     border-radius:50%;
 
-    color:#d6b36a;
+    color:#35d06f;
 
-    font-size:13px;
+    font-size:14px;
 
     font-weight:900;
 
     line-height:1;
 
-    flex:0 0 24px;
+    flex:0 0 27px;
+
+    background:rgba(53,208,111,.035);
 
     transition:all .25s ease;
 
 }
 
-.verification-icon:hover{
-
-    background:#d6b36a;
-
-    color:#08090b;
-
-    transform:scale(1.08);
-
-}
+/* Small IHF source logo — no frame */
 
 .hero-ihf-logo{
 
-    width:72px;
+    width:48px;
 
-    height:24px;
+    height:auto;
 
     object-fit:contain;
 
     display:block;
 
-    background:white;
+    background:transparent;
 
-    border-radius:2px;
+    border:none;
 
-    border:1px solid rgba(214,179,106,.45);
+    border-radius:0;
 
     transition:all .25s ease;
 
 }
 
-.hero-ihf-logo:hover{
+/* Hover on the complete source */
 
-    transform:scale(1.05);
+.verification-link:hover .verification-icon{
 
-    border-color:#d6b36a;
+    background:#35d06f;
+
+    color:#08090b;
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 15px rgba(53,208,111,.25);
 
 }
 
+.verification-link:hover .hero-ihf-logo{
+
+    transform:scale(1.05);
+
+}
+
+/* Professional Player — same white color */
+
 .professional-player{
 
-    margin-top:12px;
+    margin-top:16px;
 
-    color:#d6b36a;
+    color:#f4f4f5;
 
-    font-size:clamp(17px,2.4vw,24px);
+    font-size:clamp(25px,3.6vw,38px);
 
-    font-weight:800;
+    font-weight:850;
 
-    letter-spacing:3px;
+    letter-spacing:-.5px;
 
     text-transform:uppercase;
 
-    line-height:1.15;
+    line-height:1.05;
 
 }
 
@@ -1352,6 +1376,190 @@ footer{
 
 }
 
+/* =========================
+
+   VERIFICATION POPUP
+
+   ========================= */
+
+.verification-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:22px;
+
+    background:rgba(0,0,0,.78);
+
+    backdrop-filter:blur(12px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+    transition:opacity .25s ease,visibility .25s ease;
+
+}
+
+.verification-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+}
+
+.verification-modal-box{
+
+    position:relative;
+
+    width:min(520px,100%);
+
+    padding:38px 30px 32px;
+
+    text-align:center;
+
+    background:#101318;
+
+    border:1px solid #292d34;
+
+    box-shadow:0 25px 80px rgba(0,0,0,.55);
+
+}
+
+.verification-modal-label{
+
+    color:#35d06f;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.verification-modal-logo{
+
+    width:min(300px,85%);
+
+    height:auto;
+
+    display:block;
+
+    margin:0 auto 22px;
+
+    background:white;
+
+}
+
+.verification-modal-title{
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+.verification-modal-subtitle{
+
+    margin-top:6px;
+
+    color:#949aa3;
+
+    font-size:12px;
+
+}
+
+.verification-source-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:24px;
+
+    padding:11px 18px;
+
+    border:1px solid #35d06f;
+
+    color:#35d06f;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    transition:all .25s ease;
+
+}
+
+.verification-source-button:hover{
+
+    background:#35d06f;
+
+    color:#08090b;
+
+}
+
+.verification-close{
+
+    position:absolute;
+
+    top:12px;
+
+    right:14px;
+
+    width:34px;
+
+    height:34px;
+
+    border:1px solid #292d34;
+
+    border-radius:50%;
+
+    background:#0b0e12;
+
+    color:#949aa3;
+
+    font-size:22px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+}
+
+.verification-close:hover{
+
+    color:#fff;
+
+    border-color:#35d06f;
+
+}
+
 @media(max-width:850px){
 
 nav{
@@ -1464,33 +1672,47 @@ h1{
 
 }
 
+/* Mobile source */
+
+.role{
+
+    font-size:clamp(23px,7vw,31px);
+
+    gap:7px;
+
+}
+
+.verification-link{
+
+    gap:4px;
+
+}
+
 .verification-icon{
 
-    width:21px;
+    width:22px;
 
-    height:21px;
+    height:22px;
 
     font-size:11px;
 
-    flex-basis:21px;
+    flex-basis:22px;
 
 }
 
 .hero-ihf-logo{
 
-    width:62px;
-
-    height:21px;
+    width:39px;
 
 }
 
 .professional-player{
 
-    font-size:16px;
+    font-size:clamp(23px,6.8vw,30px);
 
-    letter-spacing:2.2px;
+    letter-spacing:-.2px;
 
-    margin-top:10px;
+    margin-top:12px;
 
 }
 
@@ -1507,6 +1729,18 @@ h1{
 .qualities{
 
     grid-template-columns:1fr;
+
+}
+
+.role{
+
+    font-size:23px;
+
+}
+
+.hero-ihf-logo{
+
+    width:36px;
 
 }
 
@@ -1562,17 +1796,15 @@ h1{
 
 <a
 
-href="https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensjuniorworldchampionship.aspx"
+href="#"
 
 class="verification-link"
 
-target="_blank"
+aria-label="Open verified IHF source"
 
-rel="noopener noreferrer"
+title="Verified IHF source"
 
-aria-label="Open official IHF reference"
-
-title="Official IHF reference">
+onclick="event.preventDefault(); document.getElementById('ihf-verification').classList.add('show');">
 
 <span class="verification-icon">✓</span>
 
@@ -1582,7 +1814,7 @@ class="hero-ihf-logo"
 
 src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
 
-alt="IHF">
+alt="IHF source">
 
 </a>
 
@@ -2575,6 +2807,110 @@ rel="noopener noreferrer">
 </div>
 
 </footer>
+
+<!-- =========================
+
+     IHF VERIFIED SOURCE POPUP
+
+     ========================= -->
+
+<div
+
+id="ihf-verification"
+
+class="verification-modal"
+
+role="dialog"
+
+aria-modal="true"
+
+aria-label="IHF Verified Source">
+
+<div class="verification-modal-box">
+
+<button
+
+class="verification-close"
+
+aria-label="Close verification"
+
+onclick="document.getElementById('ihf-verification').classList.remove('show');">
+
+×
+
+</button>
+
+<div class="verification-modal-label">
+
+VERIFIED SOURCE
+
+</div>
+
+<img
+
+class="verification-modal-logo"
+
+src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
+
+alt="International Handball Federation">
+
+<div class="verification-modal-title">
+
+IHF Official Reference
+
+</div>
+
+<div class="verification-modal-subtitle">
+
+International Handball Federation · Algeria 2017
+
+</div>
+
+<a
+
+class="verification-source-button"
+
+href="https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensjuniorworldchampionship.aspx"
+
+target="_blank"
+
+rel="noopener noreferrer">
+
+OPEN OFFICIAL IHF SOURCE ↗
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+/* Close popup when clicking outside the card */
+
+document.getElementById('ihf-verification').addEventListener('click',function(event){
+
+    if(event.target === this){
+
+        this.classList.remove('show');
+
+    }
+
+});
+
+/* Close popup with Escape */
+
+document.addEventListener('keydown',function(event){
+
+    if(event.key === 'Escape'){
+
+        document.getElementById('ihf-verification').classList.remove('show');
+
+    }
+
+});
+
+</script>
 
 </body>
 
