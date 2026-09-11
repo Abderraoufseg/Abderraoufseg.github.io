@@ -16,9 +16,9 @@ content="SEGUENI Abderraouf — Algerian international handball player. Pivot / 
 
 <style>
 
-*{ margin:0; padding:0; box-sizing:border-box; }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-html{ scroll-behavior:smooth; }
+html{scroll-behavior:smooth;}
 
 body{
 
@@ -160,11 +160,7 @@ h1{
 
 }
 
-/* =========================
-
-   HERO PLAYER TITLES
-
-   ========================= */
+/* HERO PLAYER TITLES */
 
 .role{
 
@@ -194,8 +190,6 @@ h1{
 
 }
 
-/* Small source / verification unit */
-
 .verification-link{
 
     display:inline-flex;
@@ -215,8 +209,6 @@ h1{
     transform:translateY(-1px);
 
 }
-
-/* Green verified circle */
 
 .verification-icon{
 
@@ -250,8 +242,6 @@ h1{
 
 }
 
-/* Small IHF source logo — no frame */
-
 .hero-ihf-logo{
 
     width:48px;
@@ -272,8 +262,6 @@ h1{
 
 }
 
-/* Hover on the complete source */
-
 .verification-link:hover .verification-icon{
 
     background:#35d06f;
@@ -291,8 +279,6 @@ h1{
     transform:scale(1.05);
 
 }
-
-/* Professional Player — same white color */
 
 .professional-player{
 
@@ -1376,190 +1362,6 @@ footer{
 
 }
 
-/* =========================
-
-   VERIFICATION POPUP
-
-   ========================= */
-
-.verification-modal{
-
-    position:fixed;
-
-    inset:0;
-
-    z-index:9999;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:22px;
-
-    background:rgba(0,0,0,.78);
-
-    backdrop-filter:blur(12px);
-
-    opacity:0;
-
-    visibility:hidden;
-
-    pointer-events:none;
-
-    transition:opacity .25s ease,visibility .25s ease;
-
-}
-
-.verification-modal.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-    pointer-events:auto;
-
-}
-
-.verification-modal-box{
-
-    position:relative;
-
-    width:min(520px,100%);
-
-    padding:38px 30px 32px;
-
-    text-align:center;
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-    box-shadow:0 25px 80px rgba(0,0,0,.55);
-
-}
-
-.verification-modal-label{
-
-    color:#35d06f;
-
-    font-size:10px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    margin-bottom:20px;
-
-}
-
-.verification-modal-logo{
-
-    width:min(300px,85%);
-
-    height:auto;
-
-    display:block;
-
-    margin:0 auto 22px;
-
-    background:white;
-
-}
-
-.verification-modal-title{
-
-    font-size:20px;
-
-    font-weight:800;
-
-}
-
-.verification-modal-subtitle{
-
-    margin-top:6px;
-
-    color:#949aa3;
-
-    font-size:12px;
-
-}
-
-.verification-source-button{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin-top:24px;
-
-    padding:11px 18px;
-
-    border:1px solid #35d06f;
-
-    color:#35d06f;
-
-    font-size:10px;
-
-    font-weight:800;
-
-    letter-spacing:1.5px;
-
-    transition:all .25s ease;
-
-}
-
-.verification-source-button:hover{
-
-    background:#35d06f;
-
-    color:#08090b;
-
-}
-
-.verification-close{
-
-    position:absolute;
-
-    top:12px;
-
-    right:14px;
-
-    width:34px;
-
-    height:34px;
-
-    border:1px solid #292d34;
-
-    border-radius:50%;
-
-    background:#0b0e12;
-
-    color:#949aa3;
-
-    font-size:22px;
-
-    line-height:1;
-
-    cursor:pointer;
-
-    transition:all .2s ease;
-
-}
-
-.verification-close:hover{
-
-    color:#fff;
-
-    border-color:#35d06f;
-
-}
-
 @media(max-width:850px){
 
 nav{
@@ -1671,8 +1473,6 @@ h1{
     justify-content:center;
 
 }
-
-/* Mobile source */
 
 .role{
 
@@ -1796,15 +1596,13 @@ h1{
 
 <a
 
-href="#"
+href="Ihf.htm"
 
 class="verification-link"
 
-aria-label="Open verified IHF source"
+aria-label="Verified IHF source"
 
-title="Verified IHF source"
-
-onclick="event.preventDefault(); document.getElementById('ihf-verification').classList.add('show');">
+title="Verified IHF source">
 
 <span class="verification-icon">✓</span>
 
@@ -1814,7 +1612,7 @@ class="hero-ihf-logo"
 
 src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
 
-alt="IHF source">
+alt="IHF">
 
 </a>
 
@@ -1834,7 +1632,9 @@ STATUT SPORTIF: ATHLÈTE DE HAUT NIVEAU CLASSE A &amp; ÉLITE
 
 <div class="main-photo">
 
-<img src="IMG_9755.jpeg"
+<img
+
+src="IMG_9755.jpeg"
 
 alt="SEGUENI Abderraouf — International Handball Player">
 
@@ -2156,7 +1956,11 @@ International pathway with Algeria across youth national teams, African champion
 
 <h3><span class="flag">🇹🇳</span>Championnat Arabe des Nations</h3>
 
-<p>Tunisie — Participation with Algeria in the <strong>Arab Nations Championship</strong>.</p>
+<p>
+
+Tunisie — Participation with Algeria in the <strong>Arab Nations Championship</strong>.
+
+</p>
 
 </div>
 
@@ -2170,7 +1974,11 @@ International pathway with Algeria across youth national teams, African champion
 
 <h3><span class="flag">🇰🇪</span>African Championship</h3>
 
-<p>Nairobi, Kenya — Algeria finished 2nd and earned the <span class="gold">silver medal</span>.</p>
+<p>
+
+Nairobi, Kenya — Algeria finished 2nd and earned the <span class="gold">silver medal</span>.
+
+</p>
 
 </div>
 
@@ -2184,7 +1992,11 @@ International pathway with Algeria across youth national teams, African champion
 
 <h3><span class="flag">🇲🇱</span>African Championship</h3>
 
-<p>Bamako, Mali — Algeria finished 3rd and earned the <span class="gold">bronze medal</span>.</p>
+<p>
+
+Bamako, Mali — Algeria finished 3rd and earned the <span class="gold">bronze medal</span>.
+
+</p>
 
 </div>
 
@@ -2302,7 +2114,9 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9779.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9779.jpeg"
 
 alt="CRBBA Bordj Bou Arreridj logo">
 
@@ -2314,7 +2128,13 @@ alt="CRBBA Bordj Bou Arreridj logo">
 
 <div class="club-name">CRBBA Bordj Bou Arreridj</div>
 
-<div class="club-level">2013 — 2017<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2013 — 2017<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2328,7 +2148,9 @@ alt="CRBBA Bordj Bou Arreridj logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9789.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9789.jpeg"
 
 alt="MBT Tadjenanet logo">
 
@@ -2340,7 +2162,13 @@ alt="MBT Tadjenanet logo">
 
 <div class="club-name">MBT Tadjenanet</div>
 
-<div class="club-level">2017 — 2021<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2017 — 2021<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2354,7 +2182,9 @@ alt="MBT Tadjenanet logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9781.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9781.jpeg"
 
 alt="CRBM Mila logo">
 
@@ -2366,7 +2196,13 @@ alt="CRBM Mila logo">
 
 <div class="club-name">CRBM Mila</div>
 
-<div class="club-level">2021 — 2022<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2021 — 2022<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2380,7 +2216,9 @@ alt="CRBM Mila logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9788.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9788.jpeg"
 
 alt="CHBZY Zighoud Youcef logo">
 
@@ -2392,7 +2230,13 @@ alt="CHBZY Zighoud Youcef logo">
 
 <div class="club-name">CHBZY — Zighoud Youcef</div>
 
-<div class="club-level">2022 — 2023<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2022 — 2023<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2406,7 +2250,9 @@ alt="CHBZY Zighoud Youcef logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9783.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9783.jpeg"
 
 alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
@@ -2418,7 +2264,13 @@ alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
 <div class="club-name">MBBA — Mouloudia Bordj Bou Arreridj</div>
 
-<div class="club-level">2023 — 2024<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2023 — 2024<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2432,7 +2284,9 @@ alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9786.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9786.jpeg"
 
 alt="OMA Annaba logo">
 
@@ -2444,7 +2298,13 @@ alt="OMA Annaba logo">
 
 <div class="club-name">OMA Annaba</div>
 
-<div class="club-level">2024 — Present<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2024 — Present<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2578,7 +2438,11 @@ rel="noopener noreferrer">
 
 <div class="video-preview">
 
-<img src="IMG_9042.jpeg" alt="SEGUENI Abderraouf — Video 01">
+<img
+
+src="IMG_9042.jpeg"
+
+alt="SEGUENI Abderraouf — Video 01">
 
 <span class="play-button">▶</span>
 
@@ -2606,7 +2470,11 @@ rel="noopener noreferrer">
 
 <div class="video-preview">
 
-<img src="IMG_9047.jpeg" alt="SEGUENI Abderraouf — Video 02">
+<img
+
+src="IMG_9047.jpeg"
+
+alt="SEGUENI Abderraouf — Video 02">
 
 <span class="play-button">▶</span>
 
@@ -2634,7 +2502,11 @@ rel="noopener noreferrer">
 
 <div class="video-preview">
 
-<img src="IMG_9289.jpeg" alt="SEGUENI Abderraouf — Video 03">
+<img
+
+src="IMG_9289.jpeg"
+
+alt="SEGUENI Abderraouf — Video 03">
 
 <span class="play-button">▶</span>
 
@@ -2807,110 +2679,6 @@ rel="noopener noreferrer">
 </div>
 
 </footer>
-
-<!-- =========================
-
-     IHF VERIFIED SOURCE POPUP
-
-     ========================= -->
-
-<div
-
-id="ihf-verification"
-
-class="verification-modal"
-
-role="dialog"
-
-aria-modal="true"
-
-aria-label="IHF Verified Source">
-
-<div class="verification-modal-box">
-
-<button
-
-class="verification-close"
-
-aria-label="Close verification"
-
-onclick="document.getElementById('ihf-verification').classList.remove('show');">
-
-×
-
-</button>
-
-<div class="verification-modal-label">
-
-VERIFIED SOURCE
-
-</div>
-
-<img
-
-class="verification-modal-logo"
-
-src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
-
-alt="International Handball Federation">
-
-<div class="verification-modal-title">
-
-IHF Official Reference
-
-</div>
-
-<div class="verification-modal-subtitle">
-
-International Handball Federation · Algeria 2017
-
-</div>
-
-<a
-
-class="verification-source-button"
-
-href="https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensjuniorworldchampionship.aspx"
-
-target="_blank"
-
-rel="noopener noreferrer">
-
-OPEN OFFICIAL IHF SOURCE ↗
-
-</a>
-
-</div>
-
-</div>
-
-<script>
-
-/* Close popup when clicking outside the card */
-
-document.getElementById('ihf-verification').addEventListener('click',function(event){
-
-    if(event.target === this){
-
-        this.classList.remove('show');
-
-    }
-
-});
-
-/* Close popup with Escape */
-
-document.addEventListener('keydown',function(event){
-
-    if(event.key === 'Escape'){
-
-        document.getElementById('ihf-verification').classList.remove('show');
-
-    }
-
-});
-
-</script>
 
 </body>
 
