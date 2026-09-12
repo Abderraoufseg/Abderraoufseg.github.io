@@ -172,6 +172,12 @@ h1{
 
 }
 
+/* =========================================================
+
+   INTERNATIONAL & PROFESSIONAL PLAYER TITLE
+
+   ========================================================= */
+
 .role{
 
     margin-top:28px;
@@ -188,7 +194,7 @@ h1{
 
     overflow:visible;
 
-    padding-left:18px;
+    padding-left:32px;
 
     padding-right:18px;
 
@@ -197,6 +203,34 @@ h1{
     letter-spacing:1px;
 
     text-shadow:0 0 14px rgba(214,179,106,.18);
+
+    position:relative;
+
+}
+
+/* GOLDEN VERTICAL BAR */
+
+.role::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#d6b36a;
+
+    box-shadow:
+
+        0 0 8px rgba(214,179,106,.45),
+
+        0 0 18px rgba(214,179,106,.18);
 
 }
 
@@ -1592,14 +1626,6 @@ h2{
 
     margin:auto;
 
-    /*
-
-       The source image remains untouched.
-
-       No crop / no stretch.
-
-    */
-
     filter:
 
         drop-shadow(0 8px 12px rgba(0,0,0,.55))
@@ -1844,11 +1870,7 @@ h2{
 
    ========================================================= */
 
-/* 01 — CRBBA
-
-   Yellow / Black
-
-*/
+/* 01 — CRBBA */
 
 .club:nth-child(1){
 
@@ -1868,11 +1890,7 @@ h2{
 
 }
 
-/* 02 — MBT Tadjenanet
-
-   Blue / White
-
-*/
+/* 02 — MBT Tadjenanet */
 
 .club:nth-child(2){
 
@@ -1892,11 +1910,7 @@ h2{
 
 }
 
-/* 03 — CRBM Mila
-
-   Red / White
-
-*/
+/* 03 — CRBM Mila */
 
 .club:nth-child(3){
 
@@ -1916,11 +1930,7 @@ h2{
 
 }
 
-/* 04 — CHBZY
-
-   Red / Dark
-
-*/
+/* 04 — CHBZY */
 
 .club:nth-child(4){
 
@@ -1940,11 +1950,7 @@ h2{
 
 }
 
-/* 05 — MBBA
-
-   Blue / White
-
-*/
+/* 05 — MBBA */
 
 .club:nth-child(5){
 
@@ -1964,11 +1970,7 @@ h2{
 
 }
 
-/* 06 — OMA Annaba
-
-   Blue / White
-
-*/
+/* 06 — OMA Annaba */
 
 .club:nth-child(6){
 
@@ -2606,7 +2608,7 @@ footer{
 
         letter-spacing:.7px;
 
-        padding-left:18px;
+        padding-left:27px;
 
         padding-right:18px;
 
@@ -2810,7 +2812,7 @@ footer{
 
         letter-spacing:.6px;
 
-        padding-left:18px;
+        padding-left:27px;
 
         padding-right:18px;
 
