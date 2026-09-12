@@ -284,7 +284,7 @@ h1{
 
 }
 
-/* Professional animated attention indicator */
+/* CLICK TO VERIFY — BELOW THE FRAME */
 
 .hero .ihf-box::before{
 
@@ -294,43 +294,57 @@ h1{
 
     left:50%;
 
-    top:-25px;
+    bottom:-48px;
 
     transform:translateX(-50%);
 
-    color:#d6b36a;
+    color:#f2cf72;
+
+    text-shadow:0 0 10px rgba(242,207,114,.45);
 
     font-size:9px;
 
-    font-weight:800;
+    font-weight:900;
 
     letter-spacing:3px;
 
     white-space:nowrap;
 
-    opacity:.55;
+    opacity:.8;
 
-    animation:verifyAttention 2.8s ease-in-out infinite;
+    animation:verifyAttention 2.2s ease-in-out infinite;
 
     pointer-events:none;
 
 }
 
+/* Arrow pointing directly to the IHF frame */
+
 .hero .ihf-box::after{
 
-    content:"";
+    content:"↑";
 
     position:absolute;
 
-    inset:-6px;
+    left:50%;
 
-    border:1px solid rgba(214,179,106,.0);
+    bottom:-29px;
 
-    border-radius:2px;
+    transform:translateX(-50%);
+
+    color:#f2cf72;
+
+    text-shadow:0 0 12px rgba(242,207,114,.6);
+
+    font-size:19px;
+
+    font-weight:900;
+
+    opacity:.85;
+
+    animation:verifyArrow 2.2s ease-in-out infinite;
 
     pointer-events:none;
-
-    animation:verifyGlow 2.8s ease-in-out infinite;
 
 }
 
@@ -338,9 +352,27 @@ h1{
 
     0%,100%{
 
-        opacity:.35;
+        opacity:.65;
 
-        transform:translateX(-50%) translateY(0);
+    }
+
+    50%{
+
+        opacity:1;
+
+        text-shadow:0 0 16px rgba(242,207,114,.7);
+
+    }
+
+}
+
+@keyframes verifyArrow{
+
+    0%,100%{
+
+        opacity:.55;
+
+        transform:translateX(-50%) translateY(4px);
 
     }
 
@@ -349,34 +381,6 @@ h1{
         opacity:1;
 
         transform:translateX(-50%) translateY(-4px);
-
-    }
-
-}
-
-@keyframes verifyGlow{
-
-    0%,100%{
-
-        opacity:0;
-
-        box-shadow:0 0 0 rgba(214,179,106,0);
-
-    }
-
-    45%{
-
-        opacity:1;
-
-        box-shadow:0 0 18px rgba(214,179,106,.18);
-
-    }
-
-    65%{
-
-        opacity:.45;
-
-        box-shadow:0 0 28px rgba(214,179,106,.08);
 
     }
 
@@ -1502,9 +1506,13 @@ h1{
 
 }
 
+/* INTERNATIONAL HANDBALL PLAYER — MOBILE */
+
 .role{
 
-    font-size:clamp(17px,5.5vw,24px);
+    font-size:clamp(16px,5.1vw,24px);
+
+    letter-spacing:0.2px;
 
 }
 
@@ -1528,7 +1536,7 @@ h1{
 
 }
 
-/* Animated indicator remains elegant on mobile */
+/* CLICK TO VERIFY — BELOW IHF FRAME */
 
 .hero .ihf-box::before{
 
@@ -1536,7 +1544,15 @@ h1{
 
     letter-spacing:2.5px;
 
-    top:-23px;
+    bottom:-44px;
+
+}
+
+.hero .ihf-box::after{
+
+    font-size:17px;
+
+    bottom:-27px;
 
 }
 
