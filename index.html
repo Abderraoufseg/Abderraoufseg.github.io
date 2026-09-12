@@ -274,7 +274,7 @@ h1{
 
 }
 
-/* IHF verification frame — CONTENT UNCHANGED */
+/* IHF FRAME — GOLDEN GLOW ONLY */
 
 .hero .ihf-box{
 
@@ -282,9 +282,41 @@ h1{
 
     position:relative;
 
+    box-shadow:
+
+        0 0 10px rgba(242,207,114,.18),
+
+        0 0 25px rgba(242,207,114,.12);
+
+    animation:ihfGoldenGlow 2.8s ease-in-out infinite;
+
 }
 
-/* CLICK TO VERIFY — BELOW THE FRAME */
+@keyframes ihfGoldenGlow{
+
+    0%,100%{
+
+        box-shadow:
+
+            0 0 8px rgba(242,207,114,.16),
+
+            0 0 20px rgba(242,207,114,.08);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 16px rgba(242,207,114,.45),
+
+            0 0 38px rgba(242,207,114,.22);
+
+    }
+
+}
+
+/* CLICK TO VERIFY — WHITE, CLEARLY BELOW */
 
 .hero .ihf-box::before{
 
@@ -294,31 +326,31 @@ h1{
 
     left:50%;
 
-    bottom:-48px;
+    bottom:-67px;
 
     transform:translateX(-50%);
 
-    color:#f2cf72;
+    color:#ffffff;
 
-    text-shadow:0 0 10px rgba(242,207,114,.45);
+    text-shadow:0 0 8px rgba(255,255,255,.28);
 
     font-size:9px;
 
-    font-weight:900;
+    font-weight:800;
 
     letter-spacing:3px;
 
     white-space:nowrap;
 
-    opacity:.8;
+    opacity:.82;
 
-    animation:verifyAttention 2.2s ease-in-out infinite;
+    animation:verifyAttention 2.4s ease-in-out infinite;
 
     pointer-events:none;
 
 }
 
-/* Arrow pointing directly to the IHF frame */
+/* ARROW — GOLD, WITH SPACE FROM FRAME */
 
 .hero .ihf-box::after{
 
@@ -328,21 +360,21 @@ h1{
 
     left:50%;
 
-    bottom:-29px;
+    bottom:-43px;
 
     transform:translateX(-50%);
 
     color:#f2cf72;
 
-    text-shadow:0 0 12px rgba(242,207,114,.6);
+    text-shadow:0 0 10px rgba(242,207,114,.55);
 
-    font-size:19px;
+    font-size:17px;
 
     font-weight:900;
 
     opacity:.85;
 
-    animation:verifyArrow 2.2s ease-in-out infinite;
+    animation:verifyArrow 2.4s ease-in-out infinite;
 
     pointer-events:none;
 
@@ -360,8 +392,6 @@ h1{
 
         opacity:1;
 
-        text-shadow:0 0 16px rgba(242,207,114,.7);
-
     }
 
 }
@@ -372,7 +402,7 @@ h1{
 
         opacity:.55;
 
-        transform:translateX(-50%) translateY(4px);
+        transform:translateX(-50%) translateY(3px);
 
     }
 
@@ -380,7 +410,7 @@ h1{
 
         opacity:1;
 
-        transform:translateX(-50%) translateY(-4px);
+        transform:translateX(-50%) translateY(-3px);
 
     }
 
@@ -1510,9 +1540,13 @@ h1{
 
 .role{
 
-    font-size:clamp(16px,5.1vw,24px);
+    font-size:clamp(15px,4.9vw,24px);
 
-    letter-spacing:0.2px;
+    letter-spacing:.7px;
+
+    padding-left:2px;
+
+    padding-right:2px;
 
 }
 
@@ -1536,7 +1570,19 @@ h1{
 
 }
 
-/* CLICK TO VERIFY — BELOW IHF FRAME */
+/* IHF GOLDEN GLOW — MOBILE */
+
+.hero .ihf-box{
+
+    box-shadow:
+
+        0 0 9px rgba(242,207,114,.18),
+
+        0 0 22px rgba(242,207,114,.10);
+
+}
+
+/* CLICK TO VERIFY — WHITE AND CLEARLY BELOW IHF FRAME */
 
 .hero .ihf-box::before{
 
@@ -1544,15 +1590,19 @@ h1{
 
     letter-spacing:2.5px;
 
-    bottom:-44px;
+    bottom:-63px;
+
+    color:#ffffff;
 
 }
 
+/* ARROW — SPACE BETWEEN ARROW AND FRAME */
+
 .hero .ihf-box::after{
 
-    font-size:17px;
+    font-size:16px;
 
-    bottom:-27px;
+    bottom:-40px;
 
 }
 
@@ -1574,7 +1624,13 @@ h1{
 
 .role{
 
-    font-size:clamp(15px,5.2vw,21px);
+    font-size:clamp(14px,4.8vw,21px);
+
+    letter-spacing:.6px;
+
+    padding-left:3px;
+
+    padding-right:3px;
 
 }
 
