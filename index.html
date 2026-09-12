@@ -466,6 +466,60 @@ h2{
 
 }
 
+.sport-status-box h2{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+/* LEGAL SOURCE LINK */
+
+.legal-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:30px;
+
+    height:30px;
+
+    font-size:17px;
+
+    color:#d6b36a;
+
+    border:1px solid #665331;
+
+    border-radius:50%;
+
+    background:#0b0e12;
+
+    transition:all .25s ease;
+
+    vertical-align:middle;
+
+}
+
+.legal-link:hover{
+
+    color:#ffffff;
+
+    border-color:#d6b36a;
+
+    box-shadow:0 0 14px rgba(214,179,106,.28);
+
+    transform:scale(1.08);
+
+}
+
 .sport-status-main{
 
     margin:8px 0 25px;
@@ -1524,281 +1578,299 @@ footer{
 
 @media(max-width:850px){
 
-nav{
+    nav{
 
-    display:none;
+        display:none;
 
-}
+    }
 
-.profile-layout{
+    .profile-layout{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.profile-info-grid{
+    .profile-info-grid{
 
-    grid-template-columns:repeat(3,1fr);
+        grid-template-columns:repeat(3,1fr);
 
-}
+    }
 
-.clubs{
+    .clubs{
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-}
+    }
 
-.media{
+    .media{
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-}
+    }
 
-.videos{
+    .videos{
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-}
+    }
 
 }
 
 @media(max-width:560px){
 
-.hero{
+    .hero{
 
-    padding-top:52px;
+        padding-top:52px;
 
-}
+    }
 
-h1{
+    h1{
 
-    letter-spacing:-2.5px;
+        letter-spacing:-2.5px;
 
-}
+    }
 
-.profile-info-grid{
+    .profile-info-grid{
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-}
+    }
 
-.qualities{
+    .qualities{
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-}
+    }
 
-.clubs,
+    .clubs,
 
-.media,
+    .media,
 
-.videos{
+    .videos{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.medals{
+    .medals{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.event{
+    .event{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-    gap:8px;
+        gap:8px;
 
-}
+    }
 
-.photo-info,
+    .photo-info,
 
-.footer{
+    .footer{
 
-    flex-direction:column;
+        flex-direction:column;
 
-}
+    }
 
-.signature-name{
+    .signature-name{
 
-    font-size:42px;
+        font-size:42px;
 
-}
+    }
 
-.contact{
+    .contact{
 
-    flex-direction:column;
+        flex-direction:column;
 
-    align-items:stretch;
+        align-items:stretch;
 
-}
+    }
 
-.contact-link{
+    .contact-link{
 
-    justify-content:center;
+        justify-content:center;
 
-}
+    }
 
-/* MAIN HEADLINE — GOLD MOBILE */
+    /* MAIN HEADLINE — GOLD MOBILE */
 
-.role{
+    .role{
 
-    font-size:clamp(15px,4.9vw,24px);
+        font-size:clamp(15px,4.9vw,24px);
 
-    letter-spacing:.7px;
+        letter-spacing:.7px;
 
-    padding-left:18px;
+        padding-left:18px;
 
-    padding-right:18px;
+        padding-right:18px;
 
-    line-height:1.15;
+        line-height:1.15;
 
-}
+    }
 
-/* SPORT STATUS SECTION — MOBILE */
+    /* SPORT STATUS SECTION — MOBILE */
 
-.sport-status-box{
+    .sport-status-box{
 
-    padding:30px 22px;
+        padding:30px 22px;
 
-}
+    }
 
-.sport-status-main{
+    .sport-status-box h2{
 
-    font-size:clamp(16px,4.5vw,25px);
+        gap:9px;
 
-    letter-spacing:0;
+    }
 
-}
+    .sport-status-main{
 
-.sport-status-description{
+        font-size:clamp(16px,4.5vw,25px);
 
-    font-size:13px;
+        letter-spacing:0;
 
-}
+    }
 
-.sport-status-subtitle{
+    .sport-status-description{
 
-    font-size:11px;
+        font-size:13px;
 
-    font-weight:900;
+    }
 
-    letter-spacing:2px;
+    .sport-status-subtitle{
 
-}
+        font-size:11px;
 
-.sport-status-item{
+        font-weight:900;
 
-    font-size:12px;
+        letter-spacing:2px;
 
-}
+    }
 
-/* IHF GOLDEN GLOW — MOBILE */
+    .sport-status-item{
 
-.hero .ihf-box{
+        font-size:12px;
 
-    box-shadow:
+    }
 
-        0 0 9px rgba(242,207,114,.18),
+    /* LEGAL SOURCE LINK — MOBILE */
 
-        0 0 22px rgba(242,207,114,.10);
+    .legal-link{
 
-}
+        width:27px;
 
-/* CLICK TO VERIFY — WHITE AND CLEARLY BELOW IHF FRAME */
+        height:27px;
 
-.hero .ihf-box::before{
+        font-size:15px;
 
-    font-size:8px;
+    }
 
-    letter-spacing:2.5px;
+    /* IHF GOLDEN GLOW — MOBILE */
 
-    bottom:-63px;
+    .hero .ihf-box{
 
-    color:#ffffff;
+        box-shadow:
 
-}
+            0 0 9px rgba(242,207,114,.18),
 
-/* ARROW — SPACE BETWEEN ARROW AND FRAME */
+            0 0 22px rgba(242,207,114,.10);
 
-.hero .ihf-box::after{
+    }
 
-    font-size:16px;
+    /* CLICK TO VERIFY — WHITE AND CLEARLY BELOW IHF FRAME */
 
-    bottom:-40px;
+    .hero .ihf-box::before{
 
-}
+        font-size:8px;
 
-/* VIDEOS TITLE — MOBILE */
+        letter-spacing:2.5px;
 
-.video-section-title{
+        bottom:-63px;
 
-    margin-top:65px;
+        color:#ffffff;
 
-    margin-bottom:22px;
+    }
 
-    font-size:16px;
+    /* ARROW — SPACE BETWEEN ARROW AND FRAME */
 
-    letter-spacing:3.5px;
+    .hero .ihf-box::after{
 
-}
+        font-size:16px;
 
-.algeria{
+        bottom:-40px;
 
-    gap:10px;
+    }
 
-}
+    /* VIDEOS TITLE — MOBILE */
 
-.algeria-flag{
+    .video-section-title{
 
-    font-size:32px;
+        margin-top:65px;
 
-}
+        margin-bottom:22px;
 
-.fahb-logo-end{
+        font-size:16px;
 
-    width:40px;
+        letter-spacing:3.5px;
 
-    height:40px;
+    }
 
-}
+    .algeria{
+
+        gap:10px;
+
+    }
+
+    .algeria-flag{
+
+        font-size:32px;
+
+    }
+
+    .fahb-logo-end{
+
+        width:40px;
+
+        height:40px;
+
+    }
 
 }
 
 @media(max-width:390px){
 
-.profile-info-grid{
+    .profile-info-grid{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.qualities{
+    .qualities{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.role{
+    .role{
 
-    font-size:clamp(14px,4.8vw,21px);
+        font-size:clamp(14px,4.8vw,21px);
 
-    letter-spacing:.6px;
+        letter-spacing:.6px;
 
-    padding-left:18px;
+        padding-left:18px;
 
-    padding-right:18px;
+        padding-right:18px;
 
-    line-height:1.15;
+        line-height:1.15;
 
-}
+    }
 
-.sport-status-main{
+    .sport-status-main{
 
-    font-size:clamp(15px,4.3vw,22px);
+        font-size:clamp(15px,4.3vw,22px);
 
-}
+    }
 
 }
 
@@ -1920,7 +1992,23 @@ International Handball Federation
 
 <div class="sport-status-box">
 
-<h2>STATUT SPORTIF ET JURIDIQUE :</h2>
+<h2>
+
+STATUT SPORTIF ET JURIDIQUE :
+
+<a
+
+href="statut-juridique.html"
+
+class="legal-link"
+
+aria-label="Documents officiels et références juridiques — Athlète de Haut Niveau & Élite"
+
+title="Documents officiels — Haut Niveau & Élite"
+
+>🔗</a>
+
+</h2>
 
 <div class="sport-status-main">
 
@@ -2478,7 +2566,7 @@ alt="MBT Tadjenanet logo">
 
 </div>
 
-<!-- CLUB 03 — NEW MILA LOGO -->
+<!-- CLUB 03 — MILA LOGO -->
 
 <div class="club">
 
