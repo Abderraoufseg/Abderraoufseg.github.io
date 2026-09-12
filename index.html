@@ -460,6 +460,124 @@ h2{
 
 }
 
+/* SPORT STATUS SECTION */
+
+.sport-status-box{
+
+    background:#101318;
+
+    border:1px solid #292d34;
+
+    padding:38px 34px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.sport-status-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#d6b36a;
+
+    box-shadow:0 0 18px rgba(214,179,106,.22);
+
+}
+
+.sport-status-main{
+
+    margin:8px 0 25px;
+
+    color:#d6b36a;
+
+    font-size:clamp(21px,3vw,32px);
+
+    font-weight:900;
+
+    letter-spacing:.5px;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+}
+
+.sport-status-description{
+
+    max-width:900px;
+
+    color:#b9bec6;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.sport-status-subtitle{
+
+    color:#858b94;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+}
+
+.sport-status-list{
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.sport-status-item{
+
+    background:#0b0e12;
+
+    border:1px solid #292d34;
+
+    padding:16px 18px;
+
+    color:#b9bec6;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+.sport-status-item strong{
+
+    color:#f0f1f3;
+
+}
+
+.sport-status-item.gold{
+
+    border-color:#3c3528;
+
+}
+
 .profile-layout{
 
     display:grid;
@@ -1570,6 +1688,34 @@ h1{
 
 }
 
+/* SPORT STATUS SECTION — MOBILE */
+
+.sport-status-box{
+
+    padding:30px 22px;
+
+}
+
+.sport-status-main{
+
+    font-size:clamp(16px,4.5vw,25px);
+
+    letter-spacing:0;
+
+}
+
+.sport-status-description{
+
+    font-size:13px;
+
+}
+
+.sport-status-item{
+
+    font-size:12px;
+
+}
+
 /* IHF GOLDEN GLOW — MOBILE */
 
 .hero .ihf-box{
@@ -1648,6 +1794,12 @@ h1{
 
 }
 
+.sport-status-main{
+
+    font-size:clamp(15px,4.3vw,22px);
+
+}
+
 }
 
 </style>
@@ -1663,6 +1815,8 @@ h1{
 <div class="logo">SEGUENI ABDERRAOUF</div>
 
 <nav>
+
+<a href="#sport-status">Sport Status</a>
 
 <a href="#profile">Profile</a>
 
@@ -1768,11 +1922,99 @@ International Handball Federation
 
 </section>
 
+<!-- SPORT STATUS -->
+
+<section id="sport-status">
+
+<div class="container">
+
+<div class="section-label">01 — Sport Status</div>
+
+<div class="sport-status-box">
+
+<h2>STATUT SPORTIF</h2>
+
+<div class="sport-status-main">
+
+HAUT NIVEAU — CLASSE A &amp; ÉLITE
+
+</div>
+
+<p class="sport-status-description">
+
+Joueur international algérien — Haut niveau, Classe A &amp; Élite.
+
+Parcours sportif documenté au niveau national, africain et mondial.
+
+</p>
+
+<div class="sport-status-subtitle">
+
+Cadre réglementaire &amp; juridique
+
+</div>
+
+<div class="sport-status-list">
+
+<div class="sport-status-item">
+
+<strong>Loi n° 13-05 du 23 juillet 2013</strong>
+
+</div>
+
+<div class="sport-status-item">
+
+<strong>Décret exécutif n° 15-213 du 11 août 2015</strong>
+
+</div>
+
+<div class="sport-status-item">
+
+<strong>Décret exécutif n° 23-132 du 18 mars 2023</strong>
+
+modifiant et complétant le décret n° 15-213.
+
+</div>
+
+</div>
+
+<div class="sport-status-subtitle" style="margin-top:30px;">
+
+Éléments sportifs majeurs
+
+</div>
+
+<div class="sport-status-list">
+
+<div class="sport-status-item gold">
+
+<strong>01 —</strong>
+
+Participation au Championnat du Monde U21 2017 et qualification de l'équipe nationale algérienne au deuxième tour.
+
+</div>
+
+<div class="sport-status-item gold">
+
+<strong>02 —</strong>
+
+Deux médailles continentales : <strong>argent / bronze</strong>.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 <section id="profile">
 
 <div class="container">
 
-<div class="section-label">01 — Profile</div>
+<div class="section-label">02 — Profile</div>
 
 <h2>Player Profile</h2>
 
@@ -2018,7 +2260,7 @@ Close-Range Finishing
 
 <div class="container">
 
-<div class="section-label">02 — International Career</div>
+<div class="section-label">03 — International Career</div>
 
 <h2>International Career</h2>
 
@@ -2130,7 +2372,7 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="container">
 
-<div class="section-label">03 — Achievements</div>
+<div class="section-label">04 — Achievements</div>
 
 <h2>International Medals</h2>
 
@@ -2170,7 +2412,7 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="container">
 
-<div class="section-label">04 — Club Career</div>
+<div class="section-label">05 — Club Career</div>
 
 <h2>Club Career</h2>
 
@@ -2342,7 +2584,7 @@ alt="OMA Annaba logo">
 
 <div class="container">
 
-<div class="section-label">05 — Media</div>
+<div class="section-label">06 — Media</div>
 
 <h2>Selected Media</h2>
 
@@ -2544,7 +2786,7 @@ rel="noopener noreferrer">
 
 <div class="container">
 
-<div class="section-label">06 — Signature</div>
+<div class="section-label">07 — Signature</div>
 
 <h2>SEGUENI Abderraouf</h2>
 
