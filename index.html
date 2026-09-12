@@ -64,6 +64,8 @@ h1{ line-height:.92; letter-spacing:-4px; font-weight:850; }
 
 }
 
+/* IHF verification logo */
+
 .verification-icon{
 
     display:inline-flex;
@@ -72,35 +74,33 @@ h1{ line-height:.92; letter-spacing:-4px; font-weight:850; }
 
     justify-content:center;
 
-    width:21px;
+    width:30px;
 
-    height:21px;
+    height:18px;
 
     margin-left:8px;
 
-    border:1px solid #d6b36a;
-
-    border-radius:50%;
-
-    color:#d6b36a;
-
-    font-size:12px;
-
-    font-weight:900;
-
-    line-height:1;
-
-    vertical-align:3px;
+    vertical-align:middle;
 
     transition:all .25s ease;
 
 }
 
+.verification-icon img{
+
+    width:30px;
+
+    height:auto;
+
+    max-height:18px;
+
+    display:block;
+
+    object-fit:contain;
+
+}
+
 .verification-icon:hover{
-
-    background:#d6b36a;
-
-    color:#08090b;
 
     transform:scale(1.08);
 
@@ -330,13 +330,19 @@ h1{letter-spacing:-2.5px;}
 
 .verification-icon{
 
-    width:19px;
+    width:27px;
 
-    height:19px;
-
-    font-size:11px;
+    height:17px;
 
     margin-left:6px;
+
+}
+
+.verification-icon img{
+
+    width:27px;
+
+    max-height:17px;
 
 }
 
@@ -408,13 +414,21 @@ h1{letter-spacing:-2.5px;}
 
 INTERNATIONAL HANDBALL PLAYER
 
-<a href="#verified-ihf"
+<a href="ihf.html"
 
 class="verification-icon"
 
 aria-label="Verified by IHF"
 
-title="Verified by IHF">✓</a>
+title="Official IHF Record">
+
+<img
+
+src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
+
+alt="IHF">
+
+</a>
 
 </strong>
 
