@@ -46,7 +46,95 @@ h1{ line-height:.92; letter-spacing:-4px; font-weight:850; }
 
 .first-name{ display:block; font-size:clamp(35px,5.8vw,62px); letter-spacing:-2px; font-weight:650; margin-top:9px; }
 
-.role{ margin-top:28px; font-size:clamp(21px,3vw,31px); font-weight:800; text-transform:uppercase; }
+.role{
+
+    margin-top:28px;
+
+    font-size:clamp(20px,2.8vw,30px);
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    overflow:visible;
+
+}
+
+/* IHF verification link — same line, outside the text frame */
+
+.verification-icon{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:52px;
+
+    height:24px;
+
+    margin-left:10px;
+
+    vertical-align:middle;
+
+    position:relative;
+
+    top:-1px;
+
+    overflow:visible;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    border:0;
+
+    background:transparent;
+
+    transition:transform .25s ease, opacity .25s ease;
+
+}
+
+.verification-icon img{
+
+    display:block;
+
+    width:52px;
+
+    height:auto;
+
+    max-width:none;
+
+    max-height:24px;
+
+    object-fit:contain;
+
+    border:0;
+
+    background:transparent;
+
+}
+
+.verification-icon:hover{
+
+    transform:scale(1.12);
+
+    opacity:.92;
+
+}
+
+.verification-icon:focus-visible{
+
+    outline:2px solid #d6b36a;
+
+    outline-offset:5px;
+
+    border-radius:3px;
+
+}
 
 .professional-player{
 
@@ -61,48 +149,6 @@ h1{ line-height:.92; letter-spacing:-4px; font-weight:850; }
     letter-spacing:2.5px;
 
     text-transform:uppercase;
-
-}
-
-/* IHF verification logo */
-
-.verification-icon{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:30px;
-
-    height:18px;
-
-    margin-left:8px;
-
-    vertical-align:middle;
-
-    transition:all .25s ease;
-
-}
-
-.verification-icon img{
-
-    width:30px;
-
-    height:auto;
-
-    max-height:18px;
-
-    display:block;
-
-    object-fit:contain;
-
-}
-
-.verification-icon:hover{
-
-    transform:scale(1.08);
 
 }
 
@@ -328,21 +374,31 @@ h1{letter-spacing:-2.5px;}
 
 .contact-link{justify-content:center;}
 
+.role{
+
+    font-size:clamp(17px,5.5vw,24px);
+
+}
+
 .verification-icon{
 
-    width:27px;
+    width:46px;
 
-    height:17px;
+    height:22px;
 
-    margin-left:6px;
+    margin-left:8px;
+
+    top:-1px;
 
 }
 
 .verification-icon img{
 
-    width:27px;
+    width:46px;
 
-    max-height:17px;
+    max-width:none;
+
+    max-height:22px;
 
 }
 
@@ -361,6 +417,30 @@ h1{letter-spacing:-2.5px;}
 .profile-info-grid{grid-template-columns:1fr;}
 
 .qualities{grid-template-columns:1fr;}
+
+.role{
+
+    font-size:clamp(15px,5.2vw,21px);
+
+}
+
+.verification-icon{
+
+    width:42px;
+
+    height:20px;
+
+    margin-left:6px;
+
+}
+
+.verification-icon img{
+
+    width:42px;
+
+    max-height:20px;
+
+}
 
 }
 
@@ -418,15 +498,15 @@ INTERNATIONAL HANDBALL PLAYER
 
 class="verification-icon"
 
-aria-label="Verified by IHF"
+aria-label="Official IHF Record — Click to open"
 
-title="Official IHF Record">
+title="Official IHF Record — Click here">
 
 <img
 
 src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
 
-alt="IHF">
+alt="IHF Official Record">
 
 </a>
 
