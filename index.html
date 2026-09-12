@@ -336,7 +336,7 @@ h1{
 
     color:#f2cf72;
 
-    text-shadow:0 0 10px rgba(242,207,114,.55);
+    text-shadow:0 0 10px rgba(242,207,106,.55);
 
     font-size:17px;
 
@@ -478,45 +478,105 @@ h2{
 
 }
 
-/* LEGAL SOURCE LINK */
+/* OFFICIAL LEGAL & REGULATORY REFERENCES */
 
-.legal-link{
+.legal-reference-card{
 
-    display:inline-flex;
+    display:block;
 
-    align-items:center;
+    margin:0 0 32px;
 
-    justify-content:center;
-
-    width:30px;
-
-    height:30px;
-
-    font-size:17px;
-
-    color:#d6b36a;
-
-    border:1px solid #665331;
-
-    border-radius:50%;
+    padding:22px 24px;
 
     background:#0b0e12;
 
-    transition:all .25s ease;
+    border:1px solid #3c3528;
 
-    vertical-align:middle;
+    position:relative;
+
+    overflow:hidden;
+
+    transition:all .25s ease;
 
 }
 
-.legal-link:hover{
+.legal-reference-card::before{
 
-    color:#ffffff;
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#d6b36a;
+
+    box-shadow:0 0 16px rgba(214,179,106,.22);
+
+}
+
+.legal-reference-card:hover{
 
     border-color:#d6b36a;
 
-    box-shadow:0 0 14px rgba(214,179,106,.28);
+    transform:translateY(-2px);
 
-    transform:scale(1.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.28);
+
+}
+
+.legal-reference-title{
+
+    color:#d6b36a;
+
+    font-size:clamp(15px,2vw,19px);
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.legal-reference-subtitle{
+
+    margin-top:6px;
+
+    color:#f0f1f3;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.legal-reference-arrow{
+
+    margin-top:12px;
+
+    color:#858b94;
+
+    font-size:9px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.legal-reference-card:hover .legal-reference-arrow{
+
+    color:#d6b36a;
 
 }
 
@@ -1754,15 +1814,25 @@ footer{
 
     }
 
-    /* LEGAL SOURCE LINK — MOBILE */
+    /* OFFICIAL LEGAL REFERENCES — MOBILE */
 
-    .legal-link{
+    .legal-reference-card{
 
-        width:27px;
+        padding:20px 20px;
 
-        height:27px;
+    }
 
-        font-size:15px;
+    .legal-reference-title{
+
+        font-size:14px;
+
+        line-height:1.35;
+
+    }
+
+    .legal-reference-subtitle{
+
+        font-size:12px;
 
     }
 
@@ -1932,7 +2002,9 @@ INTERNATIONAL &amp; PROFESSIONAL HANDBALL PLAYER
 
 <div class="main-photo">
 
-<img src="IMG_9755.jpeg"
+<img
+
+src="IMG_9755.jpeg"
 
 alt="SEGUENI Abderraouf — International & Professional Handball Player">
 
@@ -1948,7 +2020,9 @@ alt="SEGUENI Abderraouf — International & Professional Handball Player">
 
 <!-- IHF VERIFICATION FRAME — UNCHANGED -->
 
-<a id="verified-ihf"
+<a
+
+id="verified-ihf"
 
 href="ihf.html"
 
@@ -1996,19 +2070,35 @@ International Handball Federation
 
 STATUT SPORTIF ET JURIDIQUE :
 
+</h2>
+
 <a
 
 href="statut-juridique.html"
 
-class="legal-link"
+class="legal-reference-card"
 
-aria-label="Documents officiels et références juridiques — Athlète de Haut Niveau & Élite"
+aria-label="Official Legal and Regulatory References — Athlète de Haut Niveau et Élite">
 
-title="Documents officiels — Haut Niveau & Élite"
+<div class="legal-reference-title">
 
->🔗</a>
+Official Legal &amp; Regulatory References
 
-</h2>
+</div>
+
+<div class="legal-reference-subtitle">
+
+Athlète de Haut Niveau &amp; Élite
+
+</div>
+
+<div class="legal-reference-arrow">
+
+View official legal framework →
+
+</div>
+
+</a>
 
 <div class="sport-status-main">
 
@@ -2522,7 +2612,9 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9779.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9779.jpeg"
 
 alt="CRBBA Bordj Bou Arreridj logo">
 
@@ -2534,7 +2626,13 @@ alt="CRBBA Bordj Bou Arreridj logo">
 
 <div class="club-name">CRBBA Bordj Bou Arreridj</div>
 
-<div class="club-level">2013 — 2017<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2013 — 2017<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2548,7 +2646,9 @@ alt="CRBBA Bordj Bou Arreridj logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9789.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9789.jpeg"
 
 alt="MBT Tadjenanet logo">
 
@@ -2560,13 +2660,17 @@ alt="MBT Tadjenanet logo">
 
 <div class="club-name">MBT Tadjenanet</div>
 
-<div class="club-level">2017 — 2021<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2017 — 2021<br>
+
+Division Excellence — Top Division of Algerian Handball
 
 </div>
 
 </div>
 
-<!-- CLUB 03 — MILA LOGO -->
+</div>
 
 <div class="club">
 
@@ -2576,7 +2680,9 @@ alt="MBT Tadjenanet logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9947.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9947.jpeg"
 
 alt="CRBM Mila logo">
 
@@ -2588,7 +2694,13 @@ alt="CRBM Mila logo">
 
 <div class="club-name">CRBM Mila</div>
 
-<div class="club-level">2021 — 2022<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2021 — 2022<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2602,7 +2714,9 @@ alt="CRBM Mila logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9788.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9788.jpeg"
 
 alt="CHBZY Zighoud Youcef logo">
 
@@ -2614,7 +2728,13 @@ alt="CHBZY Zighoud Youcef logo">
 
 <div class="club-name">CHBZY — Zighoud Youcef</div>
 
-<div class="club-level">2022 — 2023<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2022 — 2023<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2628,7 +2748,9 @@ alt="CHBZY Zighoud Youcef logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9783.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9783.jpeg"
 
 alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
@@ -2640,7 +2762,13 @@ alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
 <div class="club-name">MBBA — Mouloudia Bordj Bou Arreridj</div>
 
-<div class="club-level">2023 — 2024<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2023 — 2024<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2654,7 +2782,9 @@ alt="MBBA Mouloudia Bordj Bou Arreridj logo">
 
 <div class="club-logo">
 
-<img src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9786.jpeg"
+<img
+
+src="https://raw.githubusercontent.com/Abderraoufseg/Abderraoufseg.github.io/main/IMG_9786.jpeg"
 
 alt="OMA Annaba logo">
 
@@ -2666,7 +2796,13 @@ alt="OMA Annaba logo">
 
 <div class="club-name">OMA Annaba</div>
 
-<div class="club-level">2024 — Present<br>Division Excellence — Top Division of Algerian Handball</div>
+<div class="club-level">
+
+2024 — Present<br>
+
+Division Excellence — Top Division of Algerian Handball
+
+</div>
 
 </div>
 
@@ -2904,7 +3040,7 @@ src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.
 
 alt="International Handball Federation">
 
-<!-- ALGERIAN FEDERATION LOGO + ALGERIAN FLAG -->
+<!-- ALGERIAN FEDERATION LOGO + FLAG -->
 
 <div class="algeria">
 
