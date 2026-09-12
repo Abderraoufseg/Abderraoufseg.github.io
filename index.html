@@ -172,8 +172,6 @@ h1{
 
 }
 
-/* MAIN PROFESSIONAL HEADLINE — GOLD */
-
 .role{
 
     margin-top:28px;
@@ -286,8 +284,6 @@ h1{
 
 }
 
-/* CLICK TO VERIFY — WHITE, CLEARLY BELOW */
-
 .hero .ihf-box::before{
 
     content:"CLICK TO VERIFY";
@@ -319,8 +315,6 @@ h1{
     pointer-events:none;
 
 }
-
-/* ARROW — GOLD, WITH SPACE FROM FRAME */
 
 .hero .ihf-box::after{
 
@@ -580,8 +574,6 @@ h2{
 
 }
 
-/* IMPORTANT — BELOW THE ARROW */
-
 .legal-important{
 
     margin-top:-24px;
@@ -662,8 +654,6 @@ h2{
 
 }
 
-/* SECTION SUBTITLES — CLEAR AND BOLD */
-
 .sport-status-subtitle{
 
     color:#f0f1f3;
@@ -679,8 +669,6 @@ h2{
     margin-bottom:12px;
 
 }
-
-/* MAJOR SPORTING ELEMENTS — WHITE */
 
 .sport-status-item.gold{
 
@@ -1152,75 +1140,13 @@ h2{
 
 /* =========================================================
 
-   CLUB CAREER — CREATIVE FLAG / FABRIC BACKGROUNDS
+   CLUB LOGOS — COLOR WAVE / FLAG EFFECT
 
-   Each club has its own color identity.
+   No frame around the actual club logo.
 
-   The logo remains untouched and centered.
+   The logo remains completely untouched.
 
    ========================================================= */
-
-.clubs{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:16px;
-
-}
-
-.club{
-
-    min-height:245px;
-
-    padding:22px;
-
-    background:#101318;
-
-    border:1px solid #292d34;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    position:relative;
-
-    overflow:hidden;
-
-    isolation:isolate;
-
-    transition:border-color .25s ease,transform .25s ease;
-
-}
-
-.club:hover{
-
-    border-color:#665331;
-
-    transform:translateY(-2px);
-
-}
-
-/* CLUB NUMBER */
-
-.club-number{
-
-    color:#777d86;
-
-    font-size:10px;
-
-    letter-spacing:2px;
-
-}
-
-/* ---------------------------------------------------------
-
-   CLUB LOGO FRAME
-
-   --------------------------------------------------------- */
 
 .club-logo{
 
@@ -1232,45 +1158,23 @@ h2{
 
     justify-content:center;
 
+    position:relative;
+
     margin:8px 0 18px;
-
-    background:#0b0e12;
-
-    border:1px solid #292d34;
 
     padding:10px;
 
     overflow:hidden;
 
-    position:relative;
+    border:0;
 
-    isolation:isolate;
-
-}
-
-/* Fabric / flag layer */
-
-.club-logo::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:-22%;
-
-    z-index:-2;
-
-    transform:translate3d(-5%,0,0) skewX(-8deg);
-
-    transform-origin:center;
-
-    animation:clubFlagWave 5.8s ease-in-out infinite;
-
-    opacity:.95;
+    background:#0b0e12;
 
 }
 
-/* Moving highlight across the fabric */
+/* Moving fabric / flag effect */
+
+.club-logo::before,
 
 .club-logo::after{
 
@@ -1278,39 +1182,297 @@ h2{
 
     position:absolute;
 
-    inset:-35% -65%;
+    inset:-35%;
 
-    z-index:-1;
+    pointer-events:none;
+
+    transform-origin:center;
+
+}
+
+/* Main moving wave */
+
+.club-logo::before{
 
     background:
 
         linear-gradient(
 
-            105deg,
+            115deg,
+
+            transparent 0%,
+
+            rgba(255,255,255,.035) 18%,
 
             transparent 34%,
 
-            rgba(255,255,255,.04) 43%,
+            rgba(255,255,255,.055) 50%,
 
-            rgba(255,255,255,.13) 50%,
+            transparent 67%,
 
-            rgba(255,255,255,.04) 57%,
+            rgba(255,255,255,.035) 82%,
 
-            transparent 66%
+            transparent 100%
 
         );
 
-    transform:translateX(-18%) skewX(-10deg);
-
-    animation:clubFabricLight 4.8s ease-in-out infinite;
-
-    pointer-events:none;
+    animation:clubFabricWave 5.5s ease-in-out infinite;
 
 }
 
-/* Keep every logo perfectly visible */
+/* Secondary soft fabric light */
+
+.club-logo::after{
+
+    background:
+
+        radial-gradient(
+
+            ellipse at 20% 50%,
+
+            rgba(255,255,255,.08),
+
+            transparent 38%
+
+        ),
+
+        radial-gradient(
+
+            ellipse at 80% 50%,
+
+            rgba(0,0,0,.20),
+
+            transparent 42%
+
+        );
+
+    animation:clubFabricLight 4.8s ease-in-out infinite;
+
+}
+
+@keyframes clubFabricWave{
+
+    0%,100%{
+
+        transform:translateX(-8%) skewX(-3deg);
+
+    }
+
+    50%{
+
+        transform:translateX(8%) skewX(3deg);
+
+    }
+
+}
+
+@keyframes clubFabricLight{
+
+    0%,100%{
+
+        transform:translateX(-5%) scaleX(.96);
+
+        opacity:.65;
+
+    }
+
+    50%{
+
+        transform:translateX(5%) scaleX(1.04);
+
+        opacity:1;
+
+    }
+
+}
+
+/* =========================================================
+
+   CLUB COLOR IDENTITIES
+
+   ========================================================= */
+
+/* 01 — CRBBA
+
+   Yellow + Black
+
+*/
+
+.club:nth-child(1) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #050505 0%,
+
+            #16120a 28%,
+
+            #d6a900 48%,
+
+            #171208 68%,
+
+            #050505 100%
+
+        );
+
+}
+
+/* 02 — MBT Tadjenanet
+
+   Blue + White
+
+*/
+
+.club:nth-child(2) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #06101c 0%,
+
+            #0b2c4d 30%,
+
+            #dfe8ef 50%,
+
+            #123b60 70%,
+
+            #050a10 100%
+
+        );
+
+}
+
+/* 03 — CRBM Mila
+
+   Red + White
+
+*/
+
+.club:nth-child(3) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #210708 0%,
+
+            #74151b 30%,
+
+            #f1eeee 50%,
+
+            #8d171d 70%,
+
+            #160506 100%
+
+        );
+
+}
+
+/* 04 — CHBZY Zighoud Youcef
+
+   Red / Dark tones
+
+*/
+
+.club:nth-child(4) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #090607 0%,
+
+            #3d0d12 28%,
+
+            #8f1d27 48%,
+
+            #351016 70%,
+
+            #070506 100%
+
+        );
+
+}
+
+/* 05 — MBBA
+
+   Blue + White
+
+*/
+
+.club:nth-child(5) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #06111f 0%,
+
+            #0b3d70 27%,
+
+            #e7edf3 49%,
+
+            #14538c 70%,
+
+            #050b13 100%
+
+        );
+
+}
+
+/* 06 — OMA Annaba
+
+   Blue + White
+
+*/
+
+.club:nth-child(6) .club-logo{
+
+    background:
+
+        linear-gradient(
+
+            125deg,
+
+            #06101c 0%,
+
+            #123d63 28%,
+
+            #e3ebf1 50%,
+
+            #1b527d 70%,
+
+            #050a10 100%
+
+        );
+
+}
+
+/* =========================================================
+
+   LOGO ITSELF
+
+   Completely untouched — no crop, no stretch.
+
+   ========================================================= */
 
 .club-logo img{
+
+    position:relative;
+
+    z-index:2;
 
     width:auto;
 
@@ -1328,341 +1490,27 @@ h2{
 
     margin:auto;
 
-    position:relative;
+    filter:drop-shadow(0 5px 12px rgba(0,0,0,.55));
 
-    z-index:3;
+    transition:
 
-    filter:drop-shadow(0 4px 7px rgba(0,0,0,.48));
+        transform .45s ease,
 
-}
-
-/* ---------------------------------------------------------
-
-   CLUB-SPECIFIC COLOR BACKGROUNDS
-
-   --------------------------------------------------------- */
-
-/* 01 — CRBBA Bordj Bou Arreridj
-
-   Deep red + black */
-
-.club:nth-child(1) .club-logo::before{
-
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #090a0d 0%,
-
-            #180b0e 18%,
-
-            #55151b 40%,
-
-            #8d1d27 55%,
-
-            #3c1016 70%,
-
-            #100b0e 88%,
-
-            #07080a 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 28px rgba(170,30,45,.32),
-
-        inset -30px 0 45px rgba(0,0,0,.30);
+        filter .45s ease;
 
 }
 
-/* 02 — MBT Tadjenanet
+/* Slight floating effect on hover */
 
-   Green + dark tones */
+.club:hover .club-logo img{
 
-.club:nth-child(2) .club-logo::before{
+    transform:scale(1.025);
 
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #070b09 0%,
-
-            #0b2115 18%,
-
-            #145c35 40%,
-
-            #278a4d 54%,
-
-            #0e4728 70%,
-
-            #08140d 88%,
-
-            #060809 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 28px rgba(42,150,83,.30),
-
-        inset -30px 0 45px rgba(0,0,0,.30);
+    filter:drop-shadow(0 7px 16px rgba(0,0,0,.65));
 
 }
 
-/* 03 — CRBM Mila
-
-   Green + white/silver atmosphere */
-
-.club:nth-child(3) .club-logo::before{
-
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #070a09 0%,
-
-            #10241a 18%,
-
-            #1f6542 39%,
-
-            #dfe8e2 52%,
-
-            #6c9a7d 62%,
-
-            #163b29 76%,
-
-            #080b09 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 28px rgba(95,160,119,.24),
-
-        inset -30px 0 45px rgba(0,0,0,.28);
-
-}
-
-/* 04 — CHBZY Zighoud Youcef
-
-   Red + black identity */
-
-.club:nth-child(4) .club-logo::before{
-
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #07080a 0%,
-
-            #1b090b 18%,
-
-            #62151b 40%,
-
-            #a52631 54%,
-
-            #511018 68%,
-
-            #16090c 84%,
-
-            #07080a 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 28px rgba(181,37,49,.32),
-
-        inset -30px 0 45px rgba(0,0,0,.32);
-
-}
-
-/* 05 — MBBA Mouloudia Bordj Bou Arreridj
-
-   Green + red + white dynamic blend */
-
-.club:nth-child(5) .club-logo::before{
-
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #07100b 0%,
-
-            #0b3420 18%,
-
-            #176b3d 34%,
-
-            #d9ddd9 47%,
-
-            #9e252e 58%,
-
-            #64151c 72%,
-
-            #10090b 88%,
-
-            #07080a 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 30px rgba(214,179,106,.12),
-
-        inset 0 0 28px rgba(38,132,75,.24),
-
-        inset -30px 0 45px rgba(0,0,0,.32);
-
-}
-
-/* 06 — OMA Annaba
-
-   Blue + white atmosphere */
-
-.club:nth-child(6) .club-logo::before{
-
-    background:
-
-        linear-gradient(
-
-            118deg,
-
-            #07090c 0%,
-
-            #0b1828 18%,
-
-            #123b65 38%,
-
-            #2874a8 51%,
-
-            #dce7ef 61%,
-
-            #235c87 72%,
-
-            #0b2035 87%,
-
-            #07090c 100%
-
-        );
-
-    box-shadow:
-
-        inset 0 0 28px rgba(45,122,181,.32),
-
-        inset -30px 0 45px rgba(0,0,0,.30);
-
-}
-
-/* ---------------------------------------------------------
-
-   FLAG / FABRIC MOTION
-
-   --------------------------------------------------------- */
-
-@keyframes clubFlagWave{
-
-    0%{
-
-        transform:
-
-            translate3d(-7%,0,0)
-
-            skewX(-9deg)
-
-            scaleX(1.08);
-
-    }
-
-    25%{
-
-        transform:
-
-            translate3d(2%,1%,0)
-
-            skewX(5deg)
-
-            scaleX(1.02);
-
-    }
-
-    50%{
-
-        transform:
-
-            translate3d(7%,-1%,0)
-
-            skewX(-5deg)
-
-            scaleX(1.08);
-
-    }
-
-    75%{
-
-        transform:
-
-            translate3d(-1%,1%,0)
-
-            skewX(7deg)
-
-            scaleX(1.02);
-
-    }
-
-    100%{
-
-        transform:
-
-            translate3d(-7%,0,0)
-
-            skewX(-9deg)
-
-            scaleX(1.08);
-
-    }
-
-}
-
-@keyframes clubFabricLight{
-
-    0%,100%{
-
-        transform:
-
-            translateX(-24%)
-
-            skewX(-10deg);
-
-        opacity:.25;
-
-    }
-
-    50%{
-
-        transform:
-
-            translateX(24%)
-
-            skewX(-10deg);
-
-        opacity:.75;
-
-    }
-
-}
-
-/* Pause the fabric slightly on hover */
+/* Pause the fabric movement while hovering */
 
 .club:hover .club-logo::before,
 
@@ -1671,8 +1519,6 @@ h2{
     animation-play-state:paused;
 
 }
-
-/* Club name */
 
 .club-name{
 
@@ -1701,8 +1547,6 @@ h2{
     text-transform:uppercase;
 
 }
-
-/* MEDIA */
 
 .media{
 
@@ -1932,8 +1776,6 @@ h2{
 
 }
 
-/* CONTACT */
-
 .contact{
 
     margin-top:18px;
@@ -1993,8 +1835,6 @@ h2{
     color:#858b94;
 
 }
-
-/* SIGNATURE */
 
 .signature-section{
 
@@ -2172,8 +2012,6 @@ h2{
 
 }
 
-/* FOOTER */
-
 footer{
 
     border-top:1px solid #25282d;
@@ -2195,8 +2033,6 @@ footer{
     gap:20px;
 
 }
-
-/* TABLET */
 
 @media(max-width:850px){
 
@@ -2237,8 +2073,6 @@ footer{
     }
 
 }
-
-/* MOBILE */
 
 @media(max-width:560px){
 
@@ -2318,8 +2152,6 @@ footer{
 
     }
 
-    /* MAIN HEADLINE — GOLD MOBILE */
-
     .role{
 
         font-size:clamp(15px,4.9vw,24px);
@@ -2333,8 +2165,6 @@ footer{
         line-height:1.15;
 
     }
-
-    /* SPORT STATUS SECTION — MOBILE */
 
     .sport-status-box{
 
@@ -2378,8 +2208,6 @@ footer{
 
     }
 
-    /* OFFICIAL LEGAL REFERENCES — MOBILE */
-
     .legal-reference-card{
 
         padding:20px 20px;
@@ -2400,8 +2228,6 @@ footer{
 
     }
 
-    /* IMPORTANT — MOBILE */
-
     .legal-important{
 
         margin-top:-20px;
@@ -2414,8 +2240,6 @@ footer{
 
     }
 
-    /* IHF GOLDEN GLOW — MOBILE */
-
     .hero .ihf-box{
 
         box-shadow:
@@ -2425,8 +2249,6 @@ footer{
             0 0 22px rgba(242,207,114,.10);
 
     }
-
-    /* CLICK TO VERIFY — WHITE AND CLEARLY BELOW IHF FRAME */
 
     .hero .ihf-box::before{
 
@@ -2440,8 +2262,6 @@ footer{
 
     }
 
-    /* ARROW — SPACE BETWEEN ARROW AND FRAME */
-
     .hero .ihf-box::after{
 
         font-size:16px;
@@ -2449,8 +2269,6 @@ footer{
         bottom:-40px;
 
     }
-
-    /* VIDEOS TITLE — MOBILE */
 
     .video-section-title{
 
@@ -2463,8 +2281,6 @@ footer{
         letter-spacing:3.5px;
 
     }
-
-    /* ALGERIAN FEDERATION — MOBILE */
 
     .algeria{
 
@@ -2502,17 +2318,7 @@ footer{
 
     }
 
-    /* CLUB LOGO FRAME — MOBILE */
-
-    .club-logo{
-
-        height:112px;
-
-    }
-
 }
-
-/* SMALL PHONES */
 
 @media(max-width:390px){
 
@@ -2545,34 +2351,6 @@ footer{
     .sport-status-main{
 
         font-size:clamp(15px,4.3vw,22px);
-
-    }
-
-}
-
-/* ACCESSIBILITY — REDUCE MOTION WHEN REQUESTED */
-
-@media(prefers-reduced-motion:reduce){
-
-    html{
-
-        scroll-behavior:auto;
-
-    }
-
-    .hero .ihf-box,
-
-    .hero .ihf-box::before,
-
-    .hero .ihf-box::after,
-
-    .legal-important,
-
-    .club-logo::before,
-
-    .club-logo::after{
-
-        animation:none !important;
 
     }
 
@@ -2651,8 +2429,6 @@ alt="SEGUENI Abderraouf — International & Professional Handball Player">
 </div>
 
 </div>
-
-<!-- IHF VERIFICATION FRAME — UNCHANGED -->
 
 <a
 
@@ -2796,8 +2572,6 @@ Bamako — Mali 🇲🇱 — U21 — Médaille de bronze (3e place)
 
 </div>
 
-<!-- OFFICIAL LEGAL & REGULATORY REFERENCES — AT THE END -->
-
 <a
 
 href="statut-juridique.html"
@@ -2825,8 +2599,6 @@ View official legal framework →
 </div>
 
 </a>
-
-<!-- IMPORTANT — BELOW THE ARROW -->
 
 <div class="legal-important">
 
@@ -3248,8 +3020,6 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="clubs">
 
-<!-- 01 — CRBBA -->
-
 <div class="club">
 
 <div>
@@ -3283,8 +3053,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 02 — MBT TADJENANET -->
 
 <div class="club">
 
@@ -3320,8 +3088,6 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
-<!-- 03 — CRBM MILA -->
-
 <div class="club">
 
 <div>
@@ -3355,8 +3121,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 04 — CHBZY -->
 
 <div class="club">
 
@@ -3392,8 +3156,6 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
-<!-- 05 — MBBA -->
-
 <div class="club">
 
 <div>
@@ -3427,8 +3189,6 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
-
-<!-- 06 — OMA ANNABA -->
 
 <div class="club">
 
@@ -3578,8 +3338,6 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
-<!-- VIDEOS -->
-
 <div class="video-section-title">Videos</div>
 
 <div class="videos">
@@ -3688,8 +3446,6 @@ rel="noopener noreferrer">
 
 <div class="signature-line"></div>
 
-<!-- IHF — CENTRAL AXIS / UNCHANGED -->
-
 <img
 
 class="end-ihf"
@@ -3697,8 +3453,6 @@ class="end-ihf"
 src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg"
 
 alt="International Handball Federation">
-
-<!-- ALGERIAN FEDERATION + FLAG -->
 
 <div class="algeria">
 
