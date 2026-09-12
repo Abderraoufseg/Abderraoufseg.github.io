@@ -1150,6 +1150,16 @@ h2{
 
 }
 
+/* =========================================================
+
+   CLUB CAREER — CREATIVE FLAG / FABRIC BACKGROUNDS
+
+   Each club has its own color identity.
+
+   The logo remains untouched and centered.
+
+   ========================================================= */
+
 .clubs{
 
     display:grid;
@@ -1180,7 +1190,9 @@ h2{
 
     overflow:hidden;
 
-    transition:border-color .25s ease, transform .25s ease;
+    isolation:isolate;
+
+    transition:border-color .25s ease,transform .25s ease;
 
 }
 
@@ -1204,7 +1216,11 @@ h2{
 
 }
 
-/* UNIFORM CLUB LOGO FRAME */
+/* ---------------------------------------------------------
+
+   CLUB LOGO FRAME
+
+   --------------------------------------------------------- */
 
 .club-logo{
 
@@ -1226,13 +1242,79 @@ h2{
 
     overflow:hidden;
 
+    position:relative;
+
+    isolation:isolate;
+
 }
+
+/* Fabric / flag layer */
+
+.club-logo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-22%;
+
+    z-index:-2;
+
+    transform:translate3d(-5%,0,0) skewX(-8deg);
+
+    transform-origin:center;
+
+    animation:clubFlagWave 5.8s ease-in-out infinite;
+
+    opacity:.95;
+
+}
+
+/* Moving highlight across the fabric */
+
+.club-logo::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-35% -65%;
+
+    z-index:-1;
+
+    background:
+
+        linear-gradient(
+
+            105deg,
+
+            transparent 34%,
+
+            rgba(255,255,255,.04) 43%,
+
+            rgba(255,255,255,.13) 50%,
+
+            rgba(255,255,255,.04) 57%,
+
+            transparent 66%
+
+        );
+
+    transform:translateX(-18%) skewX(-10deg);
+
+    animation:clubFabricLight 4.8s ease-in-out infinite;
+
+    pointer-events:none;
+
+}
+
+/* Keep every logo perfectly visible */
 
 .club-logo img{
 
-    width:100%;
+    width:auto;
 
-    height:100%;
+    height:auto;
 
     max-width:125px;
 
@@ -1246,7 +1328,351 @@ h2{
 
     margin:auto;
 
+    position:relative;
+
+    z-index:3;
+
+    filter:drop-shadow(0 4px 7px rgba(0,0,0,.48));
+
 }
+
+/* ---------------------------------------------------------
+
+   CLUB-SPECIFIC COLOR BACKGROUNDS
+
+   --------------------------------------------------------- */
+
+/* 01 — CRBBA Bordj Bou Arreridj
+
+   Deep red + black */
+
+.club:nth-child(1) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #090a0d 0%,
+
+            #180b0e 18%,
+
+            #55151b 40%,
+
+            #8d1d27 55%,
+
+            #3c1016 70%,
+
+            #100b0e 88%,
+
+            #07080a 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 28px rgba(170,30,45,.32),
+
+        inset -30px 0 45px rgba(0,0,0,.30);
+
+}
+
+/* 02 — MBT Tadjenanet
+
+   Green + dark tones */
+
+.club:nth-child(2) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #070b09 0%,
+
+            #0b2115 18%,
+
+            #145c35 40%,
+
+            #278a4d 54%,
+
+            #0e4728 70%,
+
+            #08140d 88%,
+
+            #060809 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 28px rgba(42,150,83,.30),
+
+        inset -30px 0 45px rgba(0,0,0,.30);
+
+}
+
+/* 03 — CRBM Mila
+
+   Green + white/silver atmosphere */
+
+.club:nth-child(3) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #070a09 0%,
+
+            #10241a 18%,
+
+            #1f6542 39%,
+
+            #dfe8e2 52%,
+
+            #6c9a7d 62%,
+
+            #163b29 76%,
+
+            #080b09 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 28px rgba(95,160,119,.24),
+
+        inset -30px 0 45px rgba(0,0,0,.28);
+
+}
+
+/* 04 — CHBZY Zighoud Youcef
+
+   Red + black identity */
+
+.club:nth-child(4) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #07080a 0%,
+
+            #1b090b 18%,
+
+            #62151b 40%,
+
+            #a52631 54%,
+
+            #511018 68%,
+
+            #16090c 84%,
+
+            #07080a 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 28px rgba(181,37,49,.32),
+
+        inset -30px 0 45px rgba(0,0,0,.32);
+
+}
+
+/* 05 — MBBA Mouloudia Bordj Bou Arreridj
+
+   Green + red + white dynamic blend */
+
+.club:nth-child(5) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #07100b 0%,
+
+            #0b3420 18%,
+
+            #176b3d 34%,
+
+            #d9ddd9 47%,
+
+            #9e252e 58%,
+
+            #64151c 72%,
+
+            #10090b 88%,
+
+            #07080a 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 30px rgba(214,179,106,.12),
+
+        inset 0 0 28px rgba(38,132,75,.24),
+
+        inset -30px 0 45px rgba(0,0,0,.32);
+
+}
+
+/* 06 — OMA Annaba
+
+   Blue + white atmosphere */
+
+.club:nth-child(6) .club-logo::before{
+
+    background:
+
+        linear-gradient(
+
+            118deg,
+
+            #07090c 0%,
+
+            #0b1828 18%,
+
+            #123b65 38%,
+
+            #2874a8 51%,
+
+            #dce7ef 61%,
+
+            #235c87 72%,
+
+            #0b2035 87%,
+
+            #07090c 100%
+
+        );
+
+    box-shadow:
+
+        inset 0 0 28px rgba(45,122,181,.32),
+
+        inset -30px 0 45px rgba(0,0,0,.30);
+
+}
+
+/* ---------------------------------------------------------
+
+   FLAG / FABRIC MOTION
+
+   --------------------------------------------------------- */
+
+@keyframes clubFlagWave{
+
+    0%{
+
+        transform:
+
+            translate3d(-7%,0,0)
+
+            skewX(-9deg)
+
+            scaleX(1.08);
+
+    }
+
+    25%{
+
+        transform:
+
+            translate3d(2%,1%,0)
+
+            skewX(5deg)
+
+            scaleX(1.02);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate3d(7%,-1%,0)
+
+            skewX(-5deg)
+
+            scaleX(1.08);
+
+    }
+
+    75%{
+
+        transform:
+
+            translate3d(-1%,1%,0)
+
+            skewX(7deg)
+
+            scaleX(1.02);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate3d(-7%,0,0)
+
+            skewX(-9deg)
+
+            scaleX(1.08);
+
+    }
+
+}
+
+@keyframes clubFabricLight{
+
+    0%,100%{
+
+        transform:
+
+            translateX(-24%)
+
+            skewX(-10deg);
+
+        opacity:.25;
+
+    }
+
+    50%{
+
+        transform:
+
+            translateX(24%)
+
+            skewX(-10deg);
+
+        opacity:.75;
+
+    }
+
+}
+
+/* Pause the fabric slightly on hover */
+
+.club:hover .club-logo::before,
+
+.club:hover .club-logo::after{
+
+    animation-play-state:paused;
+
+}
+
+/* Club name */
 
 .club-name{
 
@@ -1275,6 +1701,8 @@ h2{
     text-transform:uppercase;
 
 }
+
+/* MEDIA */
 
 .media{
 
@@ -1504,6 +1932,8 @@ h2{
 
 }
 
+/* CONTACT */
+
 .contact{
 
     margin-top:18px;
@@ -1563,6 +1993,8 @@ h2{
     color:#858b94;
 
 }
+
+/* SIGNATURE */
 
 .signature-section{
 
@@ -1740,6 +2172,8 @@ h2{
 
 }
 
+/* FOOTER */
+
 footer{
 
     border-top:1px solid #25282d;
@@ -1761,6 +2195,8 @@ footer{
     gap:20px;
 
 }
+
+/* TABLET */
 
 @media(max-width:850px){
 
@@ -1801,6 +2237,8 @@ footer{
     }
 
 }
+
+/* MOBILE */
 
 @media(max-width:560px){
 
@@ -2064,7 +2502,17 @@ footer{
 
     }
 
+    /* CLUB LOGO FRAME — MOBILE */
+
+    .club-logo{
+
+        height:112px;
+
+    }
+
 }
+
+/* SMALL PHONES */
 
 @media(max-width:390px){
 
@@ -2097,6 +2545,34 @@ footer{
     .sport-status-main{
 
         font-size:clamp(15px,4.3vw,22px);
+
+    }
+
+}
+
+/* ACCESSIBILITY — REDUCE MOTION WHEN REQUESTED */
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+
+        scroll-behavior:auto;
+
+    }
+
+    .hero .ihf-box,
+
+    .hero .ihf-box::before,
+
+    .hero .ihf-box::after,
+
+    .legal-important,
+
+    .club-logo::before,
+
+    .club-logo::after{
+
+        animation:none !important;
 
     }
 
@@ -2772,6 +3248,8 @@ More than 25 international preparation camps in Europe with international opposi
 
 <div class="clubs">
 
+<!-- 01 — CRBBA -->
+
 <div class="club">
 
 <div>
@@ -2805,6 +3283,8 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
+
+<!-- 02 — MBT TADJENANET -->
 
 <div class="club">
 
@@ -2840,6 +3320,8 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
+<!-- 03 — CRBM MILA -->
+
 <div class="club">
 
 <div>
@@ -2873,6 +3355,8 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
+
+<!-- 04 — CHBZY -->
 
 <div class="club">
 
@@ -2908,6 +3392,8 @@ Division Excellence — Top Division of Algerian Handball
 
 </div>
 
+<!-- 05 — MBBA -->
+
 <div class="club">
 
 <div>
@@ -2941,6 +3427,8 @@ Division Excellence — Top Division of Algerian Handball
 </div>
 
 </div>
+
+<!-- 06 — OMA ANNABA -->
 
 <div class="club">
 
