@@ -580,6 +580,144 @@ h2{
 
 }
 
+/* IMPORTANT NOTICE — GOLDEN ALERT */
+
+.sport-status-important{
+
+    margin-top:34px;
+
+    padding:22px 24px 20px;
+
+    background:#0b0e12;
+
+    border:1px solid #5b4a28;
+
+    position:relative;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 0 10px rgba(214,179,106,.12),
+
+        0 0 28px rgba(214,179,106,.07);
+
+    animation:importantGoldenGlow 2.8s ease-in-out infinite;
+
+}
+
+.sport-status-important::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#d6b36a;
+
+    box-shadow:0 0 16px rgba(214,179,106,.3);
+
+}
+
+.important-title{
+
+    color:#d6b36a;
+
+    font-size:clamp(14px,2vw,18px);
+
+    font-weight:900;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    text-shadow:0 0 12px rgba(214,179,106,.25);
+
+}
+
+.important-arrow{
+
+    margin-top:6px;
+
+    color:#f2cf72;
+
+    font-size:20px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    animation:importantArrow 2.2s ease-in-out infinite;
+
+}
+
+.important-text{
+
+    margin-top:7px;
+
+    color:#858b94;
+
+    font-size:9px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+@keyframes importantGoldenGlow{
+
+    0%,100%{
+
+        box-shadow:
+
+            0 0 8px rgba(214,179,106,.10),
+
+            0 0 20px rgba(214,179,106,.05);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 16px rgba(214,179,106,.30),
+
+            0 0 34px rgba(214,179,106,.12);
+
+    }
+
+}
+
+@keyframes importantArrow{
+
+    0%,100%{
+
+        opacity:.55;
+
+        transform:translateY(3px);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:translateY(-3px);
+
+    }
+
+}
+
 .sport-status-main{
 
     margin:8px 0 25px;
@@ -1836,6 +1974,30 @@ footer{
 
     }
 
+    /* IMPORTANT NOTICE — MOBILE */
+
+    .sport-status-important{
+
+        margin-top:28px;
+
+        padding:20px 18px 18px;
+
+    }
+
+    .important-title{
+
+        font-size:13px;
+
+        letter-spacing:2.5px;
+
+    }
+
+    .important-arrow{
+
+        font-size:18px;
+
+    }
+
     /* IHF GOLDEN GLOW — MOBILE */
 
     .hero .ihf-box{
@@ -2072,34 +2234,6 @@ STATUT SPORTIF ET JURIDIQUE :
 
 </h2>
 
-<a
-
-href="statut-juridique.html"
-
-class="legal-reference-card"
-
-aria-label="Official Legal and Regulatory References — Athlète de Haut Niveau et Élite">
-
-<div class="legal-reference-title">
-
-Official Legal &amp; Regulatory References
-
-</div>
-
-<div class="legal-reference-subtitle">
-
-Athlète de Haut Niveau &amp; Élite
-
-</div>
-
-<div class="legal-reference-arrow">
-
-View official legal framework →
-
-</div>
-
-</a>
-
 <div class="sport-status-main">
 
 HAUT NIVEAU — CLASSE A &amp; ÉLITE
@@ -2185,6 +2319,60 @@ Bamako — Mali 🇲🇱 — U21 — Médaille de bronze (3e place)
 </strong>
 
 </div>
+
+</div>
+
+</div>
+
+<!-- OFFICIAL LEGAL & REGULATORY REFERENCES — AT THE END -->
+
+<a
+
+href="statut-juridique.html"
+
+class="legal-reference-card"
+
+aria-label="Official Legal and Regulatory References — Athlète de Haut Niveau et Élite">
+
+<div class="legal-reference-title">
+
+Official Legal &amp; Regulatory References (Sources)
+
+</div>
+
+<div class="legal-reference-subtitle">
+
+Athlète de Haut Niveau &amp; Élite
+
+</div>
+
+<div class="legal-reference-arrow">
+
+View official legal framework →
+
+</div>
+
+</a>
+
+<!-- IMPORTANT NOTICE -->
+
+<div class="sport-status-important">
+
+<div class="important-title">
+
+IMPORTANT
+
+</div>
+
+<div class="important-arrow">
+
+↑
+
+</div>
+
+<div class="important-text">
+
+Official legal and regulatory sources
 
 </div>
 
