@@ -185,14 +185,22 @@ section{padding:82px 0;border-top:1px solid #22252a}.section-label{color:#858b94
 @keyframes medalsSweep{0%,55%{left:-28%;opacity:0}64%{opacity:1}100%{left:128%;opacity:0}}
 @media(max-width:560px){.medal-qualification{grid-column:auto}.medals-hero{margin-bottom:28px;border-radius:23px 7px 27px 8px}.medals-hero:before{inset:7px;border-radius:17px 3px 20px 4px}.medals-hero-overlay:after{top:12px;right:14px;font-size:6.5px;letter-spacing:1.7px}.medals-hero-copy{left:14px;right:auto;bottom:12px;width:min(82%,320px);padding:6px 9px}.medals-hero-copy strong{font-size:clamp(10px,3.2vw,14px);line-height:1.1;letter-spacing:-.15px}.medals-hero-copy em{font-size:clamp(8px,2.4vw,10px);margin-top:2px}.medals-hero-copy span{font-size:6px;letter-spacing:1.5px}}
 
-/* CLUB CAREER — image integrated directly with the section title; scoped only to this section */
+/* CLUB CAREER — refined image card, scoped only to this section */
 #career h2{margin-bottom:4px}
-#career .club-career-intro{position:relative;z-index:4;max-width:780px;margin:-4px 0 24px;color:#aeb3ba;font-size:14px;line-height:1.85;text-shadow:0 8px 28px rgba(0,0,0,.32)}
-#career .club-career-hero{position:relative;width:100%;margin:0 0 38px;overflow:hidden;background:transparent;isolation:isolate;box-shadow:0 -18px 48px rgba(214,179,106,.055),0 28px 70px rgba(0,0,0,.38)}
-#career .club-career-hero:before{content:"";position:absolute;left:-8%;right:-8%;top:-24px;height:48px;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(214,179,106,.10),transparent 62%);filter:blur(12px)}
-#career .club-career-hero:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(8,9,11,.035),transparent 18%,transparent 78%,rgba(8,9,11,.12) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),inset 0 -1px 0 rgba(214,179,106,.08)}
-#career .club-career-hero img{position:relative;z-index:0;display:block;width:100%;height:auto;object-fit:contain;object-position:center}
-@media(max-width:560px){#career h2{margin-bottom:3px}#career .club-career-intro{margin:-2px 0 16px;font-size:12px;line-height:1.7}#career .club-career-hero{margin-bottom:30px;box-shadow:0 -12px 32px rgba(214,179,106,.045),0 20px 45px rgba(0,0,0,.32)}}
+#career .club-career-intro{position:absolute;left:clamp(22px,4.2vw,58px);bottom:clamp(20px,4.2vw,52px);z-index:5;width:min(30%,340px);margin:0;padding:7px 11px 7px 13px;color:#f2cf72;font-size:clamp(7px,.78vw,10.5px);line-height:1.38;font-weight:800;letter-spacing:.65px;text-align:left;text-transform:uppercase;text-shadow:0 1px 4px rgba(0,0,0,.72);background:linear-gradient(90deg,rgba(8,9,11,.42),rgba(8,9,11,.13),transparent);border-left:1px solid rgba(242,207,114,.82);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;pointer-events:none}
+#career .club-career-hero{position:relative;width:min(90%,1080px);margin:2px auto 78px;overflow:visible;background:transparent;isolation:isolate;border-radius:22px;transform:perspective(1400px) rotateX(.35deg) translateZ(0);box-shadow:0 0 0 1px rgba(214,179,106,.18),0 0 0 2px rgba(214,179,106,.035),0 0 34px rgba(214,179,106,.20),0 24px 70px rgba(0,0,0,.52)}
+#career .club-career-hero:before{content:"";position:absolute;inset:-18px -24px;z-index:-2;pointer-events:none;border-radius:34px;background:radial-gradient(ellipse at center,rgba(214,179,106,.23) 0%,rgba(214,179,106,.09) 34%,transparent 70%);filter:blur(16px);opacity:.95}
+@keyframes clubCareerCinematicVeil{0%,100%{background-position:0% 0%,0% 0%,0% 0%}50%{background-position:0% 12%,100% 0%,100% 0%}}
+#career .club-career-hero:after{content:"";position:absolute;inset:0;border-radius:22px;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(8,9,11,.22) 0%,rgba(8,9,11,.075) 14%,transparent 38%,rgba(8,9,11,.018) 62%,rgba(8,9,11,.14) 100%),linear-gradient(90deg,rgba(8,9,11,.13),transparent 18%,transparent 82%,rgba(8,9,11,.13)),linear-gradient(112deg,transparent 20%,rgba(242,207,114,.055) 48%,transparent 58%);background-size:100% 135%,100% 100%,180% 100%;animation:clubCareerCinematicVeil 7s ease-in-out infinite;box-shadow:inset 0 1px 0 rgba(255,255,255,.10),inset 0 0 0 1px rgba(214,179,106,.13),inset 0 -2px 0 rgba(214,179,106,.20)}
+#career .club-career-hero img{position:relative;z-index:0;display:block;width:100%;height:auto;object-fit:contain;object-position:center;border-radius:22px;transform:translateZ(8px);box-shadow:inset 0 0 30px rgba(0,0,0,.20)}
+#career .club-career-hero .club-career-light-left,#career .club-career-hero .club-career-light-right{position:absolute;top:10%;bottom:10%;width:2px;z-index:4;pointer-events:none;background:linear-gradient(180deg,transparent 0%,rgba(242,207,114,.22) 12%,rgba(242,207,114,.95) 50%,rgba(242,207,114,.22) 88%,transparent 100%);box-shadow:0 0 8px rgba(242,207,114,.70),0 0 22px rgba(242,207,114,.28);opacity:.82}
+#career .club-career-hero .club-career-light-left{left:-10px}#career .club-career-hero .club-career-light-right{right:-10px}
+#career .club-career-hero .club-career-corner{position:absolute;width:38px;height:38px;z-index:4;pointer-events:none;opacity:.75}
+#career .club-career-hero .club-career-corner.tl{top:-1px;left:-1px;border-top:1px solid rgba(242,207,114,.82);border-left:1px solid rgba(242,207,114,.82);border-top-left-radius:24px;box-shadow:-2px -2px 14px rgba(242,207,114,.16)}
+#career .club-career-hero .club-career-corner.tr{top:-1px;right:-1px;border-top:1px solid rgba(242,207,114,.82);border-right:1px solid rgba(242,207,114,.82);border-top-right-radius:24px;box-shadow:2px -2px 14px rgba(242,207,114,.16)}
+#career .club-career-hero .club-career-corner.bl{bottom:-1px;left:-1px;border-bottom:1px solid rgba(242,207,114,.58);border-left:1px solid rgba(242,207,114,.58);border-bottom-left-radius:24px}
+#career .club-career-hero .club-career-corner.br{bottom:-1px;right:-1px;border-bottom:1px solid rgba(242,207,114,.58);border-right:1px solid rgba(242,207,114,.58);border-bottom-right-radius:24px}
+@media(max-width:560px){#career h2{margin-bottom:3px}#career .club-career-intro{left:12px;right:12px;bottom:12px;width:auto;max-width:72%;padding:6px 9px 6px 10px;font-size:7px;line-height:1.38;letter-spacing:.45px}#career .club-career-hero{width:88%;margin:0 auto 52px;border-radius:16px;box-shadow:0 0 0 1px rgba(214,179,106,.08),0 0 22px rgba(214,179,106,.12),0 16px 42px rgba(0,0,0,.34)}#career .club-career-hero:before{inset:-7px;border-radius:21px;filter:blur(10px)}#career .club-career-hero:after,#career .club-career-hero img{border-radius:16px}}
 
 .medals{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.medal{padding:30px;background:#101318;border:1px solid #292d34}.medal-qualification{grid-column:1 / -1}.medal-icon{font-size:52px}.medal-label{color:#d6b36a;font-size:10px;letter-spacing:3px;text-transform:uppercase}.medal h3{margin:12px 0 4px;font-size:24px}.medal p{color:#949aa3}.clubs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.club{position:relative;min-height:285px;overflow:hidden;background:#0d1014;border:1px solid rgba(255,255,255,.1);box-shadow:0 14px 40px rgba(0,0,0,.28)}.club-logo{height:175px;padding:20px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(125deg,var(--club-deep),var(--club-mid),var(--club-light),var(--club-mid),var(--club-deep));background-size:280% 280%;animation:clubFlow 10s linear infinite}.club-logo:after{content:"";position:absolute;inset:-45%;background:linear-gradient(105deg,transparent 20%,rgba(255,255,255,.14) 30%,transparent 45%,rgba(255,255,255,.08) 78%,transparent 88%);animation:fabric 5.5s ease-in-out infinite}.club-number{position:absolute;top:15px;left:17px;z-index:5;font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.65)}.club-identity{position:relative;z-index:8;text-align:center}.club-code{display:block;color:rgba(255,255,255,.65);font-size:9px;letter-spacing:5px;margin-bottom:9px}.club-title{color:#fff;font-size:clamp(25px,3.3vw,38px);font-weight:950;line-height:.98;letter-spacing:-1.7px;text-shadow:0 3px 15px rgba(0,0,0,.65)}.club-subtitle{margin-top:18px;color:rgba(255,255,255,.68);font-size:8px;letter-spacing:2.5px}.club>div:last-child{padding:18px 20px 20px;background:#0b0e12;border-top:1px solid rgba(255,255,255,.08)}.club-name{font-size:17px;font-weight:800}.club-level{margin-top:9px;color:#d6b36a;font-size:10px;letter-spacing:1.2px;text-transform:uppercase}@keyframes clubFlow{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@keyframes fabric{0%,100%{transform:rotate(-3deg) translateX(-9%)}50%{transform:rotate(3deg) translateX(9%)}}.media{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.media-card{overflow:hidden;background:#101318;border:1px solid #292d34}.media-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .35s}.media-card:hover img{transform:scale(1.035)}.video-section-title{display:inline-block;margin-top:78px;margin-bottom:25px;font-size:18px;font-weight:850;letter-spacing:4px;text-transform:uppercase}.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.video-card{display:block;overflow:hidden;background:#101318;border:1px solid rgba(214,179,106,.62)}.video-preview{aspect-ratio:16/9;position:relative;overflow:hidden}.video-preview img{width:100%;height:100%;object-fit:cover}.play-button{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border:1px solid #d6b36a;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#d6b36a;background:rgba(8,9,11,.72);font-size:22px}.video-info{padding:20px}.video-number{color:#d6b36a;font-size:9px;letter-spacing:3px}.video-info h3{margin-top:8px;font-size:19px}.video-info p{margin-top:4px;color:#858b94;font-size:12px}.signature-section{text-align:center}.signature-wrap{max-width:650px;margin:10px auto 0;padding:36px 30px;background:#101318;border:1px solid #292d34}.signature-name{font-family:"Brush Script MT","Segoe Script",cursive;font-size:52px;font-style:italic;color:#d6b36a}.signature-line{width:180px;height:1px;background:#665331;margin:0 auto 22px}.end-ihf{width:min(300px,85%);display:block;margin:0 auto 22px}.fahb-signature{margin:8px auto 4px;color:#8f949c;font-size:10px;letter-spacing:1.8px;text-transform:uppercase}.as18{margin:10px auto 18px;color:#d6b36a;font-size:clamp(28px,5.5vw,38px);font-weight:900;letter-spacing:4px}.signature-caption{margin-top:13px;color:#777d86;font-size:11px}.contact{margin-top:18px;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.contact-link{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid #292d34;background:#0b0e12;color:#b9bec6;font-size:11px}.contact-label{color:#858b94}.contact-icon{font-size:15px}.algeria{margin:22px auto 0}.algeria-flag{font-size:30px}footer{border-top:1px solid #25282d;padding:38px 0;color:#777d86;font-size:11px}.footer{display:flex;justify-content:space-between;gap:20px}
 /* RESPONSIVE */
@@ -293,16 +301,15 @@ section{padding:82px 0;border-top:1px solid #22252a}.section-label{color:#858b94
 #international .career-frame.back{display:none!important}
 #international .career-frame.front{position:relative!important;right:auto!important;top:auto!important;width:100%!important;height:auto!important;aspect-ratio:1.42/1;min-height:0!important;padding:0!important;border-radius:0!important;transform:none!important;opacity:1!important;filter:none!important;background:none;box-shadow:0 35px 90px rgba(0,0,0,.55);overflow:hidden}
 #international .career-frame.front:before{inset:0;border-radius:0;border:1px solid rgba(255,255,255,.13)}
-#international .career-frame.front img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;border-radius:0;filter:grayscale(.02) contrast(1.05) brightness(.92) saturate(1.08)!important;transform:none!important}
-#international .career-image-overlay{inset:0;border-radius:0;background:linear-gradient(180deg,rgba(0,0,0,.015) 18%,rgba(0,0,0,.025) 52%,rgba(0,0,0,.42) 100%),linear-gradient(115deg,transparent 52%,rgba(214,179,106,.025))}
-#international .career-image-copy{position:absolute;left:28px;right:28px;bottom:20px;z-index:7;display:flex;flex-direction:column;gap:6px;transform:none!important;color:#fff}
-#international .career-image-copy strong{max-width:460px;font-size:clamp(16px,2.6vw,30px);line-height:1.08;font-weight:800;letter-spacing:-.6px;text-shadow:0 3px 16px rgba(0,0,0,.5)}
-#international .career-image-copy span{color:#d6b36a;font-size:7.5px;font-weight:850;letter-spacing:2.4px}
+#international .career-frame.front img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;border-radius:0;filter:grayscale(.04) contrast(1.08) brightness(.78) saturate(1.03)!important;transform:none!important}
+#international .career-image-overlay{inset:0;border-radius:0;background:linear-gradient(180deg,rgba(0,0,0,.03) 20%,rgba(0,0,0,.08) 45%,rgba(0,0,0,.76) 100%)}
+#international .career-image-copy{position:absolute;left:32px;right:32px;bottom:28px;z-index:7;display:flex;flex-direction:column;gap:12px;transform:none!important;color:#fff}
+#international .career-image-copy strong{max-width:620px;font-size:clamp(24px,4vw,46px);line-height:1.04;font-weight:900;letter-spacing:-1.4px;text-shadow:0 5px 25px rgba(0,0,0,.55)}
+#international .career-image-copy span{color:#d6b36a;font-size:10px;font-weight:850;letter-spacing:3.5px}
 #international .visual-word,#international .visual-caption{display:none!important}
 #international .international-timeline{order:2;width:100%!important;padding:0 0 30px}
 #international .international-title{display:block;max-width:100%;margin:0;white-space:normal}
 #international .international-location{position:relative!important;display:flex!important;align-items:center;gap:8px;width:100%;margin:12px 0 0!important;padding:0!important;clear:both;color:#858b94;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-@media(max-width:560px){#international .career-image-copy{left:18px;right:18px;bottom:16px;gap:5px}#international .career-image-copy strong{max-width:82%;font-size:clamp(16px,4.7vw,21px);line-height:1.08;letter-spacing:-.35px}#international .career-image-copy span{font-size:6.5px;letter-spacing:1.8px}}
 #international .international-location-icon{flex:0 0 auto;font-size:1.55em;line-height:1}
 #international .international-description{clear:both}
 @media(max-width:900px){#international .section-intro{margin-bottom:48px}#international .international-layout{gap:54px}#international .career-frame.front{aspect-ratio:1.42/1}}
@@ -408,59 +415,6 @@ section{padding:82px 0;border-top:1px solid #22252a}.section-label{color:#858b94
   }
 }
 </style>
-
-<!-- FINAL INTERNATIONAL CAREER MICRO-TUNING -->
-<style>
-/* ONLY International Career image + its in-image overlay. No other section is affected. */
-#international .career-frame.front img{
-  filter:grayscale(.02) contrast(1.04) brightness(1.02) saturate(1.10)!important;
-}
-#international .career-image-overlay{
-  background:linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,.015) 58%,rgba(0,0,0,.22) 100%)!important;
-}
-#international .career-image-copy{
-  left:28px!important;
-  right:28px!important;
-  bottom:20px!important;
-  gap:5px!important;
-}
-#international .career-image-copy strong{
-  max-width:360px!important;
-  font-size:clamp(15px,2.05vw,23px)!important;
-  line-height:1.10!important;
-  letter-spacing:-.35px!important;
-  text-shadow:0 2px 10px rgba(0,0,0,.38)!important;
-}
-#international .career-image-copy span{
-  font-size:7px!important;
-  letter-spacing:2px!important;
-}
-@media(max-width:560px){
-  #international .career-frame.front img{
-    filter:grayscale(.02) contrast(1.04) brightness(1.03) saturate(1.10)!important;
-  }
-  #international .career-image-overlay{
-    background:linear-gradient(180deg,rgba(0,0,0,0) 18%,rgba(0,0,0,.01) 60%,rgba(0,0,0,.20) 100%)!important;
-  }
-  #international .career-image-copy{
-    left:22px!important;
-    right:20px!important;
-    bottom:18px!important;
-    gap:5px!important;
-  }
-  #international .career-image-copy strong{
-    max-width:78%!important;
-    font-size:clamp(17px,5.2vw,21px)!important;
-    line-height:1.08!important;
-    letter-spacing:-.3px!important;
-  }
-  #international .career-image-copy span{
-    font-size:6.5px!important;
-    letter-spacing:1.7px!important;
-  }
-}
-</style>
-<!-- /FINAL INTERNATIONAL CAREER MICRO-TUNING -->
 </head>
 <body class="intro-active">
 <div class="cinematic-intro" aria-hidden="true"><div class="cinematic-light"></div><div class="cinematic-content"><div class="cinematic-stage-one"><div class="cinematic-line"></div><span class="cinematic-last">SEGUENI</span><span class="cinematic-first">Abderraouf</span><div class="cinematic-role">International Handball Player</div><div class="cinematic-status">Professional Pivot · Algerian · #18</div><div class="cinematic-bar"></div></div><div class="cinematic-ihf-stage"><div class="ihf-box"><img class="ihf-logo" src="https://www.ihf.info/sites/default/files/inline-images/IHF%20Logo_1440x300.jpg" alt="International Handball Federation"><div class="ihf-title">Certified by IHF</div><div class="ihf-subtitle">International Handball Federation</div></div></div></div></div>
@@ -480,7 +434,7 @@ section{padding:82px 0;border-top:1px solid #22252a}.section-label{color:#858b94
 <em>Yes, this is the path of champions.</em>
 </div>
 </div><div class="medals"><div class="medal"><div class="medal-icon">🥈</div><div class="medal-label">Silver · 2014</div><h3>U19 African Championship</h3><p>🇰🇪 Nairobi, Kenya · Algeria — 2nd Place</p></div><div class="medal"><div class="medal-icon">🥉</div><div class="medal-label">Bronze · 2016</div><h3>U21 African Championship</h3><p>🇲🇱 Bamako, Mali · Algeria — 3rd Place</p></div><div class="medal medal-qualification"><div class="medal-icon"></div><div class="medal-label">WORLD CHAMPIONSHIP · QUALIFICATION</div><h3>Second-Tour Qualification<br><span style="font-size:.72em;font-weight:500;opacity:.82;">IHF Men’s World Championship</span></h3></div></div></div></section>
-<section id="career"><div class="container"><div class="section-label">05 — Club Career</div><h2>Club Career</h2><div class="club-career-intro">PLUS +12 YEARS IN EXCELLENCE DIVISION IN ALGERIA, THE HIGHEST LEVEL.</div><div class="club-career-hero"><img src="IMG_0546.jpeg" alt="Club Career — SEGUENI Abderraouf"></div><div class="clubs">
+<section id="career"><div class="container"><div class="section-label">05 — Club Career</div><h2>Club Career</h2><div class="club-career-hero"><div class="club-career-intro">PLUS +12 YEARS IN EXCELLENCE DIVISION IN ALGERIA, THE HIGHEST LEVEL.</div><span class="club-career-light-left"></span><span class="club-career-light-right"></span><span class="club-career-corner tl"></span><span class="club-career-corner tr"></span><span class="club-career-corner bl"></span><span class="club-career-corner br"></span><img src="IMG_0546.jpeg" alt="Club Career — SEGUENI Abderraouf"></div><div class="clubs">
 <div class="club"><div><div class="club-number">01</div><div class="club-logo" style="--club-deep:#030303;--club-mid:#705500;--club-light:#e4b817"><div class="club-identity"><span class="club-code">CHABAB RIADHI</span><div class="club-title">CRBBA</div><div class="club-subtitle">BORDJ BOU ARRERIDJ</div></div></div></div><div><div class="club-name">CRBBA Bordj Bou Arreridj</div><div class="club-level">2013 — 2017<br>Division Excellence — Top Division of Algerian Handball</div></div></div>
 <div class="club"><div><div class="club-number">02</div><div class="club-logo" style="--club-deep:#03080f;--club-mid:#15588d;--club-light:#e7f1f8"><div class="club-identity"><span class="club-code">HANDBALL CLUB</span><div class="club-title">MBT</div><div class="club-subtitle">TADJENANET</div></div></div></div><div><div class="club-name">MBT Tadjenanet</div><div class="club-level">2017 — 2021<br>Division Excellence — Top Division of Algerian Handball</div></div></div>
 <div class="club"><div><div class="club-number">03</div><div class="club-logo" style="--club-deep:#120103;--club-mid:#a91420;--club-light:#f05a62"><div class="club-identity"><span class="club-code">CLUB SPORTIF</span><div class="club-title">CRBM</div><div class="club-subtitle">MILA</div></div></div></div><div><div class="club-name">CRBM Mila</div><div class="club-level">2021 — 2022<br>Division Excellence — Top Division of Algerian Handball</div></div></div>
