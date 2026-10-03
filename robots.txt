@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://abderraoufseg.github.io/sitemap.xml
